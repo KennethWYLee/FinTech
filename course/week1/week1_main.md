@@ -13,7 +13,7 @@
 
 This EMI course introduces artificial intelligence in financial technology through a structured progression from financial data to backtesting, performance evaluation, and portfolio weighting. Students will first learn how financial data are collected, aligned, transformed, and used without information leakage. They will then construct reproducible quantitative-trading backtests that incorporate rolling or expanding estimation windows, model updating, signal updating, portfolio rebalancing, transaction costs, and realistic execution assumptions.
 
-After the midterm assessment, students will study established portfolio-weighting methods and compare their assumptions, required inputs, risk characteristics, transaction costs, and out-of-sample stability. Each team will identify a specific limitation of an existing method, formulate a clearly defined modification, and evaluate the proposed method using common data, benchmarks, rebalancing rules, transaction costs, and out-of-sample periods.
+After the progress report, students will study established portfolio-weighting methods and compare their assumptions, required inputs, risk characteristics, transaction costs, and out-of-sample stability. Each team will identify a specific limitation of an existing method, formulate a clearly defined modification, and evaluate the proposed method using common data, benchmarks, rebalancing rules, transaction costs, and out-of-sample periods.
 
 After completing the course, students should be able to prepare and audit financial data; calculate and align returns correctly; identify look-ahead bias, information leakage, and other sources of invalid backtest results; implement fixed, rolling, expanding, and walk-forward evaluation; distinguish model retraining, signal updating, and portfolio rebalancing; incorporate transaction costs and execution assumptions; evaluate financial performance and its uncertainty; implement and compare established portfolio-weighting methods; develop a mathematically defined modification of an existing method; and communicate financial evidence, limitations, and conclusions in professional English.
 
@@ -33,7 +33,7 @@ Research articles are introduced when they help students explain an empirical or
 
 ## 第一週
 
-Course introduction, learning outcomes, assessment, semester projects, English reporting, reproducibility, peer comparison, and the permitted use of generative AI.
+Course introduction, learning outcomes, class participation, three staged reports, English reporting, reproducibility, peer comparison, and permitted uses of generative AI.
 
 ## 第二週
 
@@ -45,7 +45,7 @@ Information timing, look-ahead bias, information leakage, financial feature cons
 
 ## 第四週
 
-Construction of a reproducible backtest from trading signals, positions, trades, execution assumptions, and portfolio returns.
+First concept report and construction of a reproducible backtest from signals, positions, trades, execution assumptions, and portfolio returns.
 
 ## 第五週
 
@@ -61,15 +61,15 @@ Transaction costs, bid-ask spreads, slippage, execution delay, turnover, cost se
 
 ## 第八週
 
-Performance measures, statistical uncertainty, overfitting, multiple testing, backtest auditing, and the first individual technical examination.
+Performance measures, statistical uncertainty, overfitting, multiple testing, data snooping, and backtest auditing.
 
 ## 第九週
 
-Asynchronous midterm submission of reproducible quantitative-trading code, results, and an English report through the LMS.
+Asynchronous submission of the progress report, reproducible quantitative-trading code, and supporting results through the LMS.
 
 ## 第十週
 
-Individual short reports on the midterm work and the transition from trading signals to portfolio weights.
+Individual progress-report presentations and the transition from quantitative trading to portfolio weights.
 
 ## 第十一週
 
@@ -89,15 +89,15 @@ Value at Risk, Conditional Value at Risk, scenario-based optimization, regulariz
 
 ## 第十五週
 
-Development of student weighting methods, the second individual technical examination, and submission of final reports, code, and results.
+Development of student weighting methods and submission of final reports, code, and results.
 
 ## 第十六週
 
-First session of final reports and oral discussion of student portfolio-weighting methods.
+First presentation session for the final report on student portfolio-weighting methods.
 
 ## 第十七週
 
-Second session of final reports and evidence-based comparison and ranking of other teams.
+Second final-report session and evidence-based comparison and ranking of other teams.
 
 ## 第十八週
 
@@ -105,27 +105,33 @@ Advanced portfolio-weighting issues and the development of research questions fr
 
 ## 成績評量
 
-- Class participation and weekly learning evidence: 10%
+- Class participation and weekly learning evidence: 40%
 
-- Two individual technical examinations: 40%
+  - In-class implementation and problem-solving: 20%
 
-  - First technical examination on financial data, backtesting, rebalancing, and performance evaluation: 20%
+  - Weekly preparation and traceable learning evidence: 10%
 
-  - Second technical examination on portfolio weighting, risk estimation, constraints, and empirical comparison: 20%
+  - Discussion, oral responses, and evidence-based peer feedback: 10%
 
-- Midterm quantitative-trading work: 25%
+- Report 1 — Concept Report: 10%
 
-  - Team implementation, reproducibility, and written report: 15%
+  - Team concept, financial question, data plan, information boundary, and benchmark: 7%
 
-  - Individual short report and oral explanation: 5%
+  - Brief English presentation and responses: 3%
+
+- Report 2 — Progress Report: 25%
+
+  - Team implementation, reproducibility, and written progress report: 15%
+
+  - Individual short presentation and oral explanation: 5%
 
   - Individual evidence-based review of other approaches: 5%
 
-- Final portfolio-weighting work: 25%
+- Report 3 — Final Report: 25%
 
   - Team weighting method, implementation, and empirical evaluation: 15%
 
-  - Final report presentation and oral responses: 5%
+  - Final presentation and oral responses: 5%
 
   - Individual evidence-based comparison of other teams: 5%
 
