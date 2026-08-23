@@ -1,3 +1,3 @@
 # Week 17 — Support
 
-Students do not rank their own team, and rankings received from classmates do not directly determine a team's grade.
+Each comparison should cite specific financial measures, implementation evidence, assumptions, or robustness results.

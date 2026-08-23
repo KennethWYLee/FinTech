@@ -1,3 +1,3 @@
 # Week 9 — Support
 
-The progress report submission deadline, LMS link, and administrative instructions will be provided through the university system.
+There is no required submission. Any administrative announcement will be provided through the university LMS.

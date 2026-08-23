@@ -1,3 +1,3 @@
 # Week 11 — Support
 
-Supporting examples will compare the weighting methods under common assets, dates, constraints, and rebalancing rules.
+Supporting examples compare portfolio weights, concentration, and stability under common estimation and testing periods.

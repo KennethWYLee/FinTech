@@ -1,5 +1,5 @@
-# Week 8 — Performance Evaluation and Backtest Auditing
+# Week 8 — Basic Portfolio-Weighting Methods
 
-Week 8 evaluates annualized return, volatility, the Sharpe ratio, the Sortino ratio, maximum drawdown, drawdown duration, turnover, and returns after transaction costs. The class also considers bootstrap confidence intervals, market-period sensitivity, repeated model selection, multiple testing, and data snooping. Students audit information timing, backtest logic, benchmarks, costs, and out-of-sample evidence before preparing the progress report.
+Week 8 introduces the transition from trading signals to portfolio weights. Students examine portfolio budget constraints, position limits, leverage, short selling, and signal normalization.
 
-By the end of the week, students should be able to interpret performance and risk jointly, identify invalid or overstated evidence, and document important limitations.
+The class compares equal weighting, market-capitalization weighting, normalized-signal weighting, and inverse-volatility weighting under common assets, dates, constraints, and rebalancing rules.

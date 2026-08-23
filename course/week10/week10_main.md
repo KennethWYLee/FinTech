@@ -1,5 +1,5 @@
-# Week 10 — Progress Report Presentations
+# Week 10 — Report 1: Quantitative Trading Report
 
-Every student gives a concise oral explanation of the team's progress report, including students whose implementation was completed collaboratively. Each presentation explains one important empirical result, one problem found in the data, backtest, rebalancing process, or performance evaluation, and one question about converting trading information into portfolio weights.
+Every student presents the team's quantitative-trading work, including the financial question, data, information boundary, features, trading rules, rolling or expanding evaluation, rebalancing, transaction costs, benchmarks, performance, limitations, and initial portfolio weights.
 
-The reports provide the evidence used to introduce the relationship among trading signals, expected returns, risk estimates, and portfolio allocation. Presentation order and time limits will be announced in class.
+Each student explains at least one empirical result and responds to questions about the validity and financial interpretation of the reported evidence.

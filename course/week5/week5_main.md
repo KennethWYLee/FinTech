@@ -1,7 +1,5 @@
-# Week 5 — Time-Series Evaluation
+# Week 5 — Time-Series Evaluation, Updating, and Rebalancing
 
-Week 5 compares a fixed training and testing split, rolling windows, expanding windows, and walk-forward evaluation. Students investigate how the estimation-window length affects the amount and relevance of available information and why random train-test splitting is generally inappropriate for financial time series.
+Week 5 compares fixed training and testing splits, rolling windows, expanding windows, and walk-forward evaluation. Students examine how window length affects available information and why random train-test splitting is generally inappropriate for financial time series.
 
-By the end of the week, students should be able to implement a time-ordered evaluation process, justify the chosen window design, and identify where model estimation and testing occur.
-
-The Week 4 backtesting notebook provides the starting implementation. Additional rolling and expanding evaluation exercises will be added here after they are aligned with the current syllabus.
+The class also distinguishes model retraining, signal recalculation, and portfolio rebalancing and compares daily, weekly, monthly, calendar-based, and threshold-based update rules.

@@ -1,3 +1,3 @@
 # Week 14 — Support
 
-Supporting examples will distinguish estimated downside risk from out-of-sample portfolio performance.
+The progress report should make the proposed method reproducible and clearly distinguish completed evidence from work that remains before the final report.

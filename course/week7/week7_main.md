@@ -1,7 +1,5 @@
-# Week 7 — Trading Costs and Benchmarks
+# Week 7 — Performance Evaluation and Backtest Auditing
 
-Week 7 introduces commissions, bid-ask spreads, slippage, execution delay, and turnover. Students conduct cost-sensitivity analysis and identify the trading-cost level at which a strategy ceases to outperform its benchmark. AI-based strategies are compared with buy-and-hold, cash, simple rule-based strategies, and an equal-weighted portfolio when multiple assets are used.
+Week 7 evaluates annualized return, volatility, Sharpe and Sortino ratios, maximum drawdown, drawdown duration, turnover, and returns after transaction costs. The class also considers bootstrap confidence intervals, market-period sensitivity, repeated model selection, multiple testing, and data snooping.
 
-By the end of the week, students should be able to calculate returns after costs, select an appropriate benchmark, and state which execution assumptions materially affect the result.
-
-The Week 4 backtesting notebook supplies the basic strategy implementation. Cost sensitivity and benchmark comparisons should use the same out-of-sample period and information boundary.
+Students audit information timing, backtest logic, benchmarks, costs, and out-of-sample evidence before moving from trading strategies to portfolio weighting.

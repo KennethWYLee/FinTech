@@ -1,5 +1,5 @@
-# Week 15 — Development of a Weighting Method
+# Week 15 — Weighting-Method Development and Final Submission
 
-Each team identifies a specific limitation of an existing method, such as excessive concentration, sensitivity to estimation error, high turnover, transaction costs, tail risk, unstable signals, or changing market conditions. The team defines its proposed modification, inputs, mathematical calculation or optimization model, portfolio constraints, and rebalancing rule.
+Teams revise their weighting methods in response to the Week 14 discussion and complete baseline comparisons, common out-of-sample evaluation, transaction-cost analysis, concentration and turnover measures, and robustness checks.
 
-All teams complete and submit the third report, code, and results before the first final-presentation session. The report must explain the proposed weighting method, baselines, portfolio constraints, rebalancing, transaction costs, out-of-sample evaluation, and limitations.
+All teams submit the same frozen version of the final report, code, and results before the Week 16 presentation session.

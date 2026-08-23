@@ -1,7 +1,5 @@
-# Week 6 — Updating and Rebalancing
+# Week 6 — Trading Costs and Benchmarks
 
-Week 6 distinguishes model retraining, signal recalculation, and portfolio rebalancing. Students compare daily, weekly, and monthly rebalancing as well as calendar-based and threshold-based rules. Machine-learning predictions may replace simple signals while retaining the same information boundary and evaluation conditions.
+Week 6 introduces commissions, bid-ask spreads, slippage, execution delay, and turnover. Students conduct cost-sensitivity analysis and identify the trading-cost level at which a strategy ceases to outperform its benchmark.
 
-By the end of the week, students should be able to define the three update frequencies separately and measure how a rebalancing choice affects holdings, trades, and turnover.
-
-Use the prediction workflow from Week 3 and the position workflow from Week 4 as the starting materials. A dedicated rebalancing exercise will be added after validation.
+AI-based strategies are compared with cash, buy-and-hold, simple rule-based strategies, and an equal-weighted portfolio when multiple assets are used.

@@ -1,5 +1,5 @@
-# Week 11 — From Signals to Portfolio Weights
+# Week 11 — Mean-Variance Portfolio Weighting
 
-Week 11 introduces portfolio budget constraints, position limits, leverage, short selling, and signal normalization. Students compare equal weighting, market-capitalization weighting, weighting based on normalized trading signals, and inverse-volatility weighting.
+Week 11 introduces expected returns, covariance estimation, the efficient frontier, minimum-variance portfolios, mean-variance optimization, and maximum-Sharpe portfolios.
 
-By the end of the week, students should be able to implement the methods under common constraints and identify a limitation that may motivate a later modification.
+The class examines how expected-return and covariance-estimation errors can produce concentrated, unstable, or economically implausible portfolio weights.

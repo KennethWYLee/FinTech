@@ -1,3 +1,3 @@
 # Week 13 — Support
 
-Supporting examples will report both portfolio weights and risk contributions under alternative covariance estimates.
+Supporting examples distinguish estimated downside risk from out-of-sample portfolio performance.

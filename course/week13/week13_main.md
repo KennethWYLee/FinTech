@@ -1,5 +1,5 @@
-# Week 13 — Covariance Estimation and Risk Parity
+# Week 13 — Downside Risk and Robust Portfolio Decisions
 
-Week 13 compares sample covariance matrices, shrinkage estimates, factor-based estimates, and rolling covariance estimates. Students then examine equal risk contribution, risk budgeting, and hierarchical risk parity. The class distinguishes diversification of capital from diversification of risk.
+Week 13 introduces Value at Risk, Conditional Value at Risk, minimum-CVaR portfolios, and scenario-based optimization. The class considers how finite samples and extreme observations affect estimated downside risk.
 
-By the end of the week, students should be able to compare portfolio weights and risk contributions under alternative covariance estimates and diversification objectives.
+Regularization, portfolio constraints, turnover limits, transaction-cost penalties, and robust optimization are introduced as responses to unstable or impractical portfolio weights.

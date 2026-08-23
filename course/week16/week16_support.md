@@ -1,3 +1,3 @@
 # Week 16 — Support
 
-Discussion focuses on assumptions, data, estimation windows, rebalancing, transaction costs, portfolio concentration, stability, and interpretation.
+Discussion focuses on whether the reported conclusions follow from the method, assumptions, common comparisons, and out-of-sample evidence.
