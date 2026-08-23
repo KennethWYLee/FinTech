@@ -1,0 +1,10 @@
+# This course archive is private by default. Add reviewed public files explicitly.
+/*
+!/.gitignore
+!/AGENTS.md
+!/CLAUDE.md
+!/COURSES.md
+!/PROJECT.md
+!/README.md
+!/COURSE_PLAN.md
+!/1151_智慧金融科技_量化交易研究導向課程大綱.md
