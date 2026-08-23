@@ -4,14 +4,14 @@ This file contains preparation, the detailed data dictionary, a processing-recor
 
 ## Before class
 
-Use Google Colab or a local Jupyter environment with Python, `numpy`, and `pandas`. The optional chart extension also requires `matplotlib`. If you need to check the environment, run the [Colab environment and data check](../resources/notebooks/00_Colab_課前環境與資料檢查.ipynb).
+Use Google Colab or a local Jupyter environment with Python, `numpy`, and `pandas`. The linked preparation notebook also requires `matplotlib` for its figure check. If you need to check the environment, run the [Colab environment and data check](../resources/notebooks/00_Colab_課前環境與資料檢查.ipynb).
 
-For Week 2, keep `USE_ONLINE_DATA=False` in that preparation notebook. Its fallback data are artificial and reproducible. An online download is not part of the required Week 2 evidence because the common market, asset, period, field definition, and redistribution conditions have not yet been specified in the course materials.
+The preparation notebook deliberately uses fixed artificial data and does not offer an online download. An online download is not part of the required Week 2 evidence because the common market, asset, period, field definition, and redistribution conditions have not yet been specified in the course materials.
 
 Before class, confirm that you can:
 
 - create and run a notebook from the first cell to the last cell;
-- import `numpy` and `pandas`;
+- import `numpy`, `pandas`, and `matplotlib` in the preparation notebook;
 - save or export the notebook with its visible outputs; and
 - preserve an error message or screenshot if the environment check fails.
 
@@ -21,14 +21,14 @@ The Week 2 main file uses a small artificial table. These field descriptions exp
 
 | Field | Meaning in the Week 2 artificial data | Required check |
 |---|---|---|
-| `Date` | Trading-session label in `YYYY-MM-DD` format | Parse to `DatetimeIndex`; verify uniqueness and ascending order |
-| `Open` | First artificial transaction price for the session | Must lie between `Low` and `High` |
-| `High` | Highest artificial price for the session | Must be at least as large as `Open` and `Close` |
-| `Low` | Lowest artificial price for the session | Must be no larger than `Open` and `Close` |
-| `Close` | Final artificial transaction price for the session | Must lie between `Low` and `High` |
+| `Date` | Trading-session label in `YYYY-MM-DD` format | Parse to `DatetimeIndex`; verify uniqueness, ascending order, and no weekend rows under the artificial-data convention |
+| `Open` | First artificial transaction price for the session | Must be positive and lie between `Low` and `High` |
+| `High` | Highest artificial price for the session | Must be positive and at least as large as `Open` and `Close` |
+| `Low` | Lowest artificial price for the session | Must be positive and no larger than `Open` and `Close` |
+| `Close` | Final artificial transaction price for the session | Must be positive and lie between `Low` and `High` |
 | `Adj_Close` | Artificial analysis price for Asset A | Must be positive and nonmissing; no corporate action occurs in this artificial sample |
 | `Volume` | Artificial number of units traded during the session | Must be nonnegative; not used to calculate Week 2 returns |
-| `Asset_B_Adj_Close` | Artificial analysis price for Asset B | Used only for the fixed-weight portfolio-return exercise |
+| `Asset_B_Adj_Close` | Artificial analysis price for Asset B | Must be positive and nonmissing; used only for the fixed-weight portfolio-return exercise |
 
 For real data, the meaning of an adjusted-price field is provider-specific. Record the provider's exact definition rather than copying the Week 2 artificial-data description.
 
@@ -42,6 +42,7 @@ Artificial or real:
 Date range:
 Observation frequency:
 Price field used for returns:
+Corporate-action definition checked:
 Reason for selecting that field:
 Return definitions:
 Date parsing rule:
@@ -58,17 +59,17 @@ Claim not supported by this evidence:
 
 ## Terminology support
 
-| English term | 中文提示 | Meaning in Week 2 |
-|---|---|---|
-| price level | 價格水準 | An asset value at one observation time |
-| simple return | 簡單報酬率 | Relative price change, \(P_t/P_{t-1}-1\) |
-| log return | 對數報酬率 | Log price change, \(\ln(P_t/P_{t-1})\) |
-| cumulative return | 累積報酬率 | Compounded change over consecutive periods |
-| wealth index | 財富指數 | Growth of one initial unit through a return sequence |
-| adjusted price | 調整後價格 | A provider-defined price series adjusted for specified events |
-| trading calendar | 交易日曆 | The sessions on which a particular market can trade |
-| data frequency | 資料頻率 | The interval represented by consecutive observations |
-| portfolio return | 投資組合報酬率 | Weighted sum of asset returns for the same holding interval |
+| Term | Meaning in Week 2 |
+|---|---|
+| price level | An asset value at one observation time |
+| simple return | Relative price change, \(P_t/P_{t-1}-1\) |
+| log return | Log price change, \(\ln(P_t/P_{t-1})\) |
+| cumulative return | Compounded change over consecutive periods |
+| wealth index | Growth of one initial unit through a return sequence |
+| adjusted price | A provider-defined price series adjusted for specified events |
+| trading calendar | The sessions on which a particular market can trade |
+| data frequency | The interval represented by consecutive observations |
+| portfolio return | Weighted sum of asset returns for the same holding interval |
 
 ## Troubleshooting
 
@@ -101,5 +102,11 @@ These activities are not required for Week 2 completion:
 - [`pandas.DataFrame.resample`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.resample.html) performs time-series frequency conversion and requires a datetime-like index unless a datetime-like column is specified.
 - [`pandas.DataFrame.sort_index`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_index.html) sorts a DataFrame by its index.
 - [`numpy.log`](https://numpy.org/doc/stable/reference/generated/numpy.log.html) calculates the natural logarithm used in the log-return formula.
+- [`numpy.expm1`](https://numpy.org/doc/stable/reference/generated/numpy.expm1.html) calculates \(\exp(x)-1\), which is used to check the relationship between log and simple returns.
 
-These references document software behavior. They do not define the financial meaning, corporate-action treatment, or legal redistribution conditions of a market-data provider.
+## Financial references
+
+- Campbell, J. Y., Lo, A. W., & MacKinlay, A. C. (1997). *The Econometrics of Financial Markets*. Princeton University Press, Chapter 1, “Prices, Returns, and Compounding,” pp. 9–13. [Publisher chapter record](https://doi.org/10.1515/9781400830213-005).
+- The U.S. Securities and Exchange Commission's [Investor.gov stock-split glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split) explains how a split changes the number of shares without changing shareholders' equity and provides a two-for-one numerical example.
+
+The book supports standard return and time-series notation, and the Investor.gov page supports the split mechanism used in the artificial example. Software references document function behavior. None defines the corporate-action treatment or legal redistribution conditions of a market-data provider.

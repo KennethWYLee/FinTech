@@ -4,7 +4,7 @@
 > `AGENTS.md`。
 
 - 最後盤點日期：2026-08-23
-- 課程狀態：115-1 課綱與18週結構已完成；Week 2學生教材已有可執行初稿，其餘週次待逐週設計
+- 課程狀態：115-1 課綱與18週結構已完成；12個實際授課週（Weeks 2–8、11–13、15與18）均已各自完成150分鐘改寫與重新驗證；正式共同資料、課堂環境與報告細則仍依下方待確認事項辦理
 - Repository：`main` 已連接並推送至 `https://github.com/KennethWYLee/FinTech.git`
 - 文件可見性：`course/` 為可公開學生教材；其他內容預設課程內部，papers、答案與行政文件需分層
 
@@ -60,7 +60,9 @@
   `weekN_support.md`兩個Markdown檔。
 - Week 1的`week1_main.md`是完整課程大綱，不是第一週的逐步課堂教材；
   `week1_support.md`只保存課綱相關補充與全課共同規範連結。
-- Week 2至Week 18的`main`是當週完整學生主教材，須包含可檢核學習目標、必要概念
+- Weeks 10、14、16與17是報告週；逐週教材設計與改進程序直接略過這四週，除非教師
+  另行要求，不建立或擴充為一般授課教材。
+- Weeks 2–8、11–13、15與18的`main`是當週完整學生主教材，須包含可檢核學習目標、必要概念
   與公式、分析流程、必做步驟、預期結果、練習、證據與完成條件。
 - `support`保存課前準備、資料字典、環境設定、檢查表、詳細除錯、延伸分析、文獻及
   其他repository資源連結，不與`main`重複同一份完整內容。
@@ -68,13 +70,82 @@
   連結，不在各週資料夾複製。
 - 公開學生教材不包含教師答案、隱藏測試、評分註記、學生資料、EMI行政文件或未確認
   再散布權利的資料與文章。
-- Week 2以120分鐘完成價格欄位、簡單與對數報酬、累積報酬、資料品質、資料頻率及
+- Week 2以150分鐘完成價格欄位、簡單與對數報酬、累積報酬、資料品質、資料頻率及
   一期固定權重投資組合報酬；不提前進入Week 3的資訊時間與交易訊號設計。
 - Week 2核心計算使用教材內明確標示的人工資料，避免在共同市場、資產、期間、欄位
   定義與發布權利核定前假裝使用真實市場證據。
 - `course/resources/notebooks/00_Colab_課前環境與資料檢查.ipynb`只作Week 2
-  環境準備；舊版`course/resources/notebooks/01_TypeB_AI量化交易_問題設定與資料初探.ipynb`
+  環境、人工價格、報酬與圖形準備，不包含線上下載、特徵、target、訊號、模型或回測；
+  舊版`course/resources/notebooks/01_TypeB_AI量化交易_問題設定與資料初探.ipynb`
   跨越多個現行週次，不是Week 2必做核心教材。
+- Weeks 2–8、11–13、15與18的`main`原有連續120分鐘教學安排；依2026-08-23決定，這12週
+  的正式目標均改為150分鐘，且已逐週獨立完成改寫與重新驗證。教材內的
+  人工資料只用於計算、回測與最佳化機制練習，不作真實市場實證。各週`support`保存準備、
+  紀錄模板、除錯、延伸與來源，不另造教師答案。
+- Week 2的150分鐘版本已逐句完整檢查兩輪；所有六個主教材Python區塊、課前notebook、
+  報酬與公司行動已知答案、資料錯誤情境、相對連結及圖形成品均已驗證。實際環境為
+  Python 3.12.9、NumPy 2.2.6、pandas 2.2.3與matplotlib 3.10.8。
+- Week 3的150分鐘版本已逐句完整檢查兩輪；五個主教材Python區塊已依學生閱讀順序執行，
+  並另以不同日期完成發布時間對齊的已知答案與錯誤方向測試。課程時序、相對連結、公開內容、
+  來源定位及Week 3資料夾檔案集合均已檢查；人工資料結果不代表真實市場實證。
+- Week 4的150分鐘版本已逐句完整檢查兩輪；四個主教材Python區塊已依學生閱讀順序執行，
+  手算ledger、獨立對齊修正及財富非正值失敗情境另經目標測試。正確lag、錯誤同期間對齊、
+  終點部位規則、來源定位、相對連結與公開內容均已檢查；所有績效數值只屬固定人工路徑。
+- Week 5的150分鐘版本已逐句完整檢查兩輪；四個主教材Python區塊已依學生閱讀順序執行，
+  另驗證每10列重估與更新的獨立練習、目前target誤入training及隨機切割使用較晚資料的失敗情境。
+  模型版本、training列數、最後training feature與target可觀察日期均已保存並檢查；預測結果只屬人工資料。
+- Week 6的150分鐘版本已逐句完整檢查兩輪；五個主教材Python區塊已依學生閱讀順序執行，
+  並另驗證basis-point換算、手算進出成本、equal-weighted共同條件比較、錯誤單位及不一致成本情境。
+  成本grid、執行延遲、各方法turnover、terminal rule、來源定位及實際數值均已核對；4 bp仍只是人工假設。
+- Week 7的150分鐘版本已逐句完整檢查兩輪；四個主教材Python區塊已依學生閱讀順序執行，
+  並另驗證手算績效指標、獨立報酬路徑、報酬為負100%、無效block長度及零波動報酬等情境。
+  固定人工路徑的財富、年化報酬、Sharpe ratio、Sortino ratio、maximum drawdown、drawdown
+  duration、block bootstrap與重複選擇結果均已核對；bootstrap區間與績效估計不作母體保證。
+- Week 8的150分鐘版本已逐句完整檢查兩輪；三個主教材Python區塊及support環境檢查已依學生
+  閱讀順序執行，另驗證手算weights、weight drift、turnover、information lag、fallback、缺失與
+  無限輸入、不可行cap及40% cap。原本在較低cap可能震盪的weight redistribution已修正並以多組
+  極端raw inputs與可行cap測試；四種方法只在固定人工路徑與相同評估條件下比較，不作普遍排名。
+- Week 11的150分鐘版本已逐句完整檢查兩輪；六個主教材Python區塊及support環境檢查已依學生
+  閱讀順序執行，並驗證二資產covariance手算、global minimum variance、mean–variance、maximum
+  Sharpe、efficient frontier、不可行target、constraint residuals、共同月度再平衡與成本及training
+  window sensitivity。缺失、非對稱與非正半定covariance、不可行cap、無效penalty及零volatility等
+  失敗情境均有目標測試；結果只屬固定人工training/test split與目前solver環境。
+- Week 12的150分鐘版本已逐句完整檢查兩輪；七個主教材Python區塊及support環境檢查已依學生
+  閱讀順序執行，並驗證sample、固定比例diagonal shrinkage、one-factor、trailing與rolling
+  covariance，volatility contribution手算、equal及unequal risk budgets、hierarchical risk parity、
+  solver residuals、共同月度再平衡與成本及covariance sensitivity。形狀不符、缺失、非對稱或
+  非正半定covariance、無效risk budget、不可行cap、錯誤日期索引與無效成本等失敗情境均有目標
+  測試；所有績效比較只屬固定人工training/test split，test covariance計算明確標示為事後診斷。
+- Week 13的150分鐘版本已逐句完整檢查兩輪；七個主教材Python區塊及support環境檢查已依學生
+  閱讀順序執行，並驗證empirical VaR與tail-loss convention、finite-scenario minimum-CVaR linear
+  program、turnover limit、linear transaction cost、absolute-deviation regularization、solver objective
+  components及residuals、scenario count與seed sensitivity、明示stress assumption及共同月度評估。
+  空值、錯誤維度、無效alpha或cap、無效previous/reference weights、不可行turnover組合、錯誤日期
+  索引與無效成本等失敗情境均有目標測試；測試期在所有設定固定前未用於計算，stress sensitivity
+  不宣稱構成formal robust optimization，one-day scenario與monthly evaluation的期間差異亦已揭露。
+- Week 15的150分鐘版本已逐句完整檢查兩輪；六個主教材Python區塊及support環境檢查已依學生
+  閱讀順序執行，並將流程修正為只以development evidence修改方法與設定、先完成三類prespecified
+  sensitivity checks與設定紀錄，再執行一次common final-period evaluation。原先提前列印final-period
+  performance的資訊洩漏已移除；舊cap redistribution已換成能處理極端raw inputs的有限步驟分配。
+  權重shape、label order、full investment、cap、information end、initial及drift turnover、basis-point
+  cost、common dates、final-period rolling information與多種錯誤輸入均有目標測試；人工placeholder仍
+  明確等同inverse volatility，不可當作學生自訂方法或真實市場證據。
+- Week 18的150分鐘版本已逐句完整檢查兩輪；四個主教材Python區塊及support環境檢查已依學生
+  閱讀順序執行，並驗證time-varying inverse-volatility weights、weight-difference threshold、
+  information end、drift turnover、linear cost、兩個人工covariance conditions、common-date lookback
+  sensitivity與cost sensitivity。錯誤資料型別、重複日期或欄位、缺失或小於等於-100%的returns、
+  無效window、schedule、threshold、cost與evaluation start均有目標測試；教材明確區分事後condition
+  label、real-time regime detection、一般sequential backtest、online portfolio selection、machine-
+  learning allocation及distributionally robust optimization，並由已觀察限制發展可被證據反駁的研究問題。
+- Weeks 2–8、11–13、15與18的逐句內容、公式、程式、預期結果、診斷步驟、練習、證據與
+  結論限制已於2026-08-23分週反覆檢查及修正。這12週`main`的全部Python區塊與所需
+  `support`檢查均先在各週獨立程序中完整執行，再以每份文件各自啟動的新Python程序重跑。
+- 18個週次資料夾的檔案集合已通過結構檢查；12個150分鐘授課週另經時間表連續性、Markdown
+  fence、數學分隔符、相對連結與錨點、公開內容及`git diff --check`檢查。Weeks 9、10、14、
+  16與17依課程設計分別為停課或報告週，不適用150分鐘完整教材檢查。Markdown lint檢查只
+  排除未列為本課規則的行長與表格欄寬樣式。
+- 以上結果只代表目前人工資料、程式版本及已定義檢查內沒有未解決的阻斷問題，不代表
+  未核定的共同資料、正式Colab套件版本、真實市場結果或三次報告rubric已完成驗證。
 
 ## 金融資料、回測與方法比較規則
 
@@ -110,6 +181,7 @@
 ## 權威文件與來源
 
 - 跨課程通用的教材建立與驗證規則：`AGENTS.md`；`CLAUDE.md`保持相同內容
+- 本課逐週教材的設計、改進與反覆驗證程序：`fintech_weekly_teaching_material_prompt.md`
 - 課程入口：`README.md`
 - 115-1過渡版本分析：`internal_materials/source_reference/1151_course_analysis_2026-08-05.md`；只作歷程證據，不是現行課程規劃
 - 公開課程入口：`course/README.md`
