@@ -4,8 +4,4 @@ Week 8 evaluates annualized return, volatility, the Sharpe ratio, the Sortino ra
 
 By the end of the week, students should be able to interpret performance and risk jointly, identify invalid or overstated evidence, and document important limitations.
 
-## Material
-
-- [Risk control, performance diagnosis, and strategy proposal](04_TypeB_風險控管_績效診斷與策略提案.ipynb)
-
 The first individual technical examination covers financial data, return calculation, information timing, backtesting, rolling evaluation, rebalancing, and performance interpretation.
