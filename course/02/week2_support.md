@@ -1,4 +1,105 @@
 # Week 2 — Support
 
-- [Colab environment and data check](../resources/notebooks/00_Colab_課前環境與資料檢查.ipynb)
-- [Quantitative-trading problem definition and data exploration](../resources/notebooks/01_TypeB_AI量化交易_問題設定與資料初探.ipynb)
+This file contains preparation, the detailed data dictionary, a processing-record template, terminology support, troubleshooting, and optional extensions for [Week 2 main](week2_main.md). The required calculations and activities remain in the main file.
+
+## Before class
+
+Use Google Colab or a local Jupyter environment with Python, `numpy`, and `pandas`. The optional chart extension also requires `matplotlib`. If you need to check the environment, run the [Colab environment and data check](../resources/notebooks/00_Colab_課前環境與資料檢查.ipynb).
+
+For Week 2, keep `USE_ONLINE_DATA=False` in that preparation notebook. Its fallback data are artificial and reproducible. An online download is not part of the required Week 2 evidence because the common market, asset, period, field definition, and redistribution conditions have not yet been specified in the course materials.
+
+Before class, confirm that you can:
+
+- create and run a notebook from the first cell to the last cell;
+- import `numpy` and `pandas`;
+- save or export the notebook with its visible outputs; and
+- preserve an error message or screenshot if the environment check fails.
+
+## Data dictionary
+
+The Week 2 main file uses a small artificial table. These field descriptions explain how each column is used in the exercise; they are not a substitute for a real provider's documentation.
+
+| Field | Meaning in the Week 2 artificial data | Required check |
+|---|---|---|
+| `Date` | Trading-session label in `YYYY-MM-DD` format | Parse to `DatetimeIndex`; verify uniqueness and ascending order |
+| `Open` | First artificial transaction price for the session | Must lie between `Low` and `High` |
+| `High` | Highest artificial price for the session | Must be at least as large as `Open` and `Close` |
+| `Low` | Lowest artificial price for the session | Must be no larger than `Open` and `Close` |
+| `Close` | Final artificial transaction price for the session | Must lie between `Low` and `High` |
+| `Adj_Close` | Artificial analysis price for Asset A | Must be positive and nonmissing; no corporate action occurs in this artificial sample |
+| `Volume` | Artificial number of units traded during the session | Must be nonnegative; not used to calculate Week 2 returns |
+| `Asset_B_Adj_Close` | Artificial analysis price for Asset B | Used only for the fixed-weight portfolio-return exercise |
+
+For real data, the meaning of an adjusted-price field is provider-specific. Record the provider's exact definition rather than copying the Week 2 artificial-data description.
+
+## Data-processing record
+
+Complete this template using facts visible in your notebook. Do not write `none` unless you actually checked the item.
+
+```text
+Data origin:
+Artificial or real:
+Date range:
+Observation frequency:
+Price field used for returns:
+Reason for selecting that field:
+Return definitions:
+Date parsing rule:
+Duplicate-date result and action:
+Missing-value result and action:
+Trading-calendar assumption:
+Frequency-conversion rule:
+Portfolio-weight assumption:
+Automated checks executed:
+Files or outputs preserved:
+Claim supported by this evidence:
+Claim not supported by this evidence:
+```
+
+## Terminology support
+
+| English term | 中文提示 | Meaning in Week 2 |
+|---|---|---|
+| price level | 價格水準 | An asset value at one observation time |
+| simple return | 簡單報酬率 | Relative price change, \(P_t/P_{t-1}-1\) |
+| log return | 對數報酬率 | Log price change, \(\ln(P_t/P_{t-1})\) |
+| cumulative return | 累積報酬率 | Compounded change over consecutive periods |
+| wealth index | 財富指數 | Growth of one initial unit through a return sequence |
+| adjusted price | 調整後價格 | A provider-defined price series adjusted for specified events |
+| trading calendar | 交易日曆 | The sessions on which a particular market can trade |
+| data frequency | 資料頻率 | The interval represented by consecutive observations |
+| portfolio return | 投資組合報酬率 | Weighted sum of asset returns for the same holding interval |
+
+## Troubleshooting
+
+| Symptom | First check | Action |
+|---|---|---|
+| `ModuleNotFoundError` | Identify the missing package in the error | Install only that package in the current environment, restart if required, and rerun from the first cell |
+| `ValueError` while creating the DataFrame | Compare values per record with the number of column names | Correct the mismatched record before any calculation |
+| Date index remains `object` | Run `prices.index.dtype` and inspect the date-conversion cell | Use `pd.to_datetime` before setting and sorting the index |
+| `KeyError: 'Adj_Close'` | Print `prices.columns.tolist()` | Use the exact column name; do not silently switch to another price field |
+| First return is `NaN` | Check whether an earlier price exists | Keep it missing for return analysis; it is expected |
+| Unexpected zero return beside a missing price | Check whether a fill operation occurred before `pct_change` | Remove the automatic fill and document the missing-value decision |
+| Weekly result is empty or unexpected | Verify a `DatetimeIndex`, sorted dates, and at least two weekly endpoints | Repair the index or extend the artificial sample; do not invent observations |
+| Portfolio result appears on the first date | Inspect `sum(..., min_count=...)` | Require all asset returns before calculating the portfolio return |
+| Assertion fails | Read the variables used in that assertion | Stop and diagnose the calculation; do not delete the assertion merely to continue |
+
+## Optional extensions
+
+These activities are not required for Week 2 completion:
+
+- Change one artificial adjusted price and predict which simple returns, log returns, weekly return, and wealth-index values must change before rerunning the code.
+- Introduce one exact duplicated row and compare `duplicated()` with `index.is_unique` after restoring the date index.
+- Compare the compounded return with the arithmetic sum after increasing the artificial daily volatility.
+- Add a third artificial asset and verify that the portfolio weights sum to one before calculating its one-period return.
+- Create a normalized-price chart for both artificial assets, starting each at 1, and explain why this comparison is different from comparing raw price levels.
+
+## Official software references
+
+- [`pandas.to_datetime`](https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html) converts date-like inputs to pandas datetime objects.
+- [`pandas.Series.pct_change`](https://pandas.pydata.org/docs/reference/api/pandas.Series.pct_change.html) calculates fractional change; multiply by 100 only when expressing the result as a percentage.
+- [`pandas.DataFrame.resample`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.resample.html) performs time-series frequency conversion and requires a datetime-like index unless a datetime-like column is specified.
+- [`pandas.DataFrame.sort_index`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_index.html) sorts a DataFrame by its index.
+- [`numpy.log`](https://numpy.org/doc/stable/reference/generated/numpy.log.html) calculates the natural logarithm used in the log-return formula.
+
+These references document software behavior. They do not define the financial meaning, corporate-action treatment, or legal redistribution conditions of a market-data provider.

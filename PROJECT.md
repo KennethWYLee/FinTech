@@ -4,8 +4,8 @@
 > `AGENTS.md`。
 
 - 最後盤點日期：2026-08-23
-- 課程狀態：115-1 課綱與18週結構已完成，準備逐週設計學生教材
-- Repository：`main` 已連接並推送至 `https://github.com/KennethWYLee/FinTech.git`；目前公開提交為 `dd38014`
+- 課程狀態：115-1 課綱與18週結構已完成；Week 2學生教材已有可執行初稿，其餘週次待逐週設計
+- Repository：`main` 已連接並推送至 `https://github.com/KennethWYLee/FinTech.git`
 - 文件可見性：`course/` 為可公開學生教材；其他內容預設課程內部，papers、答案與行政文件需分層
 
 ## 課程專屬規則
@@ -68,6 +68,13 @@
   連結，不在各週資料夾複製。
 - 公開學生教材不包含教師答案、隱藏測試、評分註記、學生資料、EMI行政文件或未確認
   再散布權利的資料與文章。
+- Week 2以120分鐘完成價格欄位、簡單與對數報酬、累積報酬、資料品質、資料頻率及
+  一期固定權重投資組合報酬；不提前進入Week 3的資訊時間與交易訊號設計。
+- Week 2核心計算使用教材內明確標示的人工資料，避免在共同市場、資產、期間、欄位
+  定義與發布權利核定前假裝使用真實市場證據。
+- `course/resources/notebooks/00_Colab_課前環境與資料檢查.ipynb`只作Week 2
+  環境準備；舊版`course/resources/notebooks/01_TypeB_AI量化交易_問題設定與資料初探.ipynb`
+  跨越多個現行週次，不是Week 2必做核心教材。
 
 ## 金融資料、回測與方法比較規則
 
@@ -144,6 +151,7 @@
 - 三次報告與40%課堂參與的評量方式已由 commit `d8ff15b` 推送。
 - 調整後的三次報告時程與18週完整中英文課綱已由 commit `e635191` 推送。
 - 每週教材資料夾已由 `week1` 至 `week18` 改為 `01` 至 `18`，並由 commit `dd38014` 推送。
+- 通用教材規則與本課專屬規則的分工已由 commit `26f3e5b` 推送。
 - `PROJECT.md` 同時記錄本課程資料夾、固定決策、權威來源、GitHub 狀態與公開限制，不再另外維護 `COURSES.md`。
 - `internal_materials/` 受 `.gitignore` 排除，尚未加入 Git 追蹤或推送；EMI 行政檔、papers、答案與資料檔待檢查後逐項決定。
 - EMI 申請及個人文件不得放入 `course/`、不得 stage，也不得推送至 GitHub。
