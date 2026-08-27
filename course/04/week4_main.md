@@ -38,9 +38,9 @@ Complete the Week 3 timing record. Use a notebook with `numpy` and `pandas`. Wee
 Use the following Week 4 assumptions:
 
 - Data frequency: one artificial observation per business day.
-- Feature: five-session momentum calculated after close \(t\).
+- Feature: five-session momentum calculated after close $t$.
 - Signal: 1 when momentum is positive and 0 when it is nonpositive; it is missing before momentum is available.
-- Decision: recorded after the closing information for period \(t\) becomes available.
+- Decision: recorded after the closing information for period $t$ becomes available.
 - Execution: position changes at the boundary before the next artificial return period. This discrete-time assumption does not establish that the same price would be fillable in real trading.
 - Holding return: close-to-close return for the period after the signal.
 - Position: 1 means fully invested in the artificial asset; 0 means cash.
@@ -50,13 +50,13 @@ Use the following Week 4 assumptions:
 - Transaction costs: 0 in Week 4 and introduced in Week 6.
 - Final boundary: report the position shown in the final row; do not force a liquidation trade in Week 4.
 
-The return at date \(t\) is the change from the artificial price at boundary \(t-1\) to the price at boundary \(t\). Under the stated discrete-time assumption, a signal formed at boundary \(t-1\) determines the position for that next interval. Therefore,
+The return at date $t$ is the change from the artificial price at boundary $t-1$ to the price at boundary $t$. Under the stated discrete-time assumption, a signal formed at boundary $t-1$ determines the position for that next interval. Therefore,
 
-\[
+$$
 p_t=s_{t-1}, \qquad r^{\text{strategy}}_t=p_t r^{\text{asset}}_t.
-\]
+$$
 
-Here, \(s_{t-1}\) is the signal available after the preceding boundary, \(p_t\) is the exposure held during the return interval ending at \(t\), and each return is expressed as a decimal. A change from position 0 to 1 or from 1 to 0 has absolute size 1. Week 6 will attach a cost to that change.
+Here, $s_{t-1}$ is the signal available after the preceding boundary, $p_t$ is the exposure held during the return interval ending at $t$, and each return is expressed as a decimal. A change from position 0 to 1 or from 1 to 0 has absolute size 1. Week 6 will attach a cost to that change.
 
 ### Worked example — four dated rows
 
@@ -69,7 +69,7 @@ The initial position is cash because no preceding signal is shown. Wealth begins
 | C | -1.0% | 1 | 0 | 1 | 0.0% | 1.0200 |
 | D | 3.0% | 1 | 1 | 1 | 3.0% | 1.0506 |
 
-For Date B, the preceding signal is 1, so the position is 1 and the strategy earns \(1\times0.02=0.02\). Wealth becomes \(1.0000(1+0.02)=1.0200\). For Date C, the preceding signal is 0, so the strategy remains in cash despite the asset return of -1.0%. The Date C signal affects Date D, not Date C. If the Date B position is recorded as 0, first compare it with the signal in Date A rather than the signal in Date B.
+For Date B, the preceding signal is 1, so the position is 1 and the strategy earns $1\times0.02=0.02$. Wealth becomes $1.0000(1+0.02)=1.0200$. For Date C, the preceding signal is 0, so the strategy remains in cash despite the asset return of -1.0%. The Date C signal affects Date D, not Date C. If the Date B position is recorded as 0, first compare it with the signal in Date A rather than the signal in Date B.
 
 ### Activity 1 — Hand-complete the ledger
 
@@ -150,7 +150,7 @@ Expected evidence shows an entry with current position 1 following a preceding s
 
 ## 4. Detect an invalid same-period backtest
 
-This flawed implementation uses a signal formed at boundary \(t\) to earn the return that ended at that boundary:
+This flawed implementation uses a signal formed at boundary $t$ to earn the return that ended at that boundary:
 
 ```python
 bt["invalid_same_period_return"] = (
@@ -182,7 +182,7 @@ Expected evidence: 29 rows differ; gross final wealth is approximately 1.201040 
 
 Write the earliest time at which `signal_at_close[t]` is known and the return interval represented by `asset_return[t]`. Use those two facts to reject the same-period implementation. For a real strategy, also identify an execution price that could actually be obtained after the signal is known.
 
-Expected evidence states that the signal is available only after the close at \(t\), whereas `asset_return[t]` ended at that close. If the explanation relies only on the difference in final wealth, first replace it with the two relevant time boundaries.
+Expected evidence states that the signal is available only after the close at $t$, whereas `asset_return[t]` ended at that close. If the explanation relies only on the difference in final wealth, first replace it with the two relevant time boundaries.
 
 ## 5. Verify accounting and benchmark meaning
 

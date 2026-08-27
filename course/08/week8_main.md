@@ -43,30 +43,30 @@ Bring the Week 6 transaction-cost convention and the Week 7 limits on empirical 
 
 A signal expresses direction or relative preference. It may be negative, unbounded, or measured in units that cannot be invested. A target weight states the desired fraction of current portfolio value allocated to an asset at a decision time. After asset returns occur, the actual holding weights normally drift away from those targets. Rebalancing trades from the drifted holdings to new targets.
 
-For \(N\) assets, today's fully invested, long-only, no-leverage portfolio must satisfy
+For $N$ assets, today's fully invested, long-only, no-leverage portfolio must satisfy
 
-\[
+$$
 \sum_{i=1}^{N}w_{i,t}=1,
 \qquad 0\leq w_{i,t}\leq w_{\max}.
-\]
+$$
 
-The gross exposure is therefore \(\sum_i|w_{i,t}|=1\). A common cap is feasible only if \(Nw_{\max}\geq1\). For four assets, a 20% cap is infeasible because the largest possible sum is only 80%.
+The gross exposure is therefore $\sum_i|w_{i,t}|=1$. A common cap is feasible only if $Nw_{\max}\geq1$. For four assets, a 20% cap is infeasible because the largest possible sum is only 80%.
 
 Before a cap is imposed, the four calculations are
 
-\[
+$$
 w_i^{EW}=\frac{1}{N},
 \qquad
 w_i^{MC}=\frac{MC_i}{\sum_j MC_j},
-\]
+$$
 
-\[
+$$
 w_i^{SIG}=\frac{\max(s_i,0)}{\sum_j\max(s_j,0)},
 \qquad
 w_i^{IV}=\frac{1/\widehat\sigma_i}{\sum_j1/\widehat\sigma_j}.
-\]
+$$
 
-Here, \(MC_i\) is the artificial price multiplied by the artificial share count, \(s_i\) is an available signal, and \(\widehat\sigma_i\) is a positive volatility estimate. Real equity indices often use float-adjusted market capitalization; today's artificial share counts do not reproduce an index provider's float adjustment. Equal and market-capitalization weights do not use a return forecast. Inverse-volatility weights use volatility estimates but ignore expected returns and correlations. They are not generally equal-risk-contribution weights, which are studied in Week 12.
+Here, $MC_i$ is the artificial price multiplied by the artificial share count, $s_i$ is an available signal, and $\widehat\sigma_i$ is a positive volatility estimate. Real equity indices often use float-adjusted market capitalization; today's artificial share counts do not reproduce an index provider's float adjustment. Equal and market-capitalization weights do not use a return forecast. Inverse-volatility weights use volatility estimates but ignore expected returns and correlations. They are not generally equal-risk-contribution weights, which are studied in Week 12.
 
 The signal-based denominator is zero when all signals are nonpositive. This class then uses equal weights and records that the fallback occurred. Missing or infinite inputs, nonpositive volatility, negative market capitalization, and an infeasible cap cause an explicit failure.
 
@@ -259,21 +259,21 @@ Expected evidence: four finite columns that sum to one and respect the 60% cap. 
 
 Suppose the target weights before one interval are `(0.50, 0.30, 0.20)` and the asset returns are `(10%, -5%, 0%)`. The portfolio return before cost is
 
-\[
+$$
 r_p=0.50(0.10)+0.30(-0.05)+0.20(0)=0.035.
-\]
+$$
 
 Without cash flows or trading during the interval, the end-of-interval holding weight is
 
-\[
+$$
 w_{i,t}^{hold}=\frac{w_{i,t}^{target}(1+r_{i,t})}{1+r_{p,t}}.
-\]
+$$
 
 The drifted holdings are approximately `(0.5314, 0.2754, 0.1932)`. Trading back to the same target at the next decision requires one-way turnover
 
-\[
+$$
 \frac12\sum_i\left|w_{i,t+1}^{target}-w_{i,t}^{hold}\right|\approx0.0314.
-\]
+$$
 
 This hand calculation shows why turnover must compare a new target with the holdings immediately before the trade, not with the previous target.
 
@@ -372,11 +372,11 @@ For `2023-01-02`, preserve the input date, four target vectors, fallback flag, p
 
 For a target weight vector, the squared-weight concentration measure is
 
-\[
+$$
 H_t=\sum_iw_{i,t}^2.
-\]
+$$
 
-It equals \(1/N=0.25\) for four equal weights. Under long-only full investment and a 60% cap, its maximum is \(0.60^2+0.40^2=0.52\). The code records this measure only when a new target is set; holding-weight concentration may differ after returns.
+It equals $1/N=0.25$ for four equal weights. Under long-only full investment and a 60% cap, its maximum is $0.60^2+0.40^2=0.52$. The code records this measure only when a new target is set; holding-weight concentration may differ after returns.
 
 Use the comparison table to write five sentences: one about inputs, one about target concentration, one about turnover, one about net wealth and volatility, and one about the limits of the evidence. A valid sentence names the criterion and the artificial evaluation period. It does not claim that the method with the largest final wealth is generally best.
 

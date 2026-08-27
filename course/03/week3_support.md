@@ -59,7 +59,7 @@ Check each candidate for:
 | Feature starts later than expected | Count required prices and returns | State the minimum history before changing `min_periods` |
 | Feature has values at the beginning | Inspect fills applied after rolling | Remove fills that invent unavailable history |
 | Signal and target look identical | Search for `shift(-1)` in feature columns | Remove the future outcome from the feature set |
-| Centered mean appears smoother | Inspect `center=True` | Use a trailing window for a decision at time \(t\) |
+| Centered mean appears smoother | Inspect `center=True` | Use a trailing window for a decision at time $t$ |
 | Full-sample standardization gives strong results | Locate where mean and standard deviation were fitted | Estimate preprocessing parameters only from permitted training rows |
 | A value appears before publication | Compare the join key and direction with `publication_time` | Align backward from each decision time; do not join by period end alone |
 

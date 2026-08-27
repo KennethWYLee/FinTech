@@ -12,7 +12,7 @@ This file contains the ledger dictionary, backtest record, troubleshooting, and 
 
 | Field | Meaning | Timing check |
 |---|---|---|
-| `asset_return` | Close-to-close artificial asset return ending on the row date | Uses prices at \(t-1\) and \(t\) |
+| `asset_return` | Close-to-close artificial asset return ending on the row date | Uses prices at $t-1$ and $t$ |
 | `signal_at_close` | Rule output calculated after the row's close | Cannot earn `asset_return` on the same row |
 | `position` | Exposure held during the current return interval | Equals the previous signal after that signal becomes available; otherwise cash |
 | `trade` | Absolute change in position | Equals zero without a position change |

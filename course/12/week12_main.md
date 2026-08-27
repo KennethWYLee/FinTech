@@ -41,30 +41,30 @@ Use a clean notebook with `numpy`, `pandas`, and `scipy`. Bring Week 11's sample
 
 ## 1. Four covariance estimates answer different questions
 
-For weights \(w\) and annual covariance matrix \(\Sigma\), portfolio volatility is
+For weights $w$ and annual covariance matrix $\Sigma$, portfolio volatility is
 
-\[
+$$
 \sigma_p=\sqrt{w^\top\Sigma w}.
-\]
+$$
 
-The sample covariance \(S\) uses every observation in the stated training period. It is easy to reproduce but changes with the sample. This class also calculates the fixed diagonal-shrinkage matrix
+The sample covariance $S$ uses every observation in the stated training period. It is easy to reproduce but changes with the sample. This class also calculates the fixed diagonal-shrinkage matrix
 
-\[
+$$
 \Sigma_\delta=(1-\delta)S+\delta\operatorname{diag}(S),
 \qquad \delta=0.35.
-\]
+$$
 
 This teaching calculation reduces off-diagonal covariances while keeping sample variances. The fixed intensity and diagonal target do not reproduce the statistically estimated intensity or target in Ledoit and Wolf.
 
 The artificial one-factor estimate is
 
-\[
+$$
 \Sigma_F=\beta\beta^\top\sigma_f^2+D,
-\]
+$$
 
-where \(f\) is the equally weighted cross-sectional return in the training data, \(\beta\) is estimated by ordinary least squares with an intercept, and \(D\) contains residual variances on its diagonal. Setting residual covariances to zero is a model assumption, not an observed fact.
+where $f$ is the equally weighted cross-sectional return in the training data, $\beta$ is estimated by ordinary least squares with an intercept, and $D$ contains residual variances on its diagonal. Setting residual covariances to zero is a model assumption, not an observed fact.
 
-Finally, a trailing-window covariance uses only the most recent \(L\) observations available at a decision date. Repeating that calculation at later decisions creates a rolling sequence of estimates. The window length changes both information and sampling variation; a shorter window is not automatically more current and better.
+Finally, a trailing-window covariance uses only the most recent $L$ observations available at a decision date. Repeating that calculation at later decisions creates a rolling sequence of estimates. The window length changes both information and sampling variation; a shorter window is not automatically more current and better.
 
 ## 2. Create artificial returns and diagnose covariance estimates
 
@@ -191,25 +191,25 @@ Before calculation, predict how changing `delta` from `0.35` to `0.70` affects o
 
 ## 3. Decompose portfolio volatility
 
-The marginal contribution of asset \(i\) to portfolio volatility and its total contribution are
+The marginal contribution of asset $i$ to portfolio volatility and its total contribution are
 
-\[
+$$
 MC_i=\frac{(\Sigma w)_i}{\sigma_p},
 \qquad
 RC_i=w_iMC_i.
-\]
+$$
 
-They satisfy \(\sum_iRC_i=\sigma_p\). The proportional contribution is \(RC_i/\sigma_p\), and all proportional contributions sum to one.
+They satisfy $\sum_iRC_i=\sigma_p$. The proportional contribution is $RC_i/\sigma_p$, and all proportional contributions sum to one.
 
 ### Worked example — two unequal risk shares
 
 Use target weights `(0.50, 0.50)` and annual covariance
 
-\[
+$$
 \Sigma=\begin{bmatrix}0.040&0.006\\0.006&0.090\end{bmatrix}.
-\]
+$$
 
-Then \(\Sigma w=(0.023,0.048)^\top\), portfolio variance is `0.0355`, and volatility is approximately `0.1884`. Marginal contributions are approximately `(0.1221, 0.2548)`, total contributions are `(0.0610, 0.1274)`, and proportional contributions are `(0.3239, 0.6761)`. Equal capital therefore does not imply equal contributions to volatility.
+Then $\Sigma w=(0.023,0.048)^\top$, portfolio variance is `0.0355`, and volatility is approximately `0.1884`. Marginal contributions are approximately `(0.1221, 0.2548)`, total contributions are `(0.0610, 0.1274)`, and proportional contributions are `(0.3239, 0.6761)`. Equal capital therefore does not imply equal contributions to volatility.
 
 ```python
 def risk_contributions(weight, cov):
@@ -249,11 +249,11 @@ Expected evidence: equal-weight annualized volatility about `0.152547` and risk 
 
 ### Activity 2 — independently verify another weight vector
 
-Use the two-asset covariance in the worked example with weights `(0.60, 0.40)`. Predict whether the two proportional contributions move closer together, calculate all four stages, and revise your explanation. Preserve the identity checks. If the shares do not sum to one, first recalculate portfolio variance and \(\Sigma w\).
+Use the two-asset covariance in the worked example with weights `(0.60, 0.40)`. Predict whether the two proportional contributions move closer together, calculate all four stages, and revise your explanation. Preserve the identity checks. If the shares do not sum to one, first recalculate portfolio variance and $\Sigma w$.
 
 ## 4. Solve equal and unequal risk budgets
 
-A risk-budget portfolio chooses positive weights so that proportional contribution \(RC_i/\sigma_p\) matches a prespecified positive budget \(b_i\), where \(\sum_i b_i=1\). Equal risk contribution uses \(b_i=1/N\). It is a special case of risk budgeting, not a different risk measure.
+A risk-budget portfolio chooses positive weights so that proportional contribution $RC_i/\sigma_p$ matches a prespecified positive budget $b_i$, where $\sum_i b_i=1$. Equal risk contribution uses $b_i=1/N$. It is a special case of risk budgeting, not a different risk measure.
 
 The teaching solver minimizes squared differences between calculated shares and budgets under full investment, positive weights, and a 60% cap. It records solver and constraint checks. A successful result only establishes agreement with the stated sample covariance and tolerance.
 
@@ -348,7 +348,7 @@ Before solving, predict how changing the budgets to `(0.25, 0.25, 0.20, 0.15, 0.
 
 ## 5. Construct hierarchical risk-parity weights
 
-The class implementation converts correlation to distance \(d_{ij}=\sqrt{(1-\rho_{ij})/2}\), applies single-linkage hierarchical clustering, records the leaf order, and recursively allocates between adjacent groups using inverse-variance subportfolios. Hierarchical risk parity does not target equal individual risk contributions. The 60% cap is verified after allocation; if it fails, the code stops rather than silently altering the hierarchy.
+The class implementation converts correlation to distance $d_{ij}=\sqrt{(1-\rho_{ij})/2}$, applies single-linkage hierarchical clustering, records the leaf order, and recursively allocates between adjacent groups using inverse-variance subportfolios. Hierarchical risk parity does not target equal individual risk contributions. The 60% cap is verified after allocation; if it fails, the code stops rather than silently altering the hierarchy.
 
 ```python
 def cluster_variance(cov, indices):

@@ -40,32 +40,32 @@ Use a clean notebook with `numpy`, `pandas`, and `scipy`. Bring Week 8's distinc
 
 ## 1. Covariance changes portfolio risk
 
-Let \(r_t\in\mathbb{R}^N\) be the asset-return vector in period \(t\), and let \(w\in\mathbb{R}^N\) be target weights selected before that return. Then
+Let $r_t\in\mathbb{R}^N$ be the asset-return vector in period $t$, and let $w\in\mathbb{R}^N$ be target weights selected before that return. Then
 
-\[
+$$
 r_{p,t}=w^\top r_t,
 \qquad
 \mu_p=w^\top\mu,
 \qquad
 \sigma_p^2=w^\top\Sigma w,
-\]
+$$
 
-where \(\mu=\mathbb{E}[r_t]\) and \(\Sigma=\operatorname{Cov}(r_t)\). Covariance records how two asset returns vary together. A covariance estimated from a finite sample is uncertain; it is an input to a stated decision, not a fixed law of the market.
+where $\mu=\mathbb{E}[r_t]$ and $\Sigma=\operatorname{Cov}(r_t)$. Covariance records how two asset returns vary together. A covariance estimated from a finite sample is uncertain; it is an input to a stated decision, not a fixed law of the market.
 
 ### Worked example — two artificial assets
 
-Suppose \(w=(0.6,0.4)^\top\), annual volatilities are 20% and 30%, and their correlation is 0.25. Annual portfolio variance is
+Suppose $w=(0.6,0.4)^\top$, annual volatilities are 20% and 30%, and their correlation is 0.25. Annual portfolio variance is
 
-\[
+$$
 \begin{aligned}
 \sigma_p^2
 &=0.6^2(0.20)^2+0.4^2(0.30)^2
 +2(0.6)(0.4)(0.25)(0.20)(0.30)\\
 &=0.0144+0.0144+0.0072=0.0360.
 \end{aligned}
-\]
+$$
 
-Portfolio volatility is \(\sqrt{0.0360}\approx18.97\%\). If correlation rises to 0.80 while every other input stays fixed, the covariance term rises, variance becomes `0.05184`, and volatility becomes approximately `22.77%`. This is a conditional calculation, not a forecast that correlation will rise.
+Portfolio volatility is $\sqrt{0.0360}\approx18.97\%$. If correlation rises to 0.80 while every other input stays fixed, the covariance term rises, variance becomes `0.05184`, and volatility becomes approximately `22.77%`. This is a conditional calculation, not a forecast that correlation will rise.
 
 ### Activity 1 — predict, calculate, and revise
 
@@ -75,34 +75,34 @@ Use weights `(0.40, 0.60)`, annual volatilities `(0.15, 0.25)`, and correlation 
 
 Every calculation below imposes full investment, long-only weights, no leverage, and a 60% position cap:
 
-\[
+$$
 \mathbf{1}^\top w=1,
 \qquad 0\leq w_i\leq0.60.
-\]
+$$
 
 The global-minimum-variance portfolio solves
 
-\[
+$$
 \min_w\;w^\top\Sigma w.
-\]
+$$
 
 It uses the covariance estimate but not the expected-return estimate. The mean–variance portfolio solves
 
-\[
+$$
 \max_w\;w^\top\mu-\lambda w^\top\Sigma w,
-\]
+$$
 
-where \(\lambda>0\) controls the variance penalty. Both \(\mu\) and \(\Sigma\) are annualized in the code, and \(\lambda=10\) is fixed before the test period. Changing from decimal returns to percentage returns without adjusting the objective would change the solution.
+where $\lambda>0$ controls the variance penalty. Both $\mu$ and $\Sigma$ are annualized in the code, and $\lambda=10$ is fixed before the test period. Changing from decimal returns to percentage returns without adjusting the objective would change the solution.
 
-With annual risk-free rate \(r_f=0.02\), the maximum-Sharpe portfolio in the stated feasible set solves
+With annual risk-free rate $r_f=0.02$, the maximum-Sharpe portfolio in the stated feasible set solves
 
-\[
+$$
 \max_w\;\frac{w^\top\mu-r_f}{\sqrt{w^\top\Sigma w}}.
-\]
+$$
 
 This is an in-sample ratio of estimated excess return to estimated volatility. It does not guarantee the largest realized Sharpe ratio.
 
-Finally, an efficient-frontier point minimizes \(w^\top\Sigma w\) subject to the same constraints and an additional requirement \(w^\top\mu\geq\mu^*\). A target above the greatest feasible estimated return is not a portfolio; it is an infeasible constraint.
+Finally, an efficient-frontier point minimizes $w^\top\Sigma w$ subject to the same constraints and an additional requirement $w^\top\mu\geq\mu^*$. A target above the greatest feasible estimated return is not a portfolio; it is an infeasible constraint.
 
 ## 3. Create and audit an artificial training/test sample
 

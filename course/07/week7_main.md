@@ -35,36 +35,36 @@ Bring the Week 6 net-return convention. This class assumes 252 artificial observ
 
 ## 1. Metrics answer different questions
 
-For periodic returns \(r_t\), \(N\) observations per year, and zero target return:
+For periodic returns $r_t$, $N$ observations per year, and zero target return:
 
-\[
+$$
 \widehat\mu_{ann}=\left(\prod_t(1+r_t)\right)^{N/T}-1,
-\]
+$$
 
-\[
+$$
 \widehat\sigma_{ann}=\operatorname{sd}(r_t)\sqrt{N},
 \qquad
 \widehat{SR}=\frac{\overline r}{\operatorname{sd}(r)}\sqrt{N}.
-\]
+$$
 
-For the Sortino ratio, define downside deviations relative to target \(q=0\):
+For the Sortino ratio, define downside deviations relative to target $q=0$:
 
-\[
+$$
 d_t=\min(r_t-q,0), \qquad
 \widehat{Sortino}=\frac{\overline r-q}{\sqrt{\frac{1}{T}\sum_t d_t^2}}\sqrt{N}.
-\]
+$$
 
-Define initial wealth as \(W_0=1\), subsequent wealth as \(W_t=\prod_{j\leq t}(1+r_j)\), the running peak as \(M_t=\max(W_0,W_1,\ldots,W_t)\), and drawdown
+Define initial wealth as $W_0=1$, subsequent wealth as $W_t=\prod_{j\leq t}(1+r_j)$, the running peak as $M_t=\max(W_0,W_1,\ldots,W_t)$, and drawdown
 
-\[
+$$
 D_t=\frac{W_t}{M_t}-1.
-\]
+$$
 
-Maximum drawdown is \(\min_t D_t\). Drawdown duration counts consecutive observations below the prior peak. It is not measured in money or percentage.
+Maximum drawdown is $\min_t D_t$. Drawdown duration counts consecutive observations below the prior peak. It is not measured in money or percentage.
 
 ### Worked example — four artificial returns
 
-Use returns \((10\%,-10\%,-5\%,8\%)\), initial wealth 1, target 0, and \(N=4\) observations per year so the four observations form one artificial annualization period. Wealth and drawdown are:
+Use returns $(10\%,-10\%,-5\%,8\%)$, initial wealth 1, target 0, and $N=4$ observations per year so the four observations form one artificial annualization period. Wealth and drawdown are:
 
 | Observation | Return | Wealth | Running peak including initial wealth | Drawdown |
 |---:|---:|---:|---:|---:|
@@ -73,7 +73,7 @@ Use returns \((10\%,-10\%,-5\%,8\%)\), initial wealth 1, target 0, and \(N=4\) o
 | 3 | -5.0% | 0.940500 | 1.100000 | -14.50% |
 | 4 | 8.0% | 1.015740 | 1.100000 | -7.66% |
 
-Because \(N/T=4/4=1\), annualized return is \(1.015740-1=1.574\%\). The arithmetic mean return is 0.75% per observation, sample standard deviation is approximately 9.777%, annualized volatility is approximately 19.553%, and the zero-target Sharpe ratio is approximately 0.1534. The downside root mean square over all four observations is approximately 5.590%; annualizing it gives 11.180%, so the zero-target Sortino ratio is approximately 0.2683. Maximum drawdown is -14.50%, and the final three observations remain below the prior peak, so maximum drawdown duration is three observations. If duration is reported as 14.50%, first separate the depth of the loss from the number of observations spent below a peak.
+Because $N/T=4/4=1$, annualized return is $1.015740-1=1.574\%$. The arithmetic mean return is 0.75% per observation, sample standard deviation is approximately 9.777%, annualized volatility is approximately 19.553%, and the zero-target Sharpe ratio is approximately 0.1534. The downside root mean square over all four observations is approximately 5.590%; annualizing it gives 11.180%, so the zero-target Sortino ratio is approximately 0.2683. Maximum drawdown is -14.50%, and the final three observations remain below the prior peak, so maximum drawdown duration is three observations. If duration is reported as 14.50%, first separate the depth of the loss from the number of observations spent below a peak.
 
 ### Activity 1 — Match evidence to questions
 
@@ -83,7 +83,7 @@ Expected evidence uses each measure once and preserves the distinction between d
 
 ### Activity 2 — Independently verify another path
 
-Use returns \((4\%,-2\%,-3\%,5\%)\), initial wealth 1, target 0, and \(N=4\). Before calculating, predict whether final wealth is above 1 and which observation has the deepest drawdown. Then calculate every wealth, running peak, drawdown, annualized return, annualized volatility, Sharpe ratio, Sortino ratio, maximum drawdown, and maximum duration. Run the `performance_metrics` function later on this four-return series and revise the prediction or calculation from the output.
+Use returns $(4\%,-2\%,-3\%,5\%)$, initial wealth 1, target 0, and $N=4$. Before calculating, predict whether final wealth is above 1 and which observation has the deepest drawdown. Then calculate every wealth, running peak, drawdown, annualized return, annualized volatility, Sharpe ratio, Sortino ratio, maximum drawdown, and maximum duration. Run the `performance_metrics` function later on this four-return series and revise the prediction or calculation from the output.
 
 Expected evidence includes four wealth factors, a running peak that never falls below 1, nonpositive drawdowns, and agreement between the hand calculations and the function within a stated rounding tolerance. If maximum drawdown misses the first loss after a peak, first prepend the initial wealth of 1 conceptually before taking the running maximum. Save the prediction, full calculation, function output, correction, and units.
 

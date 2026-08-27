@@ -62,8 +62,8 @@ Claim not supported by this evidence:
 | Term | Meaning in Week 2 |
 |---|---|
 | price level | An asset value at one observation time |
-| simple return | Relative price change, \(P_t/P_{t-1}-1\) |
-| log return | Log price change, \(\ln(P_t/P_{t-1})\) |
+| simple return | Relative price change, $P_t/P_{t-1}-1$ |
+| log return | Log price change, $\ln(P_t/P_{t-1})$ |
 | cumulative return | Compounded change over consecutive periods |
 | wealth index | Growth of one initial unit through a return sequence |
 | adjusted price | A provider-defined price series adjusted for specified events |
@@ -102,7 +102,7 @@ These activities are not required for Week 2 completion:
 - [`pandas.DataFrame.resample`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.resample.html) performs time-series frequency conversion and requires a datetime-like index unless a datetime-like column is specified.
 - [`pandas.DataFrame.sort_index`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_index.html) sorts a DataFrame by its index.
 - [`numpy.log`](https://numpy.org/doc/stable/reference/generated/numpy.log.html) calculates the natural logarithm used in the log-return formula.
-- [`numpy.expm1`](https://numpy.org/doc/stable/reference/generated/numpy.expm1.html) calculates \(\exp(x)-1\), which is used to check the relationship between log and simple returns.
+- [`numpy.expm1`](https://numpy.org/doc/stable/reference/generated/numpy.expm1.html) calculates $\exp(x)-1$, which is used to check the relationship between log and simple returns.
 
 ## Financial references
 

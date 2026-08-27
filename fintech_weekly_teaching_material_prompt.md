@@ -291,7 +291,9 @@ activity、prompt、code comment、expected output、troubleshooting及exit evid
 完成逐句檢查後，依實際內容執行適用的驗證：
 
 - 確認18個週次資料夾各自只有指定的main與support。
-- 檢查Markdown fences、headings、tables、math delimiters、relative links、anchors及resource paths。
+- 檢查Markdown fences、headings、tables、relative links、anchors及resource paths。公開於GitHub的
+  Markdown以`$...$`標示行內公式、以`$$...$$`標示獨立公式；不得使用GitHub頁面不會依本課
+  預期呈現的`\(...\)`或`\[...\]`分隔方式。核對每一對數學分隔符及公式在GitHub上的閱讀順序。
 - 對notebook執行JSON、cell order、dependency及clean execution檢查。
 - 在新的Python process或乾淨kernel中，依學生閱讀順序執行同一檔案的全部code blocks。
 - 記錄Python與package versions；目前本機成功版本不能自動變成正式課堂版本。

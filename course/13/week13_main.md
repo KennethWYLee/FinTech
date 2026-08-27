@@ -41,28 +41,28 @@ Use a clean notebook with `numpy`, `pandas`, and `scipy`. Bring Week 7's drawdow
 
 ## 1. Define downside risk using losses
 
-For one-period portfolio return \(r_{p,t}\), define loss as
+For one-period portfolio return $r_{p,t}$, define loss as
 
-\[
+$$
 L_t=-r_{p,t}.
-\]
+$$
 
-At confidence level \(\alpha\), Value at Risk is an \(\alpha\)-quantile of loss:
+At confidence level $\alpha$, Value at Risk is an $\alpha$-quantile of loss:
 
-\[
+$$
 \operatorname{VaR}_{\alpha}(L)
 =\inf\{\ell:\Pr(L\leq\ell)\geq\alpha\}.
-\]
+$$
 
 For a continuous loss distribution, CVaR can be interpreted as the expected loss in the tail beyond VaR. With finite observations or probability mass at the threshold, the mean selected by a rule such as `loss >= VaR` need not equal the optimization expression used later. Every numerical result must therefore state its quantile and tail-membership conventions.
 
 ### Activity 1 — sort the tail by hand
 
-For losses `[-0.02, 0.00, 0.01, 0.03, 0.08]` and \(\alpha=0.80\), calculate NumPy's default linear empirical quantile and identify the losses selected by `loss >= VaR`. The quantile is `0.04`, only `0.08` is selected, and the selected-loss mean is `0.08`. Explain why the loss `-0.02` represents a positive return.
+For losses `[-0.02, 0.00, 0.01, 0.03, 0.08]` and $\alpha=0.80$, calculate NumPy's default linear empirical quantile and identify the losses selected by `loss >= VaR`. The quantile is `0.04`, only `0.08` is selected, and the selected-loss mean is `0.08`. Explain why the loss `-0.02` represents a positive return.
 
 ## 2. Specify finite scenarios before optimization
 
-A scenario is one simultaneous vector of asset returns. With \(S\) scenarios \(r_s\), portfolio loss for weights \(w\) is \(L_s=-r_s^\top w\). This class initially draws complete rows with replacement from artificial training returns. Complete rows preserve cross-sectional relationships within each selected observation, but ordinary row bootstrap does not reproduce time ordering or guarantee that the training sample describes future tails.
+A scenario is one simultaneous vector of asset returns. With $S$ scenarios $r_s$, portfolio loss for weights $w$ is $L_s=-r_s^\top w$. This class initially draws complete rows with replacement from artificial training returns. Complete rows preserve cross-sectional relationships within each selected observation, but ordinary row bootstrap does not reproduce time ordering or guarantee that the training sample describes future tails.
 
 Before inspecting optimized weights, record the training dates, observation count, return frequency, asset order, sampling method, replacement rule, scenario count, random seed, confidence level, constraints, previous weights, and whether test results have been inspected. A larger scenario count may reduce simulation variation from a fixed generator. It cannot repair a generator that omits relevant market behavior.
 
@@ -151,21 +151,21 @@ Expected evidence: training VaR `0.012402`, selected-loss mean `0.021092`, and 1
 
 ## 4. Formulate and audit the minimum-CVaR linear program
 
-Rockafellar and Uryasev express finite-scenario CVaR using a threshold \(\zeta\) and nonnegative excess-loss variables \(u_s\):
+Rockafellar and Uryasev express finite-scenario CVaR using a threshold $\zeta$ and nonnegative excess-loss variables $u_s$:
 
-\[
+$$
 \min_{w,\zeta,u}\quad
 \zeta+\frac{1}{(1-\alpha)S}\sum_{s=1}^{S}u_s
-\]
+$$
 
 subject to
 
-\[
+$$
 u_s\geq-r_s^\top w-\zeta,\qquad
 u_s\geq0,\qquad
 \mathbf{1}^\top w=1,\qquad
 0\leq w_i\leq0.60.
-\]
+$$
 
 The formulation is a linear program because its scenarios are fixed. The implementation also creates variables for absolute changes from previous weights and absolute deviations from a reference. Their coefficients are initially zero. Section 5 activates them without changing the CVaR scenario constraints.
 
@@ -381,23 +381,23 @@ Expected evidence: weights approximately `(0.496398, 0, 0.503602, 0)`, threshold
 
 ### Activity 2 — audit one scenario inequality
 
-Find the scenario with the largest loss under `minimum_cvar_weight`. Substitute its returns, weight, \(\zeta\), and corresponding value in `excess` into \(u_s\geq-r_s^\top w-\zeta\). Preserve the scenario index, both sides, and residual. Do not rely only on the solver's success flag.
+Find the scenario with the largest loss under `minimum_cvar_weight`. Substitute its returns, weight, $\zeta$, and corresponding value in `excess` into $u_s\geq-r_s^\top w-\zeta$. Preserve the scenario index, both sides, and residual. Do not rely only on the solver's success flag.
 
 ## 5. Add turnover, cost, and regularization explicitly
 
-Let \(w^0\) be previous weights and \(w^R\) be a stated reference. Add nonnegative variables satisfying \(d_i\geq|w_i-w_i^0|\) and \(q_i\geq|w_i-w_i^R|\). One-way turnover is \(\frac12\sum_i d_i\). The next decision imposes
+Let $w^0$ be previous weights and $w^R$ be a stated reference. Add nonnegative variables satisfying $d_i\geq|w_i-w_i^0|$ and $q_i\geq|w_i-w_i^R|$. One-way turnover is $\frac12\sum_i d_i$. The next decision imposes
 
-\[
+$$
 \frac12\sum_i d_i\leq0.12
-\]
+$$
 
 and minimizes
 
-\[
+$$
 \text{CVaR expression}
 +\frac{4}{10{,}000}\left(\frac12\sum_i d_i\right)
 +0.005\sum_iq_i.
-\]
+$$
 
 The second term estimates the initial trade's cost under a linear 4-basis-point assumption. The third pulls weights toward equal weights; its coefficient is a teaching choice expressed on the same numerical scale as one-period loss, not an estimated market quantity. This objective treats each scenario as one holding-period return and the initial cost as paid at the start of that holding period. A hard limit restricts feasible weights, a cost term changes the objective in financial units, and regularization expresses a preference toward a reference. They are not interchangeable.
 

@@ -39,11 +39,11 @@ A fixed split estimates a model once on an earlier block and evaluates it on a l
 
 A random assignment can place a later row in training and an earlier row in evaluation. That may answer a question under independent and identically distributed sampling assumptions, but it does not reproduce a historical financial decision in which later outcomes were unavailable. Week 5 therefore preserves chronological order.
 
-At prediction time \(t\), a model for \(r_{t+1}\) may use features available through \(t\) and training outcomes that have already occurred. It may not use \(r_{t+1}\) or any later outcome.
+At prediction time $t$, a model for $r_{t+1}$ may use features available through $t$ and training outcomes that have already occurred. It may not use $r_{t+1}$ or any later outcome.
 
 ### Worked example — one-step-ahead target availability
 
-Assume every row is available after its closing boundary and the target stored on row \(j\) is the return that ends at boundary \(j+1\). A prediction made after the close at row 5 for the return ending at row 6 has the following status:
+Assume every row is available after its closing boundary and the target stored on row $j$ is the return that ends at boundary $j+1$. A prediction made after the close at row 5 for the return ending at row 6 has the following status:
 
 | Feature row | Stored target ends at | Target status after close at row 5 | Permitted use |
 |---:|---:|---|---|
@@ -94,15 +94,15 @@ assert not model_data.isna().any().any()
 assert len(model_data) == 259
 ```
 
-Expected evidence: 259 usable rows, a sorted index, and no missing value in the modeling table. If the row count differs, inspect the first valid dates of `vol_20` and `target_next_return` before changing `dropna()`. As in Week 3, `vol_20` uses \(\sqrt{252}\) as an explicit classroom annualization convention. The target in row \(t\) is the return at \(t+1\). It can be used for training only after that later return has occurred.
+Expected evidence: 259 usable rows, a sorted index, and no missing value in the modeling table. If the row count differs, inspect the first valid dates of `vol_20` and `target_next_return` before changing `dropna()`. As in Week 3, `vol_20` uses $\sqrt{252}$ as an explicit classroom annualization convention. The target in row $t$ is the return at $t+1$. It can be used for training only after that later return has occurred.
 
 ## 3. Walk forward without future outcomes
 
 The model is
 
-\[
+$$
 \widehat r_{t+1}=\beta_0+\beta_1m_{t,5}+\beta_2\widehat\sigma_{t,20}.
-\]
+$$
 
 The following function refits every five prediction dates. Between refits, the coefficients remain fixed while a new signal can still be calculated from the latest feature row.
 
@@ -166,13 +166,13 @@ assert rolling.dropna()["training_rows"].eq(80).all()
 
 Expected evidence: each design produces 179 predictions. The last training feature date must be earlier than the current prediction date, and the associated target for that last training row must have occurred no later than the current boundary. If a timing assertion fails, inspect the `frame.iloc[:i]` endpoint and the target horizon before looking at model performance.
 
-Compare prediction errors on the same dates. For \(n\) common observations, mean squared error is
+Compare prediction errors on the same dates. For $n$ common observations, mean squared error is
 
-\[
+$$
 \operatorname{MSE}=\frac{1}{n}\sum_{i=1}^{n}(r_i-\widehat r_i)^2.
-\]
+$$
 
-It is measured in squared decimal-return units. Directional accuracy is the fraction of common observations for which \(\operatorname{sign}(\widehat r_i)=\operatorname{sign}(r_i)\). The zero-prediction benchmark asks whether the fitted model reduces MSE relative to \(\widehat r_i=0\) on exactly the same outcomes. These measures describe prediction, not net trading performance.
+It is measured in squared decimal-return units. Directional accuracy is the fraction of common observations for which $\operatorname{sign}(\widehat r_i)=\operatorname{sign}(r_i)$. The zero-prediction benchmark asks whether the fitted model reduces MSE relative to $\widehat r_i=0$ on exactly the same outcomes. These measures describe prediction, not net trading performance.
 
 ```python
 forecast_rows = []

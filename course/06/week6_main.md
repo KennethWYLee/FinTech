@@ -35,25 +35,25 @@ Bring the Week 4 ledger and Week 5 update rules. Week 4 supplies the gross-retur
 
 ## 1. Define the cost convention
 
-One basis point is \(0.0001\) in decimal-return units. For a one-way position change
+One basis point is $0.0001$ in decimal-return units. For a one-way position change
 
-\[
+$$
 \tau_t=|p_t-p_{t-1}|,
-\]
+$$
 
 define the cost rate
 
-\[
+$$
 c=\frac{c_{\text{commission}}+c_{\text{half-spread}}+c_{\text{slippage}}}{10{,}000}.
-\]
+$$
 
-Each component in the numerator is stated in basis points; \(c\) is therefore in decimal-return units.
+Each component in the numerator is stated in basis points; $c$ is therefore in decimal-return units.
 
 The net return is
 
-\[
+$$
 r^{\text{net}}_t=r^{\text{gross}}_t-c\tau_t.
-\]
+$$
 
 This convention charges one-way cost on each change. Entering and later exiting a full position creates two one-way changes. If a source quotes a full spread or round-trip cost, convert it before using this formula.
 
@@ -61,11 +61,11 @@ This convention charges one-way cost on each change. Entering and later exiting 
 
 Assume a commission of 1 bp, a quoted full spread of 6 bp, and slippage of 2 bp. The half-spread used for one execution is 3 bp, so the stated one-way rate is
 
-\[
+$$
 c=\frac{1+3+2}{10{,}000}=0.0006.
-\]
+$$
 
-If a position changes from 0.25 to 0.75, then \(\tau_t=|0.75-0.25|=0.50\). The cost deducted from the portfolio return is \(0.0006\times0.50=0.0003\), or 0.03%. If gross return for the period is 0.80%, net return is \(0.0080-0.0003=0.0077\), or 0.77%. If the cost appears as 3.0%, first check whether basis points were divided by 10,000 exactly once.
+If a position changes from 0.25 to 0.75, then $\tau_t=|0.75-0.25|=0.50$. The cost deducted from the portfolio return is $0.0006\times0.50=0.0003$, or 0.03%. If gross return for the period is 0.80%, net return is $0.0080-0.0003=0.0077$, or 0.77%. If the cost appears as 3.0%, first check whether basis points were divided by 10,000 exactly once.
 
 ### Activity 1 — Hand-calculate costs
 
@@ -261,13 +261,13 @@ Expected evidence: final wealth is 1.000000 for cash, approximately 0.846184 for
 
 ### Worked example — equal-weighted benchmark under common conditions
 
-An equal-weighted benchmark is meaningful only for a multi-asset candidate using the same asset universe and period. Consider one artificial return interval with assets A and B. The candidate begins the interval with weights \((0.75,0.25)\), the benchmark with \((0.50,0.50)\), and both move from cash so that initial one-way turnover is 1. Asset returns are 2.0% and -1.0%, and the common one-way cost is 4 bp.
+An equal-weighted benchmark is meaningful only for a multi-asset candidate using the same asset universe and period. Consider one artificial return interval with assets A and B. The candidate begins the interval with weights $(0.75,0.25)$, the benchmark with $(0.50,0.50)$, and both move from cash so that initial one-way turnover is 1. Asset returns are 2.0% and -1.0%, and the common one-way cost is 4 bp.
 
-The candidate gross return is \(0.75(0.02)+0.25(-0.01)=0.0125\); its net return is \(0.0125-0.0004=0.0121\), or 1.21%. The equal-weighted benchmark gross return is \(0.50(0.02)+0.50(-0.01)=0.0050\); its net return is \(0.0050-0.0004=0.0046\), or 0.46%. This one interval demonstrates common-condition accounting only. It cannot show that the candidate weighting is generally better, and it does not address weight drift after the return. Week 8 develops multi-period weighting and rebalancing.
+The candidate gross return is $0.75(0.02)+0.25(-0.01)=0.0125$; its net return is $0.0125-0.0004=0.0121$, or 1.21%. The equal-weighted benchmark gross return is $0.50(0.02)+0.50(-0.01)=0.0050$; its net return is $0.0050-0.0004=0.0046$, or 0.46%. This one interval demonstrates common-condition accounting only. It cannot show that the candidate weighting is generally better, and it does not address weight drift after the return. Week 8 develops multi-period weighting and rebalancing.
 
 ### Activity 4 — Recalculate a common-condition comparison
 
-Use candidate weights \((0.20,0.80)\), equal weights \((0.50,0.50)\), asset returns -1.0% and 1.5%, and a common one-way entry cost of 6 bp. Before calculating, predict which net return is higher. Verify that both weight vectors are long-only and sum to one, calculate both gross and net returns, revise the prediction, and state why using a different universe or cost rate would invalidate the comparison.
+Use candidate weights $(0.20,0.80)$, equal weights $(0.50,0.50)$, asset returns -1.0% and 1.5%, and a common one-way entry cost of 6 bp. Before calculating, predict which net return is higher. Verify that both weight vectors are long-only and sum to one, calculate both gross and net returns, revise the prediction, and state why using a different universe or cost rate would invalidate the comparison.
 
 Expected evidence contains two feasible weight vectors, two gross returns, two cost deductions using the same rate and turnover, and two net returns in the same units. If the difference is driven by unequal costs, first restore the common 6 bp rate before interpreting weights. Save the prediction, calculation, revision, and limitation.
 

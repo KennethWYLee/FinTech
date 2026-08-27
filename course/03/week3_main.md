@@ -45,7 +45,7 @@ Financial data become usable through a sequence of events:
 - **Execution time**: when a trade can occur under the stated assumption.
 - **Evaluation time**: when the return generated after execution can be measured.
 
-These times may be equal for a carefully defined end-of-day price workflow, but they must not be assumed equal. A closing price is not known before that close. A financial statement for quarter \(q\) cannot be treated as known throughout quarter \(q\) if it was published later.
+These times may be equal for a carefully defined end-of-day price workflow, but they must not be assumed equal. A closing price is not known before that close. A financial statement for quarter $q$ cannot be treated as known throughout quarter $q$ if it was published later.
 
 ### Worked example — one artificial decision timeline
 
@@ -76,19 +76,19 @@ A feature is a measurable input. It becomes financially interpretable only when 
 
 This is a proposed association to test, not an empirical result. Even if the association appears in a later sample, it would not by itself establish profitability after costs. Define five-session momentum as
 
-\[
+$$
 m_{t,5}=\frac{P_t}{P_{t-5}}-1.
-\]
+$$
 
 Define twenty-session realized volatility as
 
-\[
+$$
 \widehat{\sigma}_{t,20}=\operatorname{sd}(r_{t-19},\ldots,r_t)\sqrt{252}.
-\]
+$$
 
-The factor \(\sqrt{252}\) is an explicit classroom convention for annualizing daily volatility. It is not a universal statement about the number of trading days in every market or year.
+The factor $\sqrt{252}$ is an explicit classroom convention for annualizing daily volatility. It is not a universal statement about the number of trading days in every market or year.
 
-Both features include information through the close at \(t\), so they are available only after that close under this class convention.
+Both features include information through the close at $t$, so they are available only after that close under this class convention.
 
 ### Activity 2 — Write before calculating
 
@@ -140,7 +140,7 @@ Expected evidence: 180 rows, a sorted and unique business-day index, positive pr
 
 The business-day index is an artificial sequence and is not evidence of any market's actual holidays or trading sessions.
 
-## 4. Construct features using observations through time \(t\)
+## 4. Construct features using observations through time $t$
 
 ```python
 data["mom_5"] = data["Adj_Close"] / data["Adj_Close"].shift(5) - 1
@@ -154,7 +154,7 @@ assert data["mom_5"].first_valid_index() == data.index[5]
 assert data["vol_20"].first_valid_index() == data.index[20]
 ```
 
-Expected evidence: `mom_5` first appears on the sixth price date, `vol_20` first appears after 20 returns are available, and the last `next_return_target` is missing. If either first-valid-date assertion fails, count the prices or returns required by the formula before changing the window. `next_return_target` is stored only as a future outcome for later model evaluation. It is not an allowed feature at time \(t\).
+Expected evidence: `mom_5` first appears on the sixth price date, `vol_20` first appears after 20 returns are available, and the last `next_return_target` is missing. If either first-valid-date assertion fails, count the prices or returns required by the formula before changing the window. `next_return_target` is stored only as a future outcome for later model evaluation. It is not an allowed feature at time $t$.
 
 ### Activity 3 — Explain the first valid date
 
@@ -200,14 +200,14 @@ The expected judgment separates a valid trailing feature formula from invalid fu
 
 ## 6. Convert the feature into a signal
 
-When the momentum feature is available, define a simple long-or-cash signal after close \(t\):
+When the momentum feature is available, define a simple long-or-cash signal after close $t$:
 
-\[
+$$
 s_t=\begin{cases}
 1,&m_{t,5}>0,\\
 0,&m_{t,5}\leq 0.
 \end{cases}
-\]
+$$
 
 Before the first valid momentum value, the signal remains missing rather than being treated as a cash decision. A valid signal is not yet a position and does not yet have a return. Week 4 will state the execution rule and shift the signal before measuring strategy performance.
 
@@ -238,7 +238,7 @@ Expected evidence: 175 available features and signals, with available signals pa
 
 Write one sentence describing exactly what a signal of 1 means. Then write one sentence that would be invalid because Week 3 has not yet defined execution, costs, or a backtest.
 
-The valid sentence describes only the rule output after close \(t\). If it mentions an earned return, profit, or trade fill, first remove that claim because position and execution rules begin in Week 4.
+The valid sentence describes only the rule output after close $t$. If it mentions an earned return, profit, or trade fill, first remove that claim because position and execution rules begin in Week 4.
 
 ## 7. Align a separately published variable
 

@@ -53,9 +53,9 @@ The full field descriptions are in the [data dictionary](week2_support.md#data-d
 
 Suppose an investor owns one artificial share priced at 100 immediately before a two-for-one split. Ignoring market movement, taxes, fees, and rounding, the investor owns two shares priced at 50 immediately afterward. The position value is 100 before and after the split, but the unadjusted one-share price calculation is
 
-\[
+$$
 \frac{50}{100}-1=-0.50.
-\]
+$$
 
 The negative 50% calculation reflects the change in units and is not the investor's economic holding return in this example. A data provider may supply an adjusted or total-return series to address specified corporate actions, but the provider's documentation must determine what was adjusted and how. The label alone is insufficient evidence.
 
@@ -74,27 +74,27 @@ Expected evidence shows that the raw per-share return and the change in total po
 
 ## 2. Simple and log returns
 
-Let \(P_t\) be the selected price for period \(t\), measured in the same currency and constructed consistently across dates.
+Let $P_t$ be the selected price for period $t$, measured in the same currency and constructed consistently across dates.
 
 The simple return is
 
-\[
+$$
 r_t = \frac{P_t}{P_{t-1}} - 1.
-\]
+$$
 
 The log return is
 
-\[
+$$
 g_t = \ln\left(\frac{P_t}{P_{t-1}}\right) = \ln(1+r_t).
-\]
+$$
 
 Both are decimal returns. Multiply by 100 when reporting a return in percent. A percentage point instead describes the arithmetic difference between two percentages. For example, if the price rises from 100 to 102,
 
-\[
+$$
 r_t = 0.02 = 2\%, \qquad g_t = \ln(1.02) \approx 0.019803.
-\]
+$$
 
-A simple return describes the proportional gain or loss over one period. Log returns are additive across consecutive periods, but a summed log return must be converted back with \(\exp(\sum g_t)-1\) when a cumulative simple return is required.
+A simple return describes the proportional gain or loss over one period. Log returns are additive across consecutive periods, but a summed log return must be converted back with $\exp(\sum g_t)-1$ when a cumulative simple return is required.
 
 ### Activity 2 — Calculate before coding
 
@@ -111,27 +111,27 @@ Calculate the simple and log returns for January 7 and January 8. Keep at least 
 
 Your result is complete when both formulas, substituted prices, decimal results, and one interpretation sentence are visible.
 
-The expected signs follow the direction of each price change, and each simple return must agree with `expm1` applied to the corresponding log return within rounding. If the identity fails, first check the order of \(P_t\) and \(P_{t-1}\) and confirm that the natural logarithm was used.
+The expected signs follow the direction of each price change, and each simple return must agree with `expm1` applied to the corresponding log return within rounding. If the identity fails, first check the order of $P_t$ and $P_{t-1}$ and confirm that the natural logarithm was used.
 
 ## 3. Cumulative return and the wealth index
 
-For consecutive simple returns from period 1 through \(T\), the cumulative simple return is
+For consecutive simple returns from period 1 through $T$, the cumulative simple return is
 
-\[
+$$
 R_{0,T} = \prod_{t=1}^{T}(1+r_t)-1.
-\]
+$$
 
 If the same consistently adjusted price series is used and there are no external cash flows in the calculation,
 
-\[
+$$
 R_{0,T} = \frac{P_T}{P_0}-1.
-\]
+$$
 
 A wealth index starts at 1 and shows the value of one unit invested through the return sequence:
 
-\[
+$$
 W_0=1, \qquad W_t=W_{t-1}(1+r_t).
-\]
+$$
 
 Adding simple returns is generally not the same as compounding them. The difference becomes important when returns are large, volatile, or measured over many periods.
 
@@ -332,13 +332,13 @@ The expected numerical relationship is equality, within floating-point precision
 
 ## 7. Calculate a one-period portfolio return
 
-For \(N\) assets, the one-period portfolio return is
+For $N$ assets, the one-period portfolio return is
 
-\[
+$$
 r_{p,t}=\sum_{i=1}^{N} w_{i,t-1}r_{i,t},
-\]
+$$
 
-where \(w_{i,t-1}\) is the portfolio weight established before period \(t\) begins. The weights and asset returns must refer to the same holding interval.
+where $w_{i,t-1}$ is the portfolio weight established before period $t$ begins. The weights and asset returns must refer to the same holding interval.
 
 For example, an Asset A return measured from the January 6 close to the January 7 close cannot be combined with an Asset B return measured from the January 7 close to the January 8 close. Even if both values are individually correct, their weighted sum does not describe one portfolio holding interval. Before multiplication, verify that the asset-return columns share the same date label and interval definition.
 

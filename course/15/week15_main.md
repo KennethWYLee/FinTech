@@ -64,13 +64,13 @@ A lower final return is not itself a correctness problem. A violation of decisio
 
 ## 2. Specify the weighting function before comparing performance
 
-At rebalance date \(t\), write the method as
+At rebalance date $t$, write the method as
 
-\[
+$$
 w_t=f(\mathcal{I}_t;\theta),
-\]
+$$
 
-where \(\mathcal{I}_t\) contains information available no later than the stated decision time and \(\theta\) contains settings fixed before final evaluation. The output must follow the asset order and satisfy the written constraints.
+where $\mathcal{I}_t$ contains information available no later than the stated decision time and $\theta$ contains settings fixed before final evaluation. The output must follow the asset order and satisfy the written constraints.
 
 Complete this description before running the final period:
 
@@ -283,9 +283,9 @@ Add at least two tests implied by the proposed definition. Possible subjects inc
 
 The function below starts each comparison from cash on the common evaluation-start date. At every decision, its history ends on the preceding row. It rebalances immediately on the first evaluation date and every stated number of business-day observations afterward. Initial one-way turnover is 1; subsequent turnover is
 
-\[
+$$
 \frac12\sum_i|w_{i,t}^{target}-w_{i,t}^{hold}|.
-\]
+$$
 
 Four basis points per unit of turnover is deducted from return. Holdings then drift with asset returns. This simplified accounting does not model bid–ask dynamics, market impact, taxes, or financing.
 

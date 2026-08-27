@@ -79,11 +79,11 @@ Exchange questions with another team. The reviewer must identify one ambiguous t
 
 If weights are updated over time,
 
-\[
+$$
 w_t=f(\mathcal{I}_t;\theta),
-\]
+$$
 
-then both the information set \(\mathcal{I}_t\) and fixed settings \(\theta\) must be documented. A shorter lookback responds faster but uses fewer observations; a longer lookback is smoother but can retain outdated information. This is a tradeoff to test, not a universal rule.
+then both the information set $\mathcal{I}_t$ and fixed settings $\theta$ must be documented. A shorter lookback responds faster but uses fewer observations; a longer lookback is smoother but can retain outdated information. This is a tradeoff to test, not a universal rule.
 
 The artificial sample below has two deliberately different covariance conditions. The labels are known because the data are simulated; a real application would need a detection rule that uses only information available at the time.
 
@@ -141,17 +141,17 @@ Predict which assets receive more inverse-volatility weight in each condition an
 
 ## 4. Compare scheduled trading with a weight-difference threshold
 
-At a scheduled decision date, let \(w_t^*\) be the newly estimated target and \(w_{t^-}\) the existing portfolio. A threshold \(b\geq0\) can be used to decide whether the difference is large enough to trade:
+At a scheduled decision date, let $w_t^*$ be the newly estimated target and $w_{t^-}$ the existing portfolio. A threshold $b\geq0$ can be used to decide whether the difference is large enough to trade:
 
-\[
+$$
 w_t=
 \begin{cases}
 w_{t^-}, & \max_i|w_{i,t}^*-w_{i,t^-}|<b,\\
 w_t^*, & \text{otherwise}.
 \end{cases}
-\]
+$$
 
-This rule can reduce turnover but can also delay useful adaptation. It is related to transaction costs because fewer trades can reduce the cost deduction, but the threshold is not derived from or optimized against the stated cost function. Select it without repeatedly searching final-period results. The implementation uses \(\frac12\sum_i|w_{i,new}-w_{i,old}|\) for turnover between fully invested portfolios, records initial investment from cash as 1, and lets weights drift between trades. Costs are deducted from return but do not alter post-return weights in this simplified accounting.
+This rule can reduce turnover but can also delay useful adaptation. It is related to transaction costs because fewer trades can reduce the cost deduction, but the threshold is not derived from or optimized against the stated cost function. Select it without repeatedly searching final-period results. The implementation uses $\frac12\sum_i|w_{i,new}-w_{i,old}|$ for turnover between fully invested portfolios, records initial investment from cash as 1, and lets weights drift between trades. Costs are deducted from return but do not alter post-return weights in this simplified accounting.
 
 ```python
 def inverse_volatility(history):
