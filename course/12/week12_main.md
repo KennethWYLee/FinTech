@@ -50,7 +50,7 @@ $$
 The sample covariance $S$ uses every observation in the stated training period. It is easy to reproduce but changes with the sample. This class also calculates the fixed diagonal-shrinkage matrix
 
 $$
-\Sigma_\delta=(1-\delta)S+\delta\operatorname{diag}(S),
+\Sigma_\delta=(1-\delta)S+\delta\mathrm{diag}(S),
 \qquad \delta=0.35.
 $$
 

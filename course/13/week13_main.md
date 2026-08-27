@@ -50,7 +50,7 @@ $$
 At confidence level $\alpha$, Value at Risk is an $\alpha$-quantile of loss:
 
 $$
-\operatorname{VaR}_{\alpha}(L)
+\mathrm{VaR}_{\alpha}(L)
 =\inf\{\ell:\Pr(L\leq\ell)\geq\alpha\}.
 $$
 

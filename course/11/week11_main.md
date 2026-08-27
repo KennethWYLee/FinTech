@@ -50,7 +50,7 @@ r_{p,t}=w^\top r_t,
 \sigma_p^2=w^\top\Sigma w,
 $$
 
-where $\mu=\mathbb{E}[r_t]$ and $\Sigma=\operatorname{Cov}(r_t)$. Covariance records how two asset returns vary together. A covariance estimated from a finite sample is uncertain; it is an input to a stated decision, not a fixed law of the market.
+where $\mu=\mathbb{E}[r_t]$ and $\Sigma=\mathrm{Cov}(r_t)$. Covariance records how two asset returns vary together. A covariance estimated from a finite sample is uncertain; it is an input to a stated decision, not a fixed law of the market.
 
 ### Worked example — two artificial assets
 

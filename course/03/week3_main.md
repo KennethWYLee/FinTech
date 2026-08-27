@@ -83,7 +83,7 @@ $$
 Define twenty-session realized volatility as
 
 $$
-\widehat{\sigma}_{t,20}=\operatorname{sd}(r_{t-19},\ldots,r_t)\sqrt{252}.
+\widehat{\sigma}_{t,20}=\mathrm{sd}(r_{t-19},\ldots,r_t)\sqrt{252}.
 $$
 
 The factor $\sqrt{252}$ is an explicit classroom convention for annualizing daily volatility. It is not a universal statement about the number of trading days in every market or year.

@@ -42,9 +42,9 @@ $$
 $$
 
 $$
-\widehat\sigma_{ann}=\operatorname{sd}(r_t)\sqrt{N},
+\widehat\sigma_{ann}=\mathrm{sd}(r_t)\sqrt{N},
 \qquad
-\widehat{SR}=\frac{\overline r}{\operatorname{sd}(r)}\sqrt{N}.
+\widehat{SR}=\frac{\overline r}{\mathrm{sd}(r)}\sqrt{N}.
 $$
 
 For the Sortino ratio, define downside deviations relative to target $q=0$:

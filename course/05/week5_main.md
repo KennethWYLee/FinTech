@@ -169,10 +169,10 @@ Expected evidence: each design produces 179 predictions. The last training featu
 Compare prediction errors on the same dates. For $n$ common observations, mean squared error is
 
 $$
-\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^{n}(r_i-\widehat r_i)^2.
+\mathrm{MSE}=\frac{1}{n}\sum_{i=1}^{n}(r_i-\widehat r_i)^2.
 $$
 
-It is measured in squared decimal-return units. Directional accuracy is the fraction of common observations for which $\operatorname{sign}(\widehat r_i)=\operatorname{sign}(r_i)$. The zero-prediction benchmark asks whether the fitted model reduces MSE relative to $\widehat r_i=0$ on exactly the same outcomes. These measures describe prediction, not net trading performance.
+It is measured in squared decimal-return units. Directional accuracy is the fraction of common observations for which $\mathrm{sign}(\widehat r_i)=\mathrm{sign}(r_i)$. The zero-prediction benchmark asks whether the fitted model reduces MSE relative to $\widehat r_i=0$ on exactly the same outcomes. These measures describe prediction, not net trading performance.
 
 ```python
 forecast_rows = []
