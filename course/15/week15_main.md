@@ -10,7 +10,7 @@ Week 15 is a development, validation, and submission class rather than another r
 
 By the end of this 150-minute class, each team will have a reproducible weighting function, generic and method-specific tests, development-period baseline and sensitivity comparisons, a documented point at which method choices stopped, one common final-period evaluation with transaction costs, turnover, concentration, and drawdown, and an identifiable frozen submission.
 
-The detailed grading rubric, common dataset, and course-wide numerical settings remain subject to instructor approval. This material defines technical evidence and reproducibility requirements without adding grading weights.
+The [final report criteria](../16/week16_main.md) define the assessed evidence. The common dataset and numerical settings for the course remain subject to instructor approval. This material defines the technical and reproducibility work required for the frozen submission without changing the grading weights.
 
 ## Teaching objectives
 

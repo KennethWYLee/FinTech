@@ -640,7 +640,7 @@ Expected evidence: 140 identical test observations per method. In printed order,
 
 Submit the hand-sorted loss calculation, artificial-data audit, empirical training estimate, scenario specification, minimum-CVaR weights and complete audit, one hand-checked scenario inequality, three separate implementation-change comparisons, scenario-count and seed table, stress comparison, common net test table, and completed [Week 13 scenario and optimization record](week13_support.md#scenario-and-optimization-record).
 
-The Week 14 report should use this evidence to state the financial decision, loss convention, scenario generator, scenario count, seed, constraints, objective terms, solver checks, sensitivity results, test conditions, and limits of each claim. Detailed grading criteria remain pending and are not created here.
+The Week 14 report should use this evidence to state the financial decision, loss convention, scenario generator, scenario count, seed, constraints, objective terms, solver checks, sensitivity results, test conditions, and limits of each claim. These records support the [Report 2 criteria](../14/week14_main.md); this lesson does not change the report weights or add another criterion.
 
 Your work is complete when another student can reconstruct every scenario draw, objective term, constraint, and test-period calculation and can distinguish what was observed from what was assumed.
 

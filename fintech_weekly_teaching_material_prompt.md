@@ -231,9 +231,9 @@ support不得變成第二份完整main，也不得包含教師講稿、完整練
 教材須支援已核定的評量結構，但不得自行創造詳細rubric或改變配分：
 
 - Class participation and weekly learning evidence：40%。
-- Report 1 — Quantitative Trading Report：20%，Week 10。
+- Report 1 — Quantitative Trading Report：15%，Week 10。
 - Report 2 — Weighting Method Progress Report：15%，Week 14。
-- Report 3 — Final Report：25%，Week 15提交frozen version，Weeks 16–17報告。
+- Report 3 — Final Report：30%，Week 15提交frozen version，Weeks 16–17報告。
 
 逐週檢查：
 

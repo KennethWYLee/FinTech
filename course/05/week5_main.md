@@ -280,7 +280,7 @@ Expected evidence names the choices permitted during validation and freezes them
 
 ## 7. Required evidence and completion
 
-The Week 5 timing records, common-date comparisons, and separated update schedules provide Report 1 evidence about how the trading method was estimated and updated. The detailed report rubric remains pending; this lesson does not add a new grading rule.
+The Week 5 timing records, common-date comparisons, and separated update schedules provide evidence about estimation and updating for the [Report 1 criteria](../10/week10_main.md). This lesson supplies evidence for those criteria; it does not change the report weights or add another criterion.
 
 Submit the window diagram, modeling-table audit, expanding and rolling predictions, common-date forecast comparison, model-version evidence, the summary for updates permitted every fifth row, the independent comparison for updates permitted every tenth row, protected-period rule, and the design record in [Week 5 Support](week5_support.md#evaluation-design-record).
 

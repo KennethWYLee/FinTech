@@ -268,7 +268,7 @@ Expected evidence supplies a reason and next action for every `fail` or `unclear
 
 ## 7. Required evidence and completion
 
-The Week 7 metric definitions, uncertainty checks, selection demonstration, and audit provide the performance-evidence boundary for Report 1. The detailed report rubric remains pending; this lesson does not add a new grading rule.
+The Week 7 metric definitions, uncertainty checks, selection demonstration, and audit provide the performance evidence required by the [Report 1 criteria](../10/week10_main.md). This lesson supplies evidence for those criteria; it does not change the report weights or add another criterion.
 
 Submit both four-return calculations, the metric table, four-part interpretation, bootstrap intervals, repeated-selection result, completed audit, and [Week 7 evidence record](week7_support.md#performance-and-audit-record).
 

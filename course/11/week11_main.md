@@ -507,7 +507,7 @@ Before solving, predict how changing the mean–variance penalty from 10 to 20 w
 
 Submit the two-asset worked calculation and Activity 1, the data and covariance audit, all four weight columns, in-sample estimates, solver messages and residuals, frontier and infeasible-target output, common net test-period comparison, estimation-window sensitivity table, penalty activity, and completed [Week 11 portfolio-method record](week11_support.md#portfolio-method-record).
 
-This evidence supports the Week 14 progress report's mathematical definition, baseline comparison, implementation checks, and initial evidence. Detailed report grading criteria remain pending and are not created here.
+This evidence supports the mathematical definition, baseline comparison, implementation checks, and initial evidence required by the [Report 2 criteria](../14/week14_main.md). This lesson does not change the report weights or add another criterion.
 
 Your work is complete when another student can reproduce each portfolio, distinguish its inputs and objective, verify every constraint, separate training from test evidence, and identify one observed source of weight sensitivity.
 

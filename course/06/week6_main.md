@@ -277,7 +277,7 @@ List the source still needed for commission, quoted spread, expected slippage, e
 
 ## 7. Required evidence and completion
 
-The Week 6 cost record, sensitivity results, delay comparison, and benchmark conditions provide Report 1 evidence about implementability. The detailed report rubric remains pending; this lesson does not add a new grading rule.
+The Week 6 cost record, sensitivity results, delay comparison, and benchmark conditions provide implementation evidence for the [Report 1 criteria](../10/week10_main.md). This lesson supplies evidence for those criteria; it does not change the report weights or add another criterion.
 
 Submit the cost convention, hand calculation, gross and net ledgers, passed identities, cost grid, delay comparison, benchmark table, equal-weighted comparison, assumption audit, and [Week 6 cost record](week6_support.md#cost-and-execution-record).
 

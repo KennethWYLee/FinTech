@@ -388,7 +388,7 @@ Before rerunning, predict how replacing the 60% cap with 40% will affect the sig
 
 Submit the worked-example weights, Activity 1 calculation, artificial-data audit, fixed-rule statement, constrained development-date weight table, fallback and failure outputs, drift hand calculation, common evaluation table, traced evaluation-day decision, cap comparison, five-sentence interpretation, and completed [Week 8 weighting-method record](week8_support.md#weighting-method-record).
 
-This evidence supports the Week 10 report's initial explanation of how a trading signal becomes a portfolio weight. It also supplies the common basic benchmarks needed in Week 11. Detailed report grading criteria remain pending and are not created here.
+This evidence supports the [Report 1 criteria](../10/week10_main.md), including the initial explanation of how a trading signal becomes a portfolio weight. It also supplies the common basic benchmarks needed in Week 11. This lesson does not change the report weights or add another criterion.
 
 Your work is complete when every method has a formula, input, availability time, fallback or failure rule, constraint, rebalance rule, lag, turnover convention, transaction cost, common evaluation period, and appropriately limited interpretation.
 

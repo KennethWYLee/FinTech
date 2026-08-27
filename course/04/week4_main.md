@@ -242,7 +242,7 @@ Required checks are that the valid position equals the preceding signal wherever
 
 ## 7. Required evidence and completion
 
-The Week 4 specification, ledger, timing comparison, and limitations are direct evidence for the quantitative trading work in Report 1. The detailed report rubric remains pending; this lesson does not add a new grading rule.
+The Week 4 specification, ledger, timing comparison, and limitations are direct evidence for the [Report 1 criteria](../10/week10_main.md). This lesson supplies evidence for those criteria; it does not change the report weights or add another criterion.
 
 Submit:
 

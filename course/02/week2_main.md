@@ -405,6 +405,8 @@ Submit one notebook or exported report containing:
 
 Your work is complete when another student can identify the input prices, reproduce the calculations from a clean notebook, see which checks passed, and understand every assumption without asking what you meant.
 
+The data definition, return calculations, date checks, and source record provide the data evidence required by the [Report 1 criteria](../10/week10_main.md). This lesson supplies evidence for those criteria; it does not change the report weights or add another criterion.
+
 ## Exit evidence
 
 Complete these three statements before leaving:

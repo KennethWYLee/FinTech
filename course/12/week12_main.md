@@ -567,7 +567,7 @@ Predict how replacing 126 training observations with 63 affects the condition nu
 
 Submit the data and covariance audit, changed-shrinkage activity, rolling-window record, worked and independent contribution calculations, equal and unequal risk-budget tables and solver audits, hierarchical order and allocation, comparison of method meanings, common net test-period table, covariance-sensitivity table, trailing-window activity, and completed [Week 12 risk-based method record](week12_support.md#risk-based-method-record).
 
-This evidence supports the Week 14 report's covariance choice, mathematical definition, constraints, baseline comparison, implementation checks, and initial results. Detailed report grading criteria remain pending and are not created here.
+This evidence supports the covariance choice, mathematical definition, constraints, baseline comparison, implementation checks, and initial results required by the [Report 2 criteria](../14/week14_main.md). This lesson does not change the report weights or add another criterion.
 
 Your work is complete when another student can reconstruct every covariance estimate and allocation, verify contribution identities and constraints, reproduce the common test comparison, and state which conclusions depend on the covariance model, window, risk budget, clustering, and artificial period.
 

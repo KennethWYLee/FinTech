@@ -289,7 +289,7 @@ Expected evidence contains three decision rows, two missing aligned values, and 
 
 ## 8. Required evidence and completion
 
-The Week 3 evidence supplies the timing and leakage documentation needed to defend the quantitative trading work in Report 1. The detailed report rubric remains pending; this lesson does not add a new grading rule.
+The Week 3 evidence supplies the timing and leakage documentation required by the [Report 1 criteria](../10/week10_main.md). This lesson supplies evidence for those criteria; it does not change the report weights or add another criterion.
 
 Submit:
 

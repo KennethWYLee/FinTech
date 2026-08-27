@@ -149,13 +149,13 @@ English: Week 18 connects the semester's findings with advanced issues such as t
 
   - Discussion, oral responses, and evidence-based peer feedback: 10%
 
-- Report 1 — Quantitative Trading Report: 20%
+- Report 1 — Quantitative Trading Report: 15%
 
-  - Team strategy, reproducible backtest, performance evidence, and written report: 10%
+  - Team strategy, reproducible backtest, performance evidence, and written report: 8%
 
-  - Individual presentation and oral responses: 5%
+  - Individual presentation and oral responses: 4%
 
-  - Individual evidence-based review of other approaches: 5%
+  - Individual evidence-based review of other approaches: 3%
 
 - Report 2 — Weighting Method Progress Report: 15%
 
@@ -163,15 +163,17 @@ English: Week 18 connects the semester's findings with advanced issues such as t
 
   - Brief presentation and oral responses: 5%
 
-- Report 3 — Final Report: 25%
+- Report 3 — Final Report: 30%
 
-  - Team weighting method, implementation, and empirical evaluation: 15%
+  - Team weighting method, implementation, and empirical evaluation: 18%
 
-  - Final presentation and oral responses: 5%
+  - Final presentation and oral responses: 6%
 
-  - Individual evidence-based comparison of other teams: 5%
+  - Individual evidence-based comparison of other teams: 6%
 
 Students will not evaluate their own team. Rankings received from classmates will not directly determine team grades. Individual comparison scores will depend on whether the student uses common test results, financial measures, implementation evidence, and clearly stated comparison criteria.
+
+Detailed observable criteria, team and individual responsibilities, permitted resources, version rules, and arrangements for the three report sessions are provided in [Week 1 support](week1_support.md) and the corresponding report-week files. Report 1 common settings are announced by the start of Week 3, and final portfolio settings are announced by the start of Week 11. Students will not be evaluated against an unannounced setting.
 
 ## 指定教科書及參考書籍
 
