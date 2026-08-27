@@ -26,12 +26,12 @@
 | 2 | Financial data and returns | 可稽核的價格、報酬、頻率與一期投資組合報酬計算 | 不進入交易訊號、模型或回測績效 |
 | 3 | Information timing, features, and signals | 從金融假說建立point-in-time feature與signal | 不在尚未定義執行與成本前宣稱策略績效 |
 | 4 | Basic backtesting | 從signal到position、trade、return與wealth的有效ledger | 成本敏感度與完整績效評估留待Weeks 6–7 |
-| 5 | Chronological evaluation and updating | fixed、rolling、expanding與walk-forward比較；區分model、signal與rebalance更新 | 不以同一最終期間反覆選擇設定 |
+| 5 | Chronological evaluation and updating | 以歷史資料估計至少一個prediction model，與透明prediction baseline在共同日期比較；再比較fixed、rolling、expanding與walk-forward並區分model、signal與rebalance更新 | 不以模型複雜度代替有效證據，不以同一最終期間反覆選擇設定 |
 | 6 | Costs, execution, and benchmarks | 同日期、同成本條件下的net backtest、delay，以及cash、buy-and-hold、rule-based與equal-weight benchmarks比較 | 統計不確定性與多重選擇留待Week 7 |
 | 7 | Performance and backtest validity | 報酬、風險、回撤、週轉率、不確定性、overfitting與audit | 不用單一指標或單一路徑判定方法普遍較好 |
 | 8 | Basic portfolio weighting | 在相同資訊、再平衡、成本及樣本外條件下，比較equal、market-cap、signal-based及inverse-volatility weights | 不提前取代後續最佳化與風險配置方法 |
 | 9 | Instructor travel | 無正式授課或必要報告 | 不新增必做活動 |
-| 10 | Report 1 | 全員報告quantitative-trading solution及初步weighting approach | 本 prompt 直接略過，不建立或改寫報告教材 |
+| 10 | Report 1 | 全員報告至少一個prediction model、透明prediction baseline、quantitative-trading solution及初步weighting approach | 本 prompt 直接略過，不建立或改寫報告教材 |
 | 11 | Mean–variance weighting | expected return、covariance、minimum variance、mean–variance、maximum-Sharpe與weight instability | 不把in-sample frontier當成out-of-sample證據 |
 | 12 | Covariance and risk-based weighting | sample、shrinkage、factor與rolling covariance，以及equal risk contribution、risk budgeting與hierarchical risk parity | 不用不同資料或限制比較方法 |
 | 13 | Downside risk and minimum-CVaR | VaR、CVaR、scenario-based optimization、regularization、constraints、turnover limits、cost penalties與robust portfolio decisions | 不把scenario estimate當成最大可能損失或未來保證 |
@@ -238,7 +238,7 @@ support不得變成第二份完整main，也不得包含教師講稿、完整練
 逐週檢查：
 
 - 每個learning objective至少有一段教學、一個範例及一個可保存的個人證據。
-- Week 2–8的證據能逐步支持Report 1，而不是在Week 10才第一次要求。
+- Week 2–8的證據能逐步支持Report 1；Week 5必須提供以歷史資料估計prediction model、和透明baseline在共同target dates比較的必做練習，而不是在Week 10才第一次要求。
 - Weeks 8、11–13的證據能支持Report 2的方法選擇、數學定義與初步實作。
 - Week 15能把Report 2 feedback轉為一個可追蹤修改，並建立相同frozen version供Weeks 16–17報告。
 - report weeks要求所有學生口頭參與，但不把同一團隊內容重複計分為個人技術成果。

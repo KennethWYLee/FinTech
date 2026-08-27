@@ -66,7 +66,7 @@ If no complete version is available by a report deadline, the team presents the 
 
 ## Presentation, comparison, and feedback
 
-All students or teams in the same report receive the same presentation and question time. The exact schedule is published after enrollment and team membership are known. Report 1 common data and settings are announced through the LMS by the start of Week 3. The final portfolio data, final period, costs, portfolio constraints, and required numerical settings are announced by the start of Week 11. Students are not evaluated against an unannounced setting.
+All students or teams in the same report receive the same presentation and question time. The exact schedule is published after enrollment and team membership are known. Report 1 common data, required prediction baseline, trading benchmarks, and settings are announced through the LMS by the start of Week 3. The final portfolio data, final period, costs, portfolio constraints, and required numerical settings are announced by the start of Week 11. Students are not evaluated against an unannounced setting.
 
 A required common setting is not changed after the relevant freeze. If a correction is necessary before the freeze and fewer than seven calendar days remain, all teams receive the same corrected specification and a revised deadline. If a correctness problem is discovered after the freeze, the instructor preserves the affected evidence, documents the problem, and applies the same remedy to every team.
 

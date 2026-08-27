@@ -30,8 +30,8 @@
 - 本課為EMI課程；正式課綱的每週簡述使用完整中英文。逐週學生教材的英文比例與中文
   輔助方式尚待核定，不自行把課綱的雙語格式視為所有教材的固定語言比例。
 - 三次報告的正文、簡報與口頭說明使用英文；GenAI規範提供等義英文與中文版本。
-- 115-1規劃以量化交易為起點，並串接AI in FinTech、model uncertainty、
-  explainable AI、scenario generation、CVaR與data-driven/robust portfolio optimization。
+- 115-1規劃以AI量化交易為起點，依序串接金融資料、回測、績效評估、基本與最佳化
+  weighting methods、共變異數與風險式配置、CVaR，以及由實證限制發展研究問題。
 - 本課以三次報告逐步發展學生成果：Week 10 quantitative trading report、
   Week 14 weighting method progress report，以及 Week 16–17 final report。
   Week 9 因教師出國不排課或報告。各組提出方法、英文報告與口頭問答，
@@ -43,7 +43,6 @@
 - quantitative trading：量化交易。
 - backtest：回測；look-ahead bias：前視偏誤；information leakage：資訊洩漏。
 - out-of-sample evaluation：樣本外評估；不用「未來表現保證」之類超出證據的表述。
-- model multiplicity：模型多重性；variable-importance uncertainty：變數重要性不確定性。
 - scenario budget：情境預算；minimum-CVaR portfolio：最低CVaR投資組合。
 - peer ranking：同儕排序；它是有證據的比較活動，不是以人氣決定組別成績。
 
@@ -54,6 +53,10 @@
 - Report 2 — Weighting Method Progress Report：15%，安排於 Week 14。
 - Report 3 — Final Report：30%，Week 15 提交相同 frozen version，Week 16–17 分兩週報告。
 - 本課不再安排兩次 individual technical examinations。
+- Report 1必須包含至少一個以歷史資料估計的prediction model，並在相同target dates與透明的
+  rule-based或statistical prediction baseline比較。Week 5的least-squares model已提供最低必要
+  練習；學生可使用另一個有完整紀錄的模型，但模型複雜度本身不增加分數。Prediction quality
+  與扣除成本後的portfolio performance必須分開呈現。
 - 各評量的總配分、團隊與個人責任、可觀察評分判準、版本凍結及同儕排序證據規則，分別以
   `course/01/week1_support.md`、`course/10/`、`course/14/`、`course/16/`與
   `course/17/`中的學生版文件為維護來源；2026-08-27版本為教師核定前的試行草案。
@@ -91,9 +94,9 @@
 - Week 2核心計算使用教材內明確標示的人工資料，避免在共同市場、資產、期間、欄位
   定義與發布權利核定前假裝使用真實市場證據。
 - `course/resources/notebooks/00_Colab_課前環境與資料檢查.ipynb`只作Week 2
-  環境、人工價格、報酬與圖形準備，不包含線上下載、特徵、target、訊號、模型或回測；
-  舊版`course/resources/notebooks/01_TypeB_AI量化交易_問題設定與資料初探.ipynb`
-  跨越多個現行週次，不是Week 2必做核心教材。
+  環境、人工價格、報酬與圖形準備，不包含線上下載、特徵、target、訊號、模型或回測。
+  檔名以`01_TypeB`至`04_TypeB`開頭的四份較早選用notebook均跨越多個現行週次，
+  不是目前任何一週的必做核心教材；其檔首與`course/README.md`須持續清楚標示這項界線。
 - Weeks 2–8、11–13、15與18的`main`原有連續120分鐘教學安排；依2026-08-23決定，這12週
   的正式目標均改為150分鐘，且已逐週獨立完成改寫與重新驗證。教材內的
   人工資料只用於計算、回測與最佳化機制練習，不作真實市場實證。各週`support`保存準備、
@@ -180,6 +183,12 @@
 - 以上結果只代表目前人工資料、程式版本及已定義檢查內沒有未解決的阻斷問題，不代表
   未核定的共同資料、正式Colab套件版本或真實市場結果已完成驗證，也不代表試行評分規則
   已獲教師核定。
+- 2026-08-27教師檢閱前檢查重新以獨立Python程序執行12份授課週`main`的61個Python區塊，
+  全部完成且未發生執行錯誤；五份公開notebook亦由第一格執行到最後一格。四份較早選用
+  notebook已補齊共152個cell ID，另加入中英文使用說明，修正後均通過notebook格式驗證及
+  完整執行。Repository首頁的Week 1舊路徑已同步為`course/01/`，全體追蹤中Markdown的
+  相對連結與程式碼圍欄重新檢查後未發現錯誤。這些檢查不代表較早選用notebook已改寫成
+  目前150分鐘週次教材，也不替代正式資料、環境及評量決定。
 
 ## 金融資料、回測與方法比較規則
 
@@ -244,14 +253,19 @@
 ## 待確認事項
 
 - [ ] 核定115-1正式課綱、逐週學生教材的授課語言比例與學生先備能力。
-- [ ] 選定Week 3開始使用的Report 1共同金融資料、資料字典、可公開範圍與取得方式。
+- [ ] 選定Week 3開始使用的Report 1共同金融資料、資料字典、資產、期間、頻率、成本、
+  prediction baseline、trading benchmarks、frozen test period、可公開範圍與取得方式。
 - [ ] 核定學生執行環境、套件版本、資料保存方式與notebook完成證據。
-- [ ] 定稿Problem 1的市場、資產、頻率、成本與frozen test period。
-- [ ] 定稿Problem 2的FF49期間、scenario budget、CVaR信心水準與投資限制。
+- [ ] 定稿Week 11前公布的final portfolio共同資料、development與final periods、required
+  baselines、rebalancing、transaction costs、portfolio constraints、risk measures及適用的
+  scenario與random-seed設定；不沿用已移除的FF49固定題目，除非教師重新核定。
+- [ ] 取得正式修課人數與分組數後，核定Weeks 10、14、16與17的報告順序及相同報告時間。
 - [ ] 教師核定完整試行評量規則，包括截止時間、工作量、文件與簡報上限、同儕排序權重、無準時版本的處理及回饋時點。
 - [ ] 選定核心papers、可存取版本與just-in-time reading order。
+- [ ] 決定四份較早`TypeB`選用notebook要繼續公開作跨週補充、改寫成現行週次notebook，
+  或只保留於內部來源；目前公開版本已標示不取代現行教材與評量規則。
 
-## GitHub 整理狀態（2026-08-23）
+## GitHub 整理狀態（截至2026-08-27）
 
 - 已建立獨立 Git repository，`main` 已推送第一個 commit 至 GitHub。
 - Repository remote：`https://github.com/KennethWYLee/FinTech.git`。
@@ -262,6 +276,7 @@
 - 調整後的三次報告時程與18週完整中英文課綱已由 commit `e635191` 推送。
 - 每週教材資料夾已由 `week1` 至 `week18` 改為 `01` 至 `18`，並由 commit `dd38014` 推送。
 - 通用教材規則與本課專屬規則的分工已由 commit `26f3e5b` 推送。
+- 完整評量設計與40%、15%、15%、30%最新配分已由 commit `bf085d7` 推送。
 - `PROJECT.md` 同時記錄本課程資料夾、固定決策、權威來源、GitHub 狀態與公開限制，不再另外維護 `COURSES.md`。
 - `internal_materials/` 受 `.gitignore` 排除，尚未加入 Git 追蹤或推送；EMI 行政檔、papers、答案與資料檔待檢查後逐項決定。
 - EMI 申請及個人文件不得放入 `course/`、不得 stage，也不得推送至 GitHub。

@@ -10,6 +10,7 @@ Before submission, confirm that the following items agree across the report, cod
 - return definition and treatment of missing values or differences in market calendars;
 - observation, signal, decision, execution, and evaluation times;
 - training, validation, and frozen test periods;
+- prediction target, features, fitted model, transparent prediction baseline, training rule, update schedule, and common-date predictive measures;
 - model, signal, position, rebalancing, and terminal-position rules;
 - units used for transaction costs, turnover calculation, and execution delay;
 - benchmarks, metrics, uncertainty checks, and failed cases;
@@ -18,7 +19,9 @@ Before submission, confirm that the following items agree across the report, cod
 
 The presentation should use only the figures or tables needed to support its main claims. Every item must identify the period, frequency, units, cost treatment, and comparison method when these details affect interpretation. Provide traceable links to the submitted report and code.
 
-The required common result table uses one row for the proposed strategy and one row for every required benchmark. It reports the common period, number of return observations, cumulative and annualized return after costs, annualized volatility, the stated Sharpe and Sortino ratio conventions, maximum drawdown, drawdown duration, total one-way turnover, total cost deduction, and the count of failed or unavailable decisions. Add a predictive measure only when the approach actually produces a prediction. Every row must use the same dates and metric definitions.
+The required common financial-result table uses one row for the proposed strategy and one row for every required trading benchmark. It reports the common period, number of return observations, cumulative and annualized return after costs, annualized volatility, the stated Sharpe and Sortino ratio conventions, maximum drawdown, drawdown duration, total one-way turnover, total cost deduction, and the count of failed or unavailable decisions. Every row must use the same dates and metric definitions.
+
+A separate prediction-result table must compare the required prediction model with the announced transparent rule-based or statistical prediction baseline. It reports at least one prespecified predictive measure on identical target dates, the number of observations, and any failed or unavailable predictions. Prediction results do not replace the common financial-result table and do not by themselves establish investment value.
 
 ## Individual comparison record
 
@@ -29,7 +32,7 @@ Team being reviewed: ____________________
 | Comparison dimension | Weight | Rating from 0 to 10 | Traceable evidence and limitation |
 | --- | ---: | ---: | --- |
 | Valid data timing and information boundary | 25% |  |  |
-| Reproducible trading and portfolio accounting | 20% |  |  |
+| Reproducible prediction, trading, and portfolio accounting | 20% |  |  |
 | Financial performance after costs relative to the common benchmarks | 20% |  |  |
 | Risk, drawdown, stability, and failed conditions | 20% |  |  |
 | Conclusions, uncertainty, and limitations | 15% |  |  |

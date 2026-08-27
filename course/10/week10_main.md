@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Report 1 demonstrates that the team can turn a financial question into a reproducible quantitative trading analysis. Every student must explain at least one empirical result and answer questions about its validity and financial interpretation.
+Report 1 demonstrates that the team can turn a financial question into a reproducible quantitative trading analysis that includes at least one prediction model estimated from historical data. Every student must explain at least one empirical result and answer questions about its validity and financial interpretation. A more complex model does not receive credit merely for being more complex.
 
 ## Required team submission
 
@@ -14,13 +14,15 @@ The submission must show:
 
 1. the financial question and why it matters;
 2. the assets, fields, dates, frequency, return definition, and permitted information at each decision time;
-3. the features or rules, model if used, trading signal, position rule, execution assumption, and holding period;
-4. the fixed, rolling, expanding, or walk-forward evaluation design and the model, signal, and rebalancing update rules;
-5. transaction costs, turnover, portfolio constraints, and failure behavior;
-6. comparison with the required common benchmarks under the same dates, information, execution, and cost assumptions;
-7. predictive results when applicable and financial results after costs, including return, risk, drawdown, and turnover measures;
-8. uncertainty, possible leakage or overfitting, implementation limitations, and claims that remain unsupported; and
-9. an initial, clearly defined method for converting signals into portfolio weights.
+3. at least one prediction model estimated from historical data, including its target, features, training rule, prediction timing, and update schedule;
+4. comparison of the required model with a transparent rule-based or statistical prediction baseline on the same target dates;
+5. the conversion of predictions into a trading signal, position rule, execution assumption, and holding period;
+6. the fixed, rolling, expanding, or walk-forward evaluation design and the model, signal, and rebalancing update rules;
+7. transaction costs, turnover, portfolio constraints, and failure behavior;
+8. comparison with the required common trading benchmarks under the same dates, information, execution, and cost assumptions;
+9. predictive results and financial results after costs, including return, risk, drawdown, and turnover measures, with prediction quality kept distinct from portfolio performance;
+10. uncertainty, possible leakage or overfitting, implementation limitations, and claims that remain unsupported; and
+11. an initial, clearly defined method for converting signals into portfolio weights.
 
 The common dataset and required numerical settings are announced through the LMS by the start of Week 3. Teams must use those settings for the common comparison and may separately label an additional analysis.
 
@@ -35,9 +37,9 @@ For a 150-minute class, 10 minutes are used to confirm the common conditions, 12
 | Component | Points | Observable criteria |
 | --- | ---: | --- |
 | Team submission | 2 | The financial question, data, return definition, dates, and information boundary are precise and consistent. |
-| Team submission | 2 | Signals, positions, trades, execution, costs, and portfolio returns are correctly connected. |
-| Team submission | 2 | Code, dependencies, inputs, checks, and results can be traced and rerun. |
-| Team submission | 1 | Benchmarks and performance measures use the required common comparison conditions. |
+| Team submission | 2 | The required prediction model and transparent prediction baseline have defined targets, inputs, chronological training, update rules, and common-date measures. |
+| Team submission | 2 | Predictions, signals, positions, trades, execution, costs, and portfolio returns are correctly connected. |
+| Team submission | 1 | Code, dependencies, inputs, checks, results, and required common benchmarks can be traced and rerun. |
 | Team submission | 1 | Conclusions follow from the evidence and disclose uncertainty, failures, and limitations. |
 | Individual presentation and oral responses | 1 | The student gives a clear financial explanation of the assigned work. |
 | Individual presentation and oral responses | 2 | The student connects a stated result to a specific table, figure, calculation, or execution record. |

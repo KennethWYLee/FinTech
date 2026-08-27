@@ -223,7 +223,7 @@ Expected evidence: 51 rows have different positions; next-period net final wealt
 
 Cash tests whether taking risk added value under the zero cash-return assumption. Buy-and-hold tests whether timing improved on continuous exposure to the same asset. A simple rule benchmark tests whether added complexity improves on a transparent alternative.
 
-The five-session artificial signal below is itself a transparent rule, not an AI result. The same accounting can accept an AI-generated signal, but a Report 1 comparison must identify the actual candidate and keep its data, dates, costs, and execution assumptions aligned with the benchmarks.
+The five-session artificial signal below is itself a transparent rule, not a fitted prediction-model result. For Report 1, the candidate signal must be linked to the team's required prediction model, while a transparent rule or statistical prediction serves as a prediction baseline. The trading comparison must identify each candidate and keep its data, dates, costs, and execution assumptions aligned with the required trading benchmarks.
 
 ```python
 cost_data["buy_hold_net_return"] = (

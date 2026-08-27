@@ -23,6 +23,8 @@ The course begins by establishing the relationship among financial data, trading
 
 Students then construct quantitative-trading backtests. The course covers signal and position rules, holding periods, rolling windows, expanding windows, walk-forward evaluation, model retraining, signal updating, rebalancing frequency, transaction costs, bid-ask spreads, slippage, turnover, and execution delay. Simple financial rules and machine-learning predictions are evaluated under the same backtesting conditions.
 
+Report 1 must include at least one prediction model estimated from historical data and compare it with a transparent rule-based or statistical prediction baseline on the same target dates. Students may use the interpretable model practiced in Week 5 or another documented model. Model complexity does not by itself earn a higher score; the assessed evidence is chronological validity, reproducibility, financial interpretation, and whether prediction results lead to a defensible portfolio decision after costs.
+
 After constructing a valid backtest, students learn how to evaluate investment performance. The course considers returns after costs, annualized return, volatility, the Sharpe ratio, the Sortino ratio, maximum drawdown, drawdown duration, turnover, benchmark comparison, market-period sensitivity, and statistical uncertainty. Students also examine overfitting, repeated model selection, multiple testing, and data snooping. Predictive accuracy is treated as model evidence rather than as sufficient evidence of investment value.
 
 The second half of the course focuses on portfolio weighting. Students examine equal weighting, market-capitalization weighting, weights based on normalized trading signals, inverse-volatility weighting, minimum-variance portfolios, mean-variance optimization, maximum-Sharpe portfolios, equal risk contribution, risk budgeting, hierarchical risk parity, and minimum-CVaR portfolios. Covariance estimation, estimation error, portfolio concentration, downside risk, turnover constraints, transaction-cost penalties, and robust optimization are introduced when they are relevant to the weighting methods being studied.
@@ -57,9 +59,9 @@ English: Week 4 introduces the construction of a reproducible backtest by conver
 
 ## 第五週
 
-English: Week 5 compares fixed train-test splits, rolling windows, expanding windows, and walk-forward evaluation. The class also distinguishes model retraining, signal updating, and portfolio rebalancing and compares alternative update frequencies and rules.
+English: Week 5 implements an interpretable prediction model, compares it with a transparent prediction baseline, and studies fixed train-test splits, rolling windows, expanding windows, and walk-forward evaluation. The class also distinguishes model retraining, signal updating, and portfolio rebalancing and compares alternative update frequencies and rules.
 
-中文：第五週比較固定訓練測試切割、滾動視窗、擴展視窗與逐步向前評估，並區分模型重新訓練、訊號更新及投資組合再平衡，以及比較不同的更新頻率與規則。
+中文：第五週實作一個可解釋的預測模型，將其與透明的預測基準比較，並探討固定訓練測試切割、滾動視窗、擴展視窗與逐步向前評估。課程也區分模型重新訓練、訊號更新及投資組合再平衡，並比較不同的更新頻率與規則。
 
 ## 第六週
 
@@ -87,9 +89,9 @@ English: No class or required report is scheduled in Week 9 because of instructo
 
 ## 第十週
 
-English: Week 10 contains Report 1. Every student presents the team's quantitative-trading strategy, reproducible backtesting evidence, financial performance, limitations, and initial approach to converting trading signals into portfolio weights.
+English: Week 10 contains Report 1. Every student presents the team's required prediction model, transparent prediction baseline, quantitative-trading strategy, reproducible backtesting evidence, financial performance, limitations, and initial approach to converting trading signals into portfolio weights.
 
-中文：第十週進行第一次報告。每位學生說明所屬團隊的量化交易策略、可重現的回測證據、財務績效、研究限制，以及將交易訊號轉換為投資組合權重的初步方法。
+中文：第十週進行第一次報告。每位學生說明所屬團隊必要的預測模型、透明的預測基準、量化交易策略、可重現的回測證據、財務績效、研究限制，以及將交易訊號轉換為投資組合權重的初步方法。
 
 ## 第十一週
 
@@ -151,7 +153,7 @@ English: Week 18 connects the semester's findings with advanced issues such as t
 
 - Report 1 — Quantitative Trading Report: 15%
 
-  - Team strategy, reproducible backtest, performance evidence, and written report: 8%
+  - Team prediction model, strategy, reproducible backtest, performance evidence, and written report: 8%
 
   - Individual presentation and oral responses: 4%
 

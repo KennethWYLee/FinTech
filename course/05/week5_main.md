@@ -2,7 +2,7 @@
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will generate walk-forward predictions with expanding and rolling estimation windows, convert them into daily signals, and compare daily with periodic portfolio updates. Each generated prediction will record the model version, number of training rows, last training feature date, and last training outcome date used.
+By the end of this 150-minute class, you will estimate an interpretable prediction model from historical data, compare it with a transparent zero-prediction baseline, generate walk-forward predictions with expanding and rolling estimation windows, convert them into daily signals, and compare daily with periodic portfolio updates. Each generated prediction will record the model version, number of training rows, last training feature date, and last training outcome date used.
 
 ## Teaching Objectives
 
@@ -10,13 +10,13 @@ After completing this class, you should be able to:
 
 - distinguish fixed, rolling, expanding, and walk-forward evaluation;
 - explain why a random split can violate the financial decision sequence;
-- fit a simple model using only outcomes known at each historical prediction time;
+- fit a simple model using only outcomes known at each historical prediction time and compare it with a transparent prediction baseline on common dates;
 - distinguish model retraining, signal recalculation, and portfolio rebalancing; and
 - compare update rules without reusing a final test period for repeated selection.
 
 ## Before you begin
 
-Bring the Week 3 timing record and Week 4 position alignment. Use `numpy` and `pandas`. Week 4 fixed the signal-to-position lag; this lesson keeps that lag while changing when a model is refitted, a signal is recalculated, and a position may change. Week 6 will attach costs to the resulting position changes. The simple least-squares model exposes the time sequence; it is not evidence of predictive ability.
+Bring the Week 3 timing record and Week 4 position alignment. Use `numpy` and `pandas`. Week 4 fixed the signal-to-position lag; this lesson keeps that lag while changing when a model is refitted, a signal is recalculated, and a position may change. Week 6 will attach costs to the resulting position changes. The simple least-squares model exposes the time sequence and provides the minimum prediction-model practice required for Report 1; it is not evidence of predictive ability. A team may use this model or another documented prediction model, but greater complexity does not by itself provide stronger financial evidence.
 
 ## 150-minute learning sequence
 
@@ -280,7 +280,7 @@ Expected evidence names the choices permitted during validation and freezes them
 
 ## 7. Required evidence and completion
 
-The Week 5 timing records, common-date comparisons, and separated update schedules provide evidence about estimation and updating for the [Report 1 criteria](../10/week10_main.md). This lesson supplies evidence for those criteria; it does not change the report weights or add another criterion.
+The Week 5 fitted model, transparent prediction baseline, timing records, common-date comparisons, and separated update schedules provide the required model evidence for the [Report 1 criteria](../10/week10_main.md). This lesson supplies evidence for those criteria; it does not change the report weights or add another criterion.
 
 Submit the window diagram, modeling-table audit, expanding and rolling predictions, common-date forecast comparison, model-version evidence, the summary for updates permitted every fifth row, the independent comparison for updates permitted every tenth row, protected-period rule, and the design record in [Week 5 Support](week5_support.md#evaluation-design-record).
 

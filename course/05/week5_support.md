@@ -56,7 +56,7 @@ Choices frozen before final test:
 
 ## Supporting resources
 
-The older [prediction notebook](../resources/notebooks/02_TypeB_金融資料處理_特徵工程與機器學習預測.ipynb) and [backtesting notebook](../resources/notebooks/03_TypeB_AI交易訊號_策略設計與回測.ipynb) are optional examples, not the required Week 5 sequence.
+The least-squares model in Week 5 main provides the required prediction-model practice for Report 1. The older [prediction notebook](../resources/notebooks/02_TypeB_金融資料處理_特徵工程與機器學習預測.ipynb) and [backtesting notebook](../resources/notebooks/03_TypeB_AI交易訊號_策略設計與回測.ipynb) show optional alternatives but are not the required Week 5 sequence. Using a more complex model does not by itself increase the report score.
 
 ## Official software references
 
