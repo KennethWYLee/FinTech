@@ -1,112 +1,172 @@
 # Week 2 — Support
 
-This file contains preparation, the detailed data dictionary, a processing-record template, terminology support, troubleshooting, and optional extensions for [Week 2 main](week2_main.md). The required calculations and activities remain in the main file.
+This file contains preparation, records, terminology, detailed checks, troubleshooting, optional extensions, and sources for [Week 2 main](week2_main.md). The twenty teaching issues, four required practice issues, formulas, examples, and required evidence remain in the main file.
 
 ## Before class
 
-Use Google Colab or a local Jupyter environment with Python, `numpy`, and `pandas`. The linked preparation notebook also requires `matplotlib` for its figure check. If you need to check the environment, run the [Colab environment and data check](../resources/notebooks/00_Colab_課前環境與資料檢查.ipynb).
+Use Google Colab or a local Jupyter environment with Python, `numpy`, and `pandas`. The preparation notebook also uses `matplotlib` for a figure check. If needed, run the [Colab environment and data check](../resources/notebooks/00_Colab_課前環境與資料檢查.ipynb).
 
-The preparation notebook deliberately uses fixed artificial data and does not offer an online download. An online download is not part of the required Week 2 evidence because the common market, asset, period, field definition, and redistribution conditions have not yet been specified in the course materials.
+The preparation notebook uses fixed artificial data and does not download market data. Before class, confirm that you can:
 
-Before class, confirm that you can:
+- create and run a notebook from its first cell to its last cell;
+- import `numpy` and `pandas`;
+- display a `DataFrame` and its `dtypes`;
+- save or export the notebook with visible outputs; and
+- preserve the complete error message if an environment check fails.
 
-- create and run a notebook from the first cell to the last cell;
-- import `numpy`, `pandas`, and `matplotlib` in the preparation notebook;
-- save or export the notebook with its visible outputs; and
-- preserve an error message or screenshot if the environment check fails.
+The common market, assets, period, provider fields, currency, and redistribution conditions remain pending. Do not substitute an online dataset into required Week 2 work unless the instructor publishes those decisions.
 
-## Data dictionary
+## Data dictionary for the worked example
 
-The Week 2 main file uses a small artificial table. These field descriptions explain how each column is used in the exercise; they are not a substitute for a real provider's documentation.
+The descriptions below apply only to the artificial worked example. A real provider's documentation replaces them when real data are approved.
 
-| Field | Meaning in the Week 2 artificial data | Required check |
+| Field | Meaning in the artificial example | Required check |
 |---|---|---|
-| `Date` | Trading-session label in `YYYY-MM-DD` format | Parse to `DatetimeIndex`; verify uniqueness, ascending order, and no weekend rows under the artificial-data convention |
-| `Open` | First artificial transaction price for the session | Must be positive and lie between `Low` and `High` |
-| `High` | Highest artificial price for the session | Must be positive and at least as large as `Open` and `Close` |
-| `Low` | Lowest artificial price for the session | Must be positive and no larger than `Open` and `Close` |
-| `Close` | Final artificial transaction price for the session | Must be positive and lie between `Low` and `High` |
-| `Adj_Close` | Artificial analysis price for Asset A | Must be positive and nonmissing; no corporate action occurs in this artificial sample |
-| `Volume` | Artificial number of units traded during the session | Must be nonnegative; not used to calculate Week 2 returns |
-| `Asset_B_Adj_Close` | Artificial analysis price for Asset B | Must be positive and nonmissing; used only for the fixed-weight portfolio-return exercise |
+| `Date` | Artificial session-date label in `YYYY-MM-DD` format | Parse strictly; verify uniqueness and ascending order; do not infer a real exchange or time zone |
+| `Open` | First artificial price included in the session | Positive and between `Low` and `High` |
+| `High` | Largest artificial included price | Positive and not below `Open`, `Close`, or `Low` |
+| `Low` | Smallest artificial included price | Positive and not above `Open`, `Close`, or `High` |
+| `Close` | Final artificial included price | Positive and between `Low` and `High` |
+| `Analysis_Price_A` | Artificial price used to calculate Asset A returns | Positive, nonmissing, and consistently defined across rows |
+| `Volume` | Artificial number of traded units included in the session | Nonnegative; unit must be documented before real-data use |
+| `Analysis_Price_B` | Artificial price used to calculate Asset B returns | Positive, nonmissing, and aligned to the same artificial session dates |
 
-For real data, the meaning of an adjusted-price field is provider-specific. Record the provider's exact definition rather than copying the Week 2 artificial-data description.
+The worked example contains no split or cash dividend. Corporate-action calculations in Issues 6–7 and Practice issue 1 are separate artificial cases.
 
 ## Data-processing record
 
-Complete this template using facts visible in your notebook. Do not write `none` unless you actually checked the item.
+Complete the record with facts visible in the source or notebook. Use `pending` when a required fact is not yet known. Do not write `none` unless the item was checked and none was found.
 
 ```text
-Data origin:
+Provider and dataset:
+Retrieval date and query or file identifier:
+Redistribution status:
 Artificial or real:
+Asset identifier:
+Asset name and security type:
+Market or venue:
+Currency and price unit:
 Date range:
+Timestamp meaning and time zone:
 Observation frequency:
-Price field used for returns:
-Corporate-action definition checked:
-Reason for selecting that field:
-Return definitions:
-Date parsing rule:
-Duplicate-date result and action:
+OHLCV session definition:
+Price or return field selected:
+Provider definition of that field:
+Corporate actions and distributions included:
+Return formulas and reporting units:
+Date parsing and sorting rule:
+Duplicate result and action:
 Missing-value result and action:
-Trading-calendar assumption:
-Frequency-conversion rule:
+Invalid or extreme-value result and action:
+Trading-calendar evidence:
+Frequency-conversion rule by field:
+Multi-asset alignment rule:
 Portfolio-weight assumption:
 Automated checks executed:
-Files or outputs preserved:
+Files and outputs preserved:
 Claim supported by this evidence:
 Claim not supported by this evidence:
+Unresolved questions:
 ```
+
+## Required audit checks
+
+Preserve the output of every applicable check. A passed assertion does not replace the source record or financial interpretation.
+
+### Identity and metadata
+
+- Each asset has an identifier, name or artificial label, security type, market, and currency entry.
+- Provider, dataset, retrieval information, and redistribution status are present.
+- Every field has a definition and unit.
+- Artificial labels are not presented as real assets or markets.
+
+### Dates and intervals
+
+- Dates parse under an explicit format.
+- The index is unique and sorted before returns are calculated.
+- Timestamp meaning and time zone are recorded or explicitly pending.
+- Calendar gaps are classified using market evidence rather than weekday assumptions alone.
+- Multi-asset returns share common start and end boundaries.
+
+### Values and corporate actions
+
+- Prices required by the Week 2 formulas are finite and positive.
+- Volume is nonnegative and its unit is known or pending.
+- OHLC range relations are checked.
+- Missing, repeated, stale, or extreme values remain visible until a documented decision is made.
+- Splits, dividends, and adjusted fields are not counted twice.
+
+### Returns and aggregation
+
+- The first return remains missing.
+- Simple and log returns reconcile within numerical tolerance.
+- Compounded simple return agrees with the endpoint ratio when the assumptions permit that identity.
+- The geometric mean reproduces terminal wealth over the same nonmissing periods.
+- Frequency conversion uses an aggregation appropriate to each field.
+- Portfolio weights are finite, nonnegative, sum to one, and multiply same-interval asset returns.
 
 ## Terminology support
 
-| Term | Meaning in Week 2 |
+| Term | Meaning used in Week 2 |
 |---|---|
-| price level | An asset value at one observation time |
-| simple return | Relative price change, $P_t/P_{t-1}-1$ |
-| log return | Log price change, $\ln(P_t/P_{t-1})$ |
-| cumulative return | Compounded change over consecutive periods |
-| wealth index | Growth of one initial unit through a return sequence |
-| adjusted price | A provider-defined price series adjusted for specified events |
-| trading calendar | The sessions on which a particular market can trade |
-| data frequency | The interval represented by consecutive observations |
-| portfolio return | Weighted sum of asset returns for the same holding interval |
+| price level | A price observation with an asset, time, field, currency, and unit |
+| price return | Relative price change over a stated holding interval |
+| holding-period return | Return over one stated interval, including the distributions explicitly included by its convention |
+| simple return | $P_t/P_{t-1}-1$ for a consistently defined price series |
+| log return | $\ln(P_t/P_{t-1})$ for positive prices |
+| cumulative return | Compounded change across consecutive holding intervals |
+| wealth index | Growth of one initial unit under the stated return sequence |
+| arithmetic mean return | Sum of observed returns divided by their count |
+| geometric mean return | Constant per-period return that reproduces the compounded terminal wealth |
+| adjusted price | Provider-defined price series adjusted for specified events |
+| total-return series | Provider-defined series that includes specified distributions under a stated convention |
+| trading calendar | The sessions and special schedules defined for a particular market |
+| observation frequency | Interval or sampling rule represented by consecutive observations |
+| common holding interval | Shared start and end boundaries for returns being combined |
+| portfolio return | Weighted sum of same-interval asset returns under stated weights |
 
 ## Troubleshooting
 
-| Symptom | First check | Action |
+| Symptom | First check | Safe next action |
 |---|---|---|
-| `ModuleNotFoundError` | Identify the missing package in the error | Install only that package in the current environment, restart if required, and rerun from the first cell |
-| `ValueError` while creating the DataFrame | Compare values per record with the number of column names | Correct the mismatched record before any calculation |
-| Date index remains `object` | Run `prices.index.dtype` and inspect the date-conversion cell | Use `pd.to_datetime` before setting and sorting the index |
-| `KeyError: 'Adj_Close'` | Print `prices.columns.tolist()` | Use the exact column name; do not silently switch to another price field |
-| First return is `NaN` | Check whether an earlier price exists | Keep it missing for return analysis; it is expected |
-| Unexpected zero return beside a missing price | Check whether a fill operation occurred before `pct_change` | Remove the automatic fill and document the missing-value decision |
-| Weekly result is empty or unexpected | Verify a `DatetimeIndex`, sorted dates, and at least two weekly endpoints | Repair the index or extend the artificial sample; do not invent observations |
-| Portfolio result appears on the first date | Inspect `sum(..., min_count=...)` | Require all asset returns before calculating the portfolio return |
-| Assertion fails | Read the variables used in that assertion | Stop and diagnose the calculation; do not delete the assertion merely to continue |
+| `ModuleNotFoundError` | Read the missing package name | Install only the required package in the current environment, restart if needed, and rerun from the first cell |
+| `ValueError` while creating a `DataFrame` | Compare values per record with the column count | Correct the source record before calculating |
+| Date index remains `object` | Display `dtypes` and the parsing cell | Use `pd.to_datetime` with the expected format and `errors="raise"` |
+| Duplicate timestamp | Display all rows sharing that timestamp and their identifiers | Preserve them and investigate the source key before selecting or removing a row |
+| First return is `NaN` | Check whether an earlier price exists | Keep it missing in the return series |
+| Zero return appears beside a missing price | Inspect fills before `pct_change` | Remove automatic filling and document the missing-value decision |
+| Log return is infinite or missing unexpectedly | Display the two prices in the ratio | Stop on zero, negative, missing, or misaligned prices |
+| Simple and log returns do not reconcile | Check order, alignment, and units | Recalculate both from the same two price observations |
+| Wealth endpoint identity fails | Compare first price, last price, and included returns | Repair interval or compounding logic before interpreting the result |
+| Weekly return differs from compounded daily return | List both weekly endpoints and included daily intervals | Align endpoints and use last observed analysis prices before calculating returns |
+| Weekly OHLCV looks implausible | Inspect the aggregation used for each field | Use first, maximum, minimum, last, or sum only when it matches the field definition |
+| A portfolio return appears on the first price date | Inspect component returns and `min_count` | Require every component return; do not treat missing as zero |
+| Assets have different return horizons | Display start and end prices for each component | Align common price endpoints first and then recalculate returns |
+| Return is 100 times too large | Inspect decimal-to-percent conversion | Convert to percent once, only for reporting |
+| Assertion fails | Read the variables and rows used by that assertion | Preserve the failure and diagnose the data or formula; do not delete the assertion |
 
 ## Optional extensions
 
 These activities are not required for Week 2 completion:
 
-- Change one artificial adjusted price and predict which simple returns, log returns, weekly return, and wealth-index values must change before rerunning the code.
-- Introduce one exact duplicated row and compare `duplicated()` with `index.is_unique` after restoring the date index.
-- Compare the compounded return with the arithmetic sum after increasing the artificial daily volatility.
-- Add a third artificial asset and verify that the portfolio weights sum to one before calculating its one-period return.
-- Create a normalized-price chart for both artificial assets, starting each at 1, and explain why this comparison is different from comparing raw price levels.
+- Add a third artificial asset in another currency and list the additional foreign-exchange information needed before forming one investor-currency portfolio return.
+- Compare weekly OHLCV aggregation with an intentionally incorrect column-wise mean and explain every affected field.
+- Introduce an extreme artificial return and prepare two competing explanations: a real event and a data or corporate-action error. State the evidence needed to distinguish them.
+- Compare a price-only wealth index with a separately specified dividend-inclusive artificial return series without treating either as a provider's adjusted field.
+- Create a normalized-price chart that starts each artificial asset at 1 and label the period, frequency, units, and artificial-data status.
 
 ## Official software references
 
-- [`pandas.to_datetime`](https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html) converts date-like inputs to pandas datetime objects.
-- [`pandas.Series.pct_change`](https://pandas.pydata.org/docs/reference/api/pandas.Series.pct_change.html) calculates fractional change; multiply by 100 only when expressing the result as a percentage.
-- [`pandas.DataFrame.resample`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.resample.html) performs time-series frequency conversion and requires a datetime-like index unless a datetime-like column is specified.
-- [`pandas.DataFrame.sort_index`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_index.html) sorts a DataFrame by its index.
-- [`numpy.log`](https://numpy.org/doc/stable/reference/generated/numpy.log.html) calculates the natural logarithm used in the log-return formula.
-- [`numpy.expm1`](https://numpy.org/doc/stable/reference/generated/numpy.expm1.html) calculates $\exp(x)-1$, which is used to check the relationship between log and simple returns.
+- [`pandas.to_datetime`](https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html) parses date-like values.
+- [`pandas.Series.pct_change`](https://pandas.pydata.org/docs/reference/api/pandas.Series.pct_change.html) calculates fractional change; its result is not automatically a percentage.
+- [`pandas.DataFrame.resample`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.resample.html) groups time-series observations by a stated frequency before an aggregation is applied.
+- [pandas time-series documentation](https://pandas.pydata.org/docs/user_guide/timeseries.html) documents time indexes, frequency conversion, and time-zone operations.
+- [`numpy.log`](https://numpy.org/doc/stable/reference/generated/numpy.log.html), [`numpy.log1p`](https://numpy.org/doc/stable/reference/generated/numpy.log1p.html), and [`numpy.expm1`](https://numpy.org/doc/stable/reference/generated/numpy.expm1.html) support the log-return reconciliation used in the lesson.
 
-## Financial references
+## Financial and market references
 
 - Campbell, J. Y., Lo, A. W., & MacKinlay, A. C. (1997). *The Econometrics of Financial Markets*. Princeton University Press, Chapter 1, “Prices, Returns, and Compounding,” pp. 9–13. [Publisher chapter record](https://doi.org/10.1515/9781400830213-005).
-- The U.S. Securities and Exchange Commission's [Investor.gov stock-split glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split) explains how a split changes the number of shares without changing shareholders' equity and provides a two-for-one numerical example.
+- The U.S. Securities and Exchange Commission's Investor.gov pages on [stock splits](https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split), [dividends](https://www.investor.gov/introduction-investing/investing-basics/glossary/dividend), and [investment returns](https://www.investor.gov/introduction-investing) support the basic split, distribution, and compound-growth distinctions used in the artificial examples.
+- Nasdaq's [trading schedule](https://www.nasdaq.com/market-activity/stock-market-holiday-schedule) illustrates that a real market calendar includes holidays, special closes, session hours, and a stated time zone. It is not the calendar used by the artificial Week 2 dates.
 
-The book supports standard return and time-series notation, and the Investor.gov page supports the split mechanism used in the artificial example. Software references document function behavior. None defines the corporate-action treatment or legal redistribution conditions of a market-data provider.
+The textbook supports standard return and compounding notation. Investor.gov supports the economic descriptions of splits and dividends. Nasdaq and pandas documentation support calendar and timestamp implementation examples. None defines the construction, correction history, or redistribution rights of a future course data provider; those items remain pending until the instructor approves a dataset.

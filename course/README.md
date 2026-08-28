@@ -1,6 +1,6 @@
 # Artificial Intelligence in FinTech
 
-This directory contains the public, student-facing materials for the 18-week course. The course progresses from financial data to backtesting, performance evaluation, and portfolio weighting.
+This directory contains the public, student-facing materials for the 18-week course. Before Report 1, the course progresses from financial data to technical indicators and features, signals, backtesting, machine-learning prediction, trading costs, performance evaluation, and basic portfolio weighting. The second half develops and evaluates more advanced weighting methods.
 
 ## Weekly materials
 
@@ -8,9 +8,9 @@ This directory contains the public, student-facing materials for the 18-week cou
 |---|---|
 | [Week 1](01/week1_main.md) | Course syllabus, learning outcomes, assessment, and semester expectations |
 | [Week 2](02/week2_main.md) | Financial prices, returns, and data frequency |
-| [Week 3](03/week3_main.md) | Point-in-time information, financial features, and simple signals |
+| [Week 3](03/week3_main.md) | Point-in-time information, technical indicators and features, and simple signals |
 | [Week 4](04/week4_main.md) | Construction of a basic backtest |
-| [Week 5](05/week5_main.md) | Time-series evaluation, model updating, and rebalancing |
+| [Week 5](05/week5_main.md) | Machine-learning prediction, time-series evaluation, model updating, and rebalancing |
 | [Week 6](06/week6_main.md) | Trading costs, execution assumptions, and benchmarks |
 | [Week 7](07/week7_main.md) | Performance evaluation and backtest auditing |
 | [Week 8](08/week8_main.md) | Basic portfolio-weighting methods |

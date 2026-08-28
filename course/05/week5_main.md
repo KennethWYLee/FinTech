@@ -1,8 +1,8 @@
-# Week 5 — Time-Series Evaluation, Updating, and Rebalancing
+# Week 5 — Machine-Learning Prediction and Time-Series Evaluation
 
 ## Observable outcome
 
-After completing Week 5, you will estimate an interpretable prediction model from historical data, compare it with a transparent zero-prediction baseline, generate walk-forward predictions with expanding and rolling estimation windows, convert them into daily signals, and compare daily with periodic portfolio updates. Each generated prediction will record the model version, number of training rows, last training feature date, and last training outcome date used.
+After completing Week 5, you will use an interpretable least-squares model to learn the chronological workflow required for machine-learning prediction in this course. You will estimate the model from historical data, compare it with a transparent zero-prediction baseline, generate walk-forward predictions with expanding and rolling estimation windows, convert them into daily signals, and compare daily with periodic portfolio updates. Each generated prediction will record the model version, number of training rows, last training feature date, and last training outcome date used.
 
 ## Teaching Objectives
 

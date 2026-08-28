@@ -1,14 +1,15 @@
-# Week 3 — Information Timing, Features, and Signals
+# Week 3 — Information Timing, Technical Indicators, Features, and Signals
 
 ## Observable outcome
 
-After completing Week 3, you will convert one financial hypothesis into a documented feature and a simple signal without using information that was unavailable at the decision time. You will preserve a time-boundary table, feature calculations, leakage checks, an alignment based on publication times, and a signal table. The artificial data demonstrate mechanics only and do not support a claim about a real market.
+After completing Week 3, you will calculate trailing momentum and rolling volatility, explain how an indicator becomes a feature in a stated analysis, and convert one financially motivated feature into a simple signal without using information that was unavailable at the decision time. You will preserve a time-boundary table, indicator and feature calculations, leakage checks, an alignment based on publication times, and a signal table. The artificial data demonstrate mechanics only and do not support a claim about a real market.
 
 ## Teaching Objectives
 
 After completing this class, you should be able to:
 
 - distinguish observation, publication, signal, decision, execution, and evaluation times;
+- calculate trailing momentum and rolling volatility and state the inputs, lookback, units, and first valid date of each;
 - translate a financial hypothesis into a measurable feature with a stated economic interpretation;
 - apply lags that respect when information becomes available;
 - align a separately published variable to decision times using only values already available;
@@ -17,7 +18,7 @@ After completing this class, you should be able to:
 
 ## Before you begin
 
-Complete Week 2 or be able to calculate returns from a sorted `DatetimeIndex`. Use a notebook with `numpy` and `pandas`. Week 2 supplied the return definitions used here; Week 4 will add positions, execution, and performance measurement after the timing in this lesson is correct. The detailed preparation and terminology are in [Week 3 Support](week3_support.md).
+Complete Week 2 or be able to calculate returns from a sorted `DatetimeIndex`. Use a notebook with `numpy` and `pandas`. Week 2 supplied the return definitions used here; Week 4 will add positions, execution, and backtest accounting after the timing in this lesson is correct. Performance evaluation begins in Week 7 after machine-learning prediction and trading costs have been added. The detailed preparation and terminology are in [Week 3 Support](week3_support.md).
 
 ## 1. Six different times
 
@@ -53,9 +54,11 @@ Your table is complete when no return used for evaluation occurs before the exec
 
 Expected evidence places observation no later than publication, publication no later than signal, signal no later than decision, decision no later than execution, and evaluation after execution. If a source has no separate publication delay, observation time and publication time may be the same. If the order fails, first identify the latest source value required by the feature and its actual availability time.
 
-## 2. Start with a hypothesis
+## 2. Start with a hypothesis before choosing an indicator or feature
 
-A feature is a measurable input. It becomes financially interpretable only when connected to a hypothesis. For this class, use the following working hypothesis for a later backtest:
+Technical indicators are numerical summaries constructed from historical market observations. When an indicator is used as an input to a decision rule or prediction model, it serves as a feature in that analysis. Neither label establishes predictive value or profitability.
+
+A feature becomes financially interpretable only when connected to a hypothesis. For this class, use the following working hypothesis for a later backtest:
 
 > In this artificial setting, observations with positive five-session momentum may have a higher mean next-session return than observations with nonpositive five-session momentum.
 
@@ -279,7 +282,7 @@ The Week 3 evidence supplies the timing and leakage documentation required by th
 Submit:
 
 1. the completed time-boundary table and an interpretation of the worked artificial timeline;
-2. the hypothesis–feature statement;
+2. the hypothesis–indicator–feature statement;
 3. the artificial input and feature tables, including an explanation of the first valid date for each trailing feature;
 4. the candidate-feature audit and preprocessing judgment;
 5. the signal rule and signal evidence;

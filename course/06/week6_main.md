@@ -16,7 +16,7 @@ After completing this class, you should be able to:
 
 ## Before you begin
 
-Bring the Week 4 ledger and Week 5 update rules. Week 4 supplies the gross-return ledger, and Week 5 supplies the update and rebalancing schedule. This class uses artificial data and assumes zero cash return. Week 7 will evaluate the resulting net returns and their uncertainty. See [Week 6 Support](week6_support.md) for the cost record and troubleshooting.
+Bring the Week 4 ledger and Week 5 update rules. Week 4 supplies the gross-return ledger, and Week 5 supplies the update and rebalancing schedule. This class uses artificial data and assumes zero cash return. The equal-weighted comparison is a fixed benchmark in this lesson, not a study of how to select portfolio weights; weighting methods begin in Week 8 after Week 7 evaluates the resulting net returns and their uncertainty. See [Week 6 Support](week6_support.md) for the cost record and troubleshooting.
 
 ## 1. Define the cost convention
 

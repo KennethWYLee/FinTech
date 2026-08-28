@@ -80,6 +80,7 @@ Check each candidate for:
 
 ## Financial research reference
 
+- Lo, A. W., Mamaysky, H., & Wang, J. (2000). [Foundations of Technical Analysis: Computational Algorithms, Statistical Inference, and Empirical Implementation](https://doi.org/10.1111/0022-1082.00265). *The Journal of Finance, 55*(4), 1705–1765.
 - Jegadeesh, N., & Titman, S. (1993). [Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1993.tb04702.x). *The Journal of Finance, 48*(1), 65–91.
 
-The paper supports established academic use of past-return momentum, but its assets, formation periods, holding periods, and evidence are not the Week 3 five-session artificial exercise. Software documentation explains operations. None of these sources determines when a value in another dataset was historically available; that requires the provider definition and publication record.
+Lo, Mamaysky, and Wang support established academic use of the term technical analysis and the systematic calculation of technical patterns. Jegadeesh and Titman support established academic study of past-return momentum. Their assets, definitions, formation periods, holding periods, and evidence are not the Week 3 five-session artificial exercise. Software documentation explains operations. None of these sources determines when a value in another dataset was historically available; that requires the provider definition and publication record.

@@ -1,11 +1,7 @@
 # This course archive is private by default. Add reviewed public files explicitly.
 /*
 !/.gitignore
-!/AGENTS.md
-!/CLAUDE.md
-!/PROJECT.md
 !/README.md
 !/COURSE_PLAN.md
-!/fintech_weekly_teaching_material_prompt.md
 !/course/
 !/course/**
