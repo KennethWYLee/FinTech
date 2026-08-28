@@ -7,7 +7,7 @@ This directory contains the public, student-facing materials for the 18-week cou
 | Week | Topic |
 |---|---|
 | [Week 1](01/week1_main.md) | Course syllabus, learning outcomes, assessment, and semester expectations |
-| [Week 2](02/week2_main.md) | Financial prices, returns, and data frequency |
+| [Week 2](02/week2_main.ipynb) | Financial prices, returns, and data frequency |
 | [Week 3](03/week3_main.md) | Point-in-time information, technical indicators and features, and simple signals |
 | [Week 4](04/week4_main.md) | Construction of a basic backtest |
 | [Week 5](05/week5_main.md) | Machine-learning prediction, time-series evaluation, model updating, and rebalancing |
@@ -25,6 +25,6 @@ This directory contains the public, student-facing materials for the 18-week cou
 | [Week 17](17/week17_main.md) | Final report, session 2 and comparison of other teams |
 | [Week 18](18/week18_main.md) | Advanced issues and research questions |
 
-The complete syllabus is [Week 1 main](01/week1_main.md), and the shared assessment, submission, workload, version, and accommodation rules are in [Week 1 support](01/week1_support.md). Each weekly directory contains exactly one main file and one support file. The bilingual [course statement and GenAI policy](GenAI使用規範.md) apply throughout the semester.
+The complete syllabus is [Week 1 main](01/week1_main.md), and the shared assessment, submission, workload, version, and accommodation rules are in [Week 1 support](01/week1_support.md). Weekly directories normally contain one main file and one support file; Week 2 instead uses one complete executable notebook containing both the main lesson and its supporting information. The bilingual [course statement and GenAI policy](GenAI使用規範.md) apply throughout the semester.
 
-The [Week 2 environment and data check](resources/notebooks/00_Colab_課前環境與資料檢查.ipynb) is the preparation notebook, and the [Week 2 executable lesson](resources/notebooks/05_Week2_Financial_Data_and_Returns.ipynb) provides the twenty worked issues and four independent practice issues. The four notebooks whose filenames begin with `01_TypeB` through `04_TypeB` preserve earlier optional examples that combine topics now assigned to several weeks; they do not replace the current weekly main files or define current assessment requirements. Instructor answers, grading records, administrative files, personal EMI documents, and material without verified distribution rights are not included.
+The [Week 2 environment and data check](resources/notebooks/00_Colab_課前環境與資料檢查.ipynb) is an optional preparation notebook. The [Week 2 main notebook](02/week2_main.ipynb) integrates preparation, required records, the complete lesson, twenty worked issues, four independent practice issues, troubleshooting, extensions, and sources. The four notebooks whose filenames begin with `01_TypeB` through `04_TypeB` preserve earlier optional examples that combine topics now assigned to several weeks; they do not replace the current weekly main files or define current assessment requirements. Instructor answers, grading records, administrative files, personal EMI documents, and material without verified distribution rights are not included.
