@@ -2,7 +2,7 @@
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will convert a gross backtest into a net backtest with explicit commissions, bid–ask spread, slippage, turnover, and execution delay. You will compare the same strategy with cash, buy-and-hold, and a simple rule under identical dates, construct a small equal-weighted comparison under a common asset universe, and report the tested cost level at which a comparison changes.
+After completing Week 6, you will convert a gross backtest into a net backtest with explicit commissions, bid–ask spread, slippage, turnover, and execution delay. You will compare the same strategy with cash, buy-and-hold, and a simple rule under identical dates, construct a small equal-weighted comparison under a common asset universe, and report the tested cost level at which a comparison changes.
 
 ## Teaching Objectives
 
@@ -17,21 +17,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Bring the Week 4 ledger and Week 5 update rules. Week 4 supplies the gross-return ledger, and Week 5 supplies the update and rebalancing schedule. This class uses artificial data and assumes zero cash return. Week 7 will evaluate the resulting net returns and their uncertainty. See [Week 6 Support](week6_support.md) for the cost record and troubleshooting.
-
-## 150-minute learning sequence
-
-| Time | Focus | Evidence produced |
-|---:|---|---|
-| 0–10 minutes | Gross or net? | Missing-cost diagnosis |
-| 10–30 minutes | Commission, spread, slippage, and a worked trade | Cost convention and verified calculation |
-| 30–45 minutes | Turnover | Independent hand cost calculation |
-| 45–60 minutes | Rebuild the strategy ledger | Gross ledger |
-| 60–80 minutes | Add net costs | Net ledger and identity checks |
-| 80–100 minutes | Cost sensitivity | Cost grid and change in the comparison |
-| 100–115 minutes | Execution delay | Delay comparison |
-| 115–140 minutes | Cash, buy-and-hold, simple-rule, and equal-weighted comparisons | Common-condition evidence |
-| 140–145 minutes | Assumption audit | Missing real-market inputs |
-| 145–150 minutes | Exit evidence | Conditional conclusion |
 
 ## 1. Define the cost convention
 

@@ -8,7 +8,7 @@ Week 15 is a development, validation, and submission class rather than another r
 
 ## Observable outcome
 
-By the end of this 150-minute class, each team will have a reproducible weighting function, generic and method-specific tests, development-period baseline and sensitivity comparisons, a documented point at which method choices stopped, one common final-period evaluation with transaction costs, turnover, concentration, and drawdown, and an identifiable frozen submission.
+After completing Week 15, each team will have a reproducible weighting function, generic and method-specific tests, development-period baseline and sensitivity comparisons, a documented point at which method choices stopped, one common final-period evaluation with transaction costs, turnover, concentration, and drawdown, and an identifiable frozen submission.
 
 The [final report criteria](../16/week16_main.md) define the assessed evidence. The common dataset and numerical settings for the course remain subject to instructor approval. This material defines the technical and reproducibility work required for the frozen submission without changing the grading weights.
 
@@ -27,20 +27,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Bring the Week 14 code, evidence, questions, and proposed changes. Use a clean notebook with `numpy` and `pandas`. All data and numerical results below are artificial. The 60-observation lookback, 21-business-day rebalance interval, 4-basis-point cost, 50% cap, artificial dates, and sensitivity settings are teaching assumptions rather than approved course-wide settings.
-
-## 150-minute class plan
-
-| Time | Focus | Required evidence |
-|---:|---|---|
-| 0–15 minutes | Convert Week 14 feedback into testable work | One prioritized change record |
-| 15–35 minutes | Specify the weighting function and timing | Complete mathematical and implementation description |
-| 35–60 minutes | Test inputs, outputs, labels, and constraints | Passed checks and intentional failures |
-| 60–85 minutes | Common development-period comparison | Proposed method and baseline table |
-| 85–105 minutes | Costs, turnover, concentration, and tradeoffs | Accounting audit and explanation |
-| 105–125 minutes | Prespecified development sensitivity checks | Common-date sensitivity table |
-| 125–135 minutes | Stop revising before final data | Completed settings and claim record |
-| 135–145 minutes | One common final-period evaluation | Final table and constraint evidence |
-| 145–150 minutes | Freeze submission | Identifier and independent rerun assignment |
 
 ## 1. Convert feedback into one verifiable change at a time
 

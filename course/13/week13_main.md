@@ -8,7 +8,7 @@ Week 12 compared allocations defined through volatility and covariance. Week 13 
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will calculate empirical Value at Risk (VaR) and CVaR, solve and audit a long-only minimum-CVaR portfolio, add an explicit turnover limit, linear transaction-cost term, and absolute-deviation regularization term, and compare sensitivity to scenario count, random seed, and a stated stress scenario.
+After completing Week 13, you will calculate empirical Value at Risk (VaR) and CVaR, solve and audit a long-only minimum-CVaR portfolio, add an explicit turnover limit, linear transaction-cost term, and absolute-deviation regularization term, and compare sensitivity to scenario count, random seed, and a stated stress scenario.
 
 ## Teaching objectives
 
@@ -24,20 +24,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Use a clean notebook with `numpy`, `pandas`, and `scipy`. Bring Week 7's drawdown calculation, Week 11's constraint audits, and Week 12's rule that test results must not be used to redesign a method while still being described as unused. All returns and results below are artificial. The 95% confidence level, scenario counts, seeds, 60% cap, 12% turnover limit, 4-basis-point cost, regularization coefficient, and stress returns are teaching assumptions.
-
-## 150-minute class plan
-
-| Time | Focus | Required evidence |
-|---:|---|---|
-| 0–15 minutes | Returns, losses, VaR, and CVaR | Hand-sorted tail calculation |
-| 15–30 minutes | Finite scenarios and limits of inference | Scenario specification |
-| 30–50 minutes | Artificial data and empirical estimates | Chronological split and training estimate |
-| 50–75 minutes | Minimum-CVaR linear program | Weights, objective, and constraint audit |
-| 75–100 minutes | Turnover, costs, and regularization | Formulation and comparison |
-| 100–120 minutes | Scenario-count and seed sensitivity | Repeated-solution table |
-| 120–135 minutes | Stress assumptions and meaning of robustness | Changed weights and bounded conclusion |
-| 135–145 minutes | Common later-period evaluation | Net performance and tail-risk table |
-| 145–150 minutes | Exit evidence | Supported conclusion and next question |
 
 ## 1. Define downside risk using losses
 

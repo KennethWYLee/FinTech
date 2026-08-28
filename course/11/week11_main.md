@@ -8,7 +8,7 @@ Week 8 supplied equal, market-capitalization, signal-based, and inverse-volatili
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will estimate annual expected returns and a covariance matrix from an artificial training period, solve three constrained portfolio problems, trace an efficient frontier, and apply frozen target weights to a later test period under one common monthly rebalancing and cost rule. You will preserve input units, solver status, constraint residuals, concentration, and weight sensitivity.
+After completing Week 11, you will estimate annual expected returns and a covariance matrix from an artificial training period, solve three constrained portfolio problems, trace an efficient frontier, and apply frozen target weights to a later test period under one common monthly rebalancing and cost rule. You will preserve input units, solver status, constraint residuals, concentration, and weight sensitivity.
 
 ## Teaching objectives
 
@@ -23,20 +23,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Use a clean notebook with `numpy`, `pandas`, and `scipy`. Bring Week 8's distinction among target weights, drifted holdings, turnover, and net returns. All returns and results below are artificial. The 60% cap, annual risk-free rate of 2%, variance penalty of 10, monthly rebalance, and 4-basis-point cost are teaching assumptions, not recommended settings.
-
-## 150-minute class plan
-
-| Time | Focus | Required evidence |
-|---:|---|---|
-| 0–10 minutes | From basic weights to optimization | Input-and-objective comparison |
-| 10–30 minutes | Portfolio variance and covariance | Worked calculation and independent exercise |
-| 30–45 minutes | Three objectives, frontier, and units | Complete mathematical specification |
-| 45–65 minutes | Artificial data, split, and estimates | Data and matrix audit |
-| 65–95 minutes | Solve and audit four allocations | Weights, estimates, solver messages, and residuals |
-| 95–115 minutes | Efficient frontier and infeasible target | Frontier table and explicit failure |
-| 115–135 minutes | Common later-period evaluation | Net evidence under common conditions |
-| 135–145 minutes | Estimation-window sensitivity | Weight-change comparison and interpretation |
-| 145–150 minutes | Exit evidence | Supported claim and unresolved limitation |
 
 ## 1. Covariance changes portfolio risk
 

@@ -23,7 +23,7 @@ The final evaluation period must not be used to choose or revise the method. Res
 
 ## Presentation and revision record
 
-Every team receives the same presentation and question time. For a 150-minute class, 10 minutes are used to confirm the requirements, 110 minutes are divided equally among the teams, 20 minutes are reserved for teams to record evidence-based revisions, and 10 minutes are used to confirm the work required before the final submission. Approximately three-fifths of each team slot is used for the prepared explanation and two-fifths for questions. The exact slot length and order are published after the number of teams is known.
+Every team follows the same presentation and question requirements. Teams record evidence-based revisions and confirm the work required before the final submission. The presentation order is published after the number of teams is known.
 
 Questions from the instructor and peers help each team identify necessary revisions. A team does not need to accept every suggestion, but it must record the question, decide whether a change is justified, and identify the evidence that supports the decision.
 

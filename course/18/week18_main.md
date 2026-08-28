@@ -6,7 +6,7 @@ How can a limitation observed in the completed portfolio project become a falsif
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will use an observed limitation from the semester to formulate a falsifiable financial research question, implement one advanced comparison involving time-varying weights, a trade threshold, and transaction costs, distinguish that comparison from online portfolio selection and formal distributionally robust optimization, and specify the baselines, chronology, sensitivity checks, and evidence needed for a defensible study.
+After completing Week 18, you will use an observed limitation from the semester to formulate a falsifiable financial research question, implement one advanced comparison involving time-varying weights, a trade threshold, and transaction costs, distinguish that comparison from online portfolio selection and formal distributionally robust optimization, and specify the baselines, chronology, sensitivity checks, and evidence needed for a defensible study.
 
 Week 18 does not add a fourth report. It uses the completed projects to distinguish a useful research question from an unsupported claim or a method in search of a problem.
 
@@ -19,19 +19,6 @@ After completing this class, you should be able to:
 - compare trading on every scheduled date with skipping trades below a stated weight-difference threshold;
 - identify research roles for online allocation, machine learning, and distributionally robust optimization without treating complexity as evidence of value; and
 - design a chronological experiment whose conclusions remain within the data and assumptions tested.
-
-## 150-minute class plan
-
-| Time | Focus | Required evidence |
-|---|---|---|
-| 0–15 minutes | Extract a limitation from final-report evidence | Limitation with table or figure reference |
-| 15–35 minutes | Form and challenge a falsifiable question | Decision, comparison, outcome, and contrary result |
-| 35–55 minutes | Time-varying weights and changing conditions | Prediction and artificial-data audit |
-| 55–80 minutes | Trade thresholds and transaction costs | Complete code and accounting checks |
-| 80–100 minutes | Compare the two artificial conditions | Condition-specific table and skipped-trade audit |
-| 100–120 minutes | Estimation and cost-assumption sensitivity | Common-date lookback and cost tables |
-| 120–140 minutes | Online, machine-learning, and distributionally robust extensions | Justified extension and failure condition |
-| 140–150 minutes | Defend the proposed study | One-page plan, peer challenge, and exit evidence |
 
 ## 1. Begin with observed evidence
 

@@ -8,7 +8,7 @@ Week 11 used one sample covariance in mean–variance calculations and found tha
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will construct and diagnose four covariance estimates, verify the decomposition of portfolio volatility, solve equal and unequal risk-budget allocations, construct a hierarchical risk-parity allocation, and compare fixed target weights on one later period under common monthly rebalancing and transaction costs.
+After completing Week 12, you will construct and diagnose four covariance estimates, verify the decomposition of portfolio volatility, solve equal and unequal risk-budget allocations, construct a hierarchical risk-parity allocation, and compare fixed target weights on one later period under common monthly rebalancing and transaction costs.
 
 ## Teaching objectives
 
@@ -23,21 +23,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Use a clean notebook with `numpy`, `pandas`, and `scipy`. Bring Week 11's sample covariance, solver checks, target-weight drift, monthly rebalancing, and 4-basis-point cost convention. All returns, factors, weights, and results below are artificial. The 35% shrinkage intensity, 126-observation window, single-linkage clustering, risk budgets, 60% cap, and other numerical settings are teaching assumptions.
-
-## 150-minute class plan
-
-| Time | Focus | Required evidence |
-|---:|---|---|
-| 0–10 minutes | Week 11 sensitivity to covariance choices | Question and prediction |
-| 10–30 minutes | Four covariance estimates and their assumptions | Formula-and-input comparison |
-| 30–50 minutes | Artificial data and covariance diagnostics | Four matrices and rolling-window record |
-| 50–65 minutes | Worked contribution calculation | Hand calculation and identity check |
-| 65–85 minutes | Equal and unequal risk budgets | Weights, risk shares, and solver audits |
-| 85–105 minutes | Hierarchical risk parity | Distance, clustered order, and weights |
-| 105–120 minutes | Compare meanings and failure conditions | Constraint and interpretation check |
-| 120–135 minutes | Common later-period evaluation | Net results under common conditions |
-| 135–145 minutes | Covariance sensitivity activity | Weight-change evidence and revision |
-| 145–150 minutes | Exit evidence | Supported conclusion and next question |
 
 ## 1. Four covariance estimates answer different questions
 

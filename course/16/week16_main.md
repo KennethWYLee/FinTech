@@ -22,7 +22,7 @@ The common dataset, final period, numerical constraints, and required baselines 
 
 ## Presentation sessions
 
-The first set of teams presents in Week 16. Class time includes 10 minutes to confirm the frozen comparison conditions, 130 minutes for team presentations and questions, and 10 minutes to record unresolved questions for the comparison of teams. Week 17 continues with the same requirements. After the number of teams is known, teams are divided between the two sessions and one common slot length is selected that fits both presentation blocks. Approximately two-thirds of each slot is used for the prepared explanation and one-third for questions. The exact assignment, order, and slot length are published before the freeze.
+The first set of teams presents in Week 16, and Week 17 continues with the same requirements. After the number of teams is known, teams are divided between the two sessions. Every team follows the same presentation and question requirements, and the assignment and order are published before the freeze.
 
 Students should ask whether conclusions follow from the assumptions, data, estimation windows, rebalancing, transaction costs, concentration, stability, failed cases, and out-of-sample evidence. Individual rankings are completed only after all Week 17 presentations.
 

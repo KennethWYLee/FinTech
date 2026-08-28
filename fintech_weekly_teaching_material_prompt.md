@@ -8,7 +8,7 @@
 本程序沿用「資料庫管理」課程教材 prompt 的完整範圍核對、範例與練習對齊、逐句檢查、
 實際執行及反覆修正架構；課程範圍、金融有效性檢查、檔案分工與評量銜接則依本課重新設計。
 
-目前需要完整150分鐘授課教材的週次依序為 Weeks 2–8、11–13、15與18。Week 1是完整
+目前需要完整授課教材的週次依序為 Weeks 2–8、11–13、15與18。Week 1是完整
 課程大綱；Week 9因教師出國不授課；Weeks 10、14、16與17是報告週。執行本 prompt 時
 直接略過報告週，不建立、擴充或逐句檢查其報告文件；報告目的只用來反向核對先前教學週
 是否提供足夠準備。除非使用者另外指定，不得把報告週改成一般授課週或納入教材改寫範圍。
@@ -22,7 +22,7 @@
 
 | 週次 | 正式方向 | 該週主要成果 | 不得提前取代的後續內容 |
 |---:|---|---|---|
-| 1 | Course orientation and syllabus | 完整中英文課綱、學習成果、評量與三次報告說明 | 不改寫成150分鐘技術教材 |
+| 1 | Course orientation and syllabus | 完整中英文課綱、學習成果、評量與三次報告說明 | 不改寫成逐步技術教材 |
 | 2 | Financial data and returns | 可稽核的價格、報酬、頻率與一期投資組合報酬計算 | 不進入交易訊號、模型或回測績效 |
 | 3 | Information timing, features, and signals | 從金融假說建立point-in-time feature與signal | 不在尚未定義執行與成本前宣稱策略績效 |
 | 4 | Basic backtesting | 從signal到position、trade、return與wealth的有效ledger | 成本敏感度與完整績效評估留待Weeks 6–7 |
@@ -41,7 +41,7 @@
 | 17 | Final report, session 2 | 其餘團隊報告、evidence-based comparison與peer ranking | 本 prompt 直接略過，不建立或改寫報告教材 |
 | 18 | Advanced issues and research questions | 從已觀察限制形成可反駁問題、簡單比較與後續驗證方式 | 不把未實作的進階方法寫成已證實結果 |
 
-課綱列出的內容若超過150分鐘可合理教授的分量，先指出衝突並提出「保留於主要教學」、
+課綱列出的內容若分量過多而難以合理教授，先指出衝突並提出「保留於主要教學」、
 「移至support作延伸」或「由教師調整課綱」的選項。未取得教師決定前，不自行刪除課綱
 內容，也不把它假裝成已完整教授。
 
@@ -194,10 +194,14 @@ robust optimization的公式必須與code完全一致。
 seed、repetitions及stress scenarios。不得因較大scenario budget在一次實驗中表現較穩定，就宣稱
 它修正了錯誤的distribution assumption。
 
-## 九、兩個學生檔案的角色與150分鐘設計
+## 九、兩個學生檔案的角色
 
 每個週次資料夾只能包含`weekN_main.md`與`weekN_support.md`。若需要共用notebook、圖、資料或
 script，放在`course/resources/`適當位置並由support連結；不得在週次資料夾新增第三個檔案。
+
+依2026-08-28教師決定，學生教材不得標示課堂總分鐘數、活動分鐘數或逐段時間表。不要使用
+`By the end of this 150-minute class`、`150-minute learning sequence`或同義寫法；改以
+`After completing Week N`說明學習成果，並依概念先備關係安排內容。報告日期與繳交期限照常保留。
 
 `main`是學生在沒有教師投影片時仍可依序閱讀、重現與完成的完整教材，至少包含：
 
@@ -205,7 +209,7 @@ script，放在`course/resources/`適當位置並由support連結；不得在週
 - 與前一授課週及下一授課週的關係。
 - observable outcome與5個左右可檢核learning objectives。
 - 課前條件及需要的環境。
-- 時段連續、無重疊且合計150分鐘的class plan。
+- 內容順序清楚，且必要概念在學生使用前已經說明。
 - 完整概念講解、公式、符號、單位及成立條件。
 - 每個正式內容對應的worked example。
 - 完整可執行的code或明確標示依賴與插入位置的片段。
@@ -322,7 +326,7 @@ exit code 0只表示程式結束，不能取代known-answer check、output inspe
 - 課綱每一項正式內容都在逐項核對表中有明確狀態。
 - 每項本週正式內容都有講解、worked example、學生練習、expected evidence、diagnostic及completion evidence。
 - main與support角色清楚，且週次資料夾沒有第三個檔案。
-- 150分鐘class plan連續、無重疊、份量足夠且能合理完成。
+- 教學內容順序清楚、份量足夠且能合理完成。
 - 核心technical term與research claim均有適當來源。
 - data、time、formula、code、output及financial interpretation沒有已知矛盾。
 - 所有可合理執行的code與target tests均通過，輸出已人工核對。

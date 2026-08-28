@@ -2,7 +2,7 @@
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will produce an audited return table from a clearly identified price series. The table will contain simple returns, log returns, a cumulative wealth index, weekly returns, and one-period portfolio returns. You will also submit a short record of the data-processing decisions that make those results interpretable and reproducible.
+After completing Week 2, you will produce an audited return table from a clearly identified price series. The table will contain simple returns, log returns, a cumulative wealth index, weekly returns, and one-period portfolio returns. You will also submit a short record of the data-processing decisions that make those results interpretable and reproducible.
 
 The numerical data used in this class are artificial and are provided only for calculation practice. They do not describe a real security and must not be used to make an investment claim.
 
@@ -21,21 +21,6 @@ After completing this class, you should be able to:
 You need a browser-based or local Python notebook with `numpy` and `pandas`. Run the cells in this document from top to bottom. If your environment is not ready, use the preparation instructions in [Week 2 Support](week2_support.md#before-class).
 
 Use the artificial data in this document for all required work. Do not replace it with an online download unless the instructor provides a data source, field definition, time range, and permission for classroom use.
-
-## 150-minute learning sequence
-
-| Time | Focus | Evidence produced |
-|---:|---|---|
-| 0–10 minutes | Price or return? | One sentence identifying the evidence needed to compare two investments |
-| 10–25 minutes | Price fields, corporate actions, and adjusted prices | A field-selection decision and corporate-action calculation |
-| 25–45 minutes | Simple and log returns | Hand calculations and an interpretation in percentage terms |
-| 45–60 minutes | Compounding and cumulative return | A comparison of arithmetic addition and compounding |
-| 60–75 minutes | Python reproduction | An audited return table and automated identity checks |
-| 75–90 minutes | Dates, duplicates, missing values, and trading days | A three-row data-quality decision table |
-| 90–105 minutes | Daily and weekly frequency | A comparison using the same underlying price path |
-| 105–120 minutes | One-period portfolio return | A fixed-weight portfolio-return calculation with its assumption stated |
-| 120–145 minutes | Independent return audit | A second audited dataset, return calculation, and portfolio-return check |
-| 145–150 minutes | Exit evidence | One valid conclusion, one unsupported conclusion, and one unresolved question |
 
 ## 1. A price is not an investment result
 

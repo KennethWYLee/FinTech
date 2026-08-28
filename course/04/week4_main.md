@@ -2,7 +2,7 @@
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will produce a complete long-or-cash backtest ledger that connects price, return, signal, position, trade, strategy return, and wealth. You will compare correctly lagged and invalid same-period implementations, verify a miniature ledger by hand, and repair a separate alignment error. Costs are deliberately postponed to Week 6; every Week 4 strategy result is gross of costs.
+After completing Week 4, you will produce a complete long-or-cash backtest ledger that connects price, return, signal, position, trade, strategy return, and wealth. You will compare correctly lagged and invalid same-period implementations, verify a miniature ledger by hand, and repair a separate alignment error. Costs are deliberately postponed to Week 6; every Week 4 strategy result is gross of costs.
 
 ## Teaching Objectives
 
@@ -17,21 +17,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Complete the Week 3 timing record. Use a notebook with `numpy` and `pandas`. Week 3 defined when the signal becomes available; this lesson applies that time to a position and a return. Week 5 will preserve the same timing while changing model, signal, and rebalancing update schedules. Detailed ledger fields and troubleshooting are in [Week 4 Support](week4_support.md).
-
-## 150-minute learning sequence
-
-| Time | Focus | Evidence produced |
-|---:|---|---|
-| 0–10 minutes | Signal or position? | Classification of five backtest fields |
-| 10–25 minutes | Written strategy specification | Explicit timing and position assumptions |
-| 25–45 minutes | Worked row-by-row ledger | Verified manual calculations |
-| 45–60 minutes | Student ledger calculation | Hand-completed ledger rows |
-| 60–75 minutes | Artificial price and signal | Reproducible input table |
-| 75–95 minutes | Correctly lagged backtest | Complete ledger and assertions |
-| 95–110 minutes | Same-period error | Comparison with invalid alignment |
-| 110–125 minutes | Trades, cash, wealth, and benchmark | Accounting checks and gross comparison |
-| 125–145 minutes | Independent alignment repair | Repaired ledger and timing explanation |
-| 145–150 minutes | Exit evidence | One valid conclusion and one failure condition |
 
 ## 1. Write the strategy specification first
 

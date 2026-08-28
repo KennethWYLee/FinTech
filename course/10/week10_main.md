@@ -30,7 +30,7 @@ The common dataset and required numerical settings are announced through GitHub 
 
 Each student receives an equal short presentation slot. The student must identify their contribution, explain one result using traceable evidence, and respond without relying on another team member to answer in their place. Students then review and rank the other teams; students do not review their own team.
 
-For a 150-minute class, 10 minutes are used to confirm the common conditions, 120 minutes are divided equally among the presenting students, 15 minutes are reserved for the individual review, and 5 minutes are used to close the session. Approximately two-thirds of each individual slot is used for the prepared explanation and one-third for questions. Students record evidence during the presentations and use the review period to complete the comparison. The exact slot length and presentation order are published after the number of students is known.
+All students follow the same presentation and question requirements. Students record evidence during the presentations and use it to complete the individual comparison. The presentation order is published after the number of students is known.
 
 ## Scoring — 15 points
 

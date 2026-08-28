@@ -2,7 +2,7 @@
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will estimate an interpretable prediction model from historical data, compare it with a transparent zero-prediction baseline, generate walk-forward predictions with expanding and rolling estimation windows, convert them into daily signals, and compare daily with periodic portfolio updates. Each generated prediction will record the model version, number of training rows, last training feature date, and last training outcome date used.
+After completing Week 5, you will estimate an interpretable prediction model from historical data, compare it with a transparent zero-prediction baseline, generate walk-forward predictions with expanding and rolling estimation windows, convert them into daily signals, and compare daily with periodic portfolio updates. Each generated prediction will record the model version, number of training rows, last training feature date, and last training outcome date used.
 
 ## Teaching Objectives
 
@@ -17,21 +17,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Bring the Week 3 timing record and Week 4 position alignment. Use `numpy` and `pandas`. Week 4 fixed the signal-to-position lag; this lesson keeps that lag while changing when a model is refitted, a signal is recalculated, and a position may change. Week 6 will attach costs to the resulting position changes. The simple least-squares model exposes the time sequence and provides the minimum prediction-model practice required for Report 1; it is not evidence of predictive ability. A team may use this model or another documented prediction model, but greater complexity does not by itself provide stronger financial evidence.
-
-## 150-minute learning sequence
-
-| Time | Focus | Evidence produced |
-|---:|---|---|
-| 0–10 minutes | Which rows are known? | Historical training boundary |
-| 10–25 minutes | Fixed, rolling, and expanding windows | Window comparison table |
-| 25–45 minutes | Worked prediction-time boundary | Row-by-row availability table |
-| 45–60 minutes | Student boundary diagram | Prediction-time diagram |
-| 60–80 minutes | Artificial features and target | Audited modeling table |
-| 80–105 minutes | Expanding and rolling estimation | Two prediction series |
-| 105–120 minutes | Retraining versus signal updating | Model-version evidence |
-| 120–135 minutes | Rebalancing and an independent update rule | Position comparison and independent checks |
-| 135–145 minutes | Protected test period | Selection rule statement |
-| 145–150 minutes | Exit evidence | Valid evaluation description |
 
 ## 1. Evaluation must follow time
 

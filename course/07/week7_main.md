@@ -2,7 +2,7 @@
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will verify performance measures by hand, produce a performance table, drawdown record, block-bootstrap interval, and backtest audit for an artificial net-return series, and demonstrate why selecting the best of many trials can create an optimistic result.
+After completing Week 7, you will verify performance measures by hand, produce a performance table, drawdown record, block-bootstrap interval, and backtest audit for an artificial net-return series, and demonstrate why selecting the best of many trials can create an optimistic result.
 
 ## Teaching Objectives
 
@@ -17,21 +17,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Bring the Week 6 net-return convention. This class assumes 252 artificial observations per year and a zero target or cash return for its full-length example. Those assumptions must appear beside the metrics. Week 8 will use the same cost and evidence limits when comparing portfolio weights.
-
-## 150-minute learning sequence
-
-| Time | Focus | Evidence produced |
-|---:|---|---|
-| 0–10 minutes | Which metric answers which question? | Metric classification |
-| 10–35 minutes | Worked return, variability, ratio, and drawdown calculations | Verified four-return example |
-| 35–50 minutes | Independent four-return calculation | Prediction, calculation, and correction |
-| 50–70 minutes | Build net strategy returns | Audited series |
-| 70–90 minutes | Performance function | Common metric table |
-| 90–110 minutes | Block-bootstrap uncertainty | Interval and assumptions |
-| 110–125 minutes | Multiple trials | Selection-bias demonstration |
-| 125–140 minutes | Backtest audit | Pass/fail/unclear table |
-| 140–145 minutes | Evidence synthesis | Report 1 evidence statement |
-| 145–150 minutes | Exit evidence | Defensible conclusion |
 
 ## 1. Metrics answer different questions
 

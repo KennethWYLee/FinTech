@@ -1,8 +1,8 @@
 # Week 17 — Final Report, Session 2
 
-The remaining teams present the frozen final submission under the same requirements, scoring criteria, and time allocation stated in the [Week 16 final report instructions](../16/week16_main.md). No team may change its evaluated version after the first presentation session.
+The remaining teams present the frozen final submission under the same requirements and scoring criteria stated in the [Week 16 final report instructions](../16/week16_main.md). No team may change its evaluated version after the first presentation session.
 
-For a 150-minute class, 5 minutes are used to confirm the frozen versions, up to 105 minutes are reserved for the remaining presentations and questions, 30 minutes are reserved for the individual comparison, and 10 minutes are used for conclusions across the course. Presentation time not required by the remaining teams becomes comparison or question time; it does not increase one team's slot relative to another.
+The remaining teams follow the same presentation and question requirements used in Week 16. Students then complete the individual comparison and record conclusions across the course.
 
 ## Individual comparison and ranking
 

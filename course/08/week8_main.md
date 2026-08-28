@@ -8,7 +8,7 @@ Week 7 established that performance measures answer different questions and that
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will calculate four weight vectors for the same artificial assets, distinguish target weights from weights that drift after returns, and evaluate rules fixed before a separate chronological period. You will preserve constraint checks, timing, turnover, costs, concentration, and limited conclusions rather than select a universal winner.
+After completing Week 8, you will calculate four weight vectors for the same artificial assets, distinguish target weights from weights that drift after returns, and evaluate rules fixed before a separate chronological period. You will preserve constraint checks, timing, turnover, costs, concentration, and limited conclusions rather than select a universal winner.
 
 ## Teaching objectives
 
@@ -23,21 +23,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Bring the Week 6 transaction-cost convention and the Week 7 limits on empirical conclusions. Use a clean notebook with `numpy` and `pandas`. Every asset, price, return, share count, and result in this class is artificial. The 20-business-day lookback, 60% cap, monthly schedule, and 4-basis-point cost are teaching assumptions, not recommended settings.
-
-## 150-minute learning sequence
-
-| Time | Focus | Required evidence |
-|---:|---|---|
-| 0–10 minutes | From trading decisions to capital allocation | Signal, target-weight, and holding-weight distinction |
-| 10–25 minutes | Budget, long-only, leverage, and position caps | Feasibility statement |
-| 25–45 minutes | Worked calculation of four weighting rules | Four hand-calculated vectors and cap check |
-| 45–60 minutes | Independent normalization exercise | Prediction, calculation, and corrected explanation |
-| 60–75 minutes | Artificial data and chronological boundary | Data audit and fixed-rule statement |
-| 75–100 minutes | Weight functions, fallbacks, and failures | Common-date weight table and passed tests |
-| 100–120 minutes | Target weights, drift, rebalancing, and costs | Hand calculation and audited backtest |
-| 120–135 minutes | Separate chronological evaluation | Four comparable result rows |
-| 135–145 minutes | Concentration, turnover, and limitations | Evidence-based comparison |
-| 145–150 minutes | Exit evidence | Conditional conclusion and next question |
 
 ## 1. A signal is not a portfolio weight
 

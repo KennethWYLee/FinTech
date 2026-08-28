@@ -2,7 +2,7 @@
 
 ## Observable outcome
 
-By the end of this 150-minute class, you will convert one financial hypothesis into a documented feature and a simple signal without using information that was unavailable at the decision time. You will preserve a time-boundary table, feature calculations, leakage checks, an alignment based on publication times, and a signal table. The artificial data demonstrate mechanics only and do not support a claim about a real market.
+After completing Week 3, you will convert one financial hypothesis into a documented feature and a simple signal without using information that was unavailable at the decision time. You will preserve a time-boundary table, feature calculations, leakage checks, an alignment based on publication times, and a signal table. The artificial data demonstrate mechanics only and do not support a claim about a real market.
 
 ## Teaching Objectives
 
@@ -18,21 +18,6 @@ After completing this class, you should be able to:
 ## Before you begin
 
 Complete Week 2 or be able to calculate returns from a sorted `DatetimeIndex`. Use a notebook with `numpy` and `pandas`. Week 2 supplied the return definitions used here; Week 4 will add positions, execution, and performance measurement after the timing in this lesson is correct. The detailed preparation and terminology are in [Week 3 Support](week3_support.md).
-
-## 150-minute learning sequence
-
-| Time | Focus | Evidence produced |
-|---:|---|---|
-| 0–10 minutes | Can this variable be used now? | Initial timing judgment |
-| 10–25 minutes | Six times in a financial decision | Completed time-boundary table |
-| 25–40 minutes | Hypothesis before feature | Hypothesis–feature statement |
-| 40–55 minutes | Lags and availability | Correctly aligned example |
-| 55–70 minutes | Build artificial data with dated rows | Audited input table |
-| 70–85 minutes | Construct momentum and volatility features | Feature table with definitions |
-| 85–100 minutes | Detect leakage | Candidate-feature audit |
-| 100–115 minutes | Convert a feature into a signal | Signal rule and coverage evidence |
-| 115–145 minutes | Align a separately published variable | Alignment by publication time and an independent repair exercise |
-| 145–150 minutes | Exit evidence | Supported and unsupported claims |
 
 ## 1. Six different times
 
