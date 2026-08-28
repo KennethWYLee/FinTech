@@ -6,6 +6,8 @@ What must be known, checked, and calculated before a table of financial prices c
 
 Week 1 introduced the course workflow. Week 2 establishes the financial-data and return foundation for that workflow. Week 3 will ask when a variable became available, calculate technical indicators and financially motivated features, and convert a stated feature rule into a signal. Week 2 stops before those questions: it does not build a trading signal, fit a prediction model, or report backtest performance.
 
+Use the [Week 2 executable lesson notebook](../resources/notebooks/05_Week2_Financial_Data_and_Returns.ipynb) with this document. The notebook expands every issue into a financial context, executable example, output interpretation, four discussion questions, evidence requirement, and first diagnostic action. Issue 2 includes an optional yfinance retrieval example; all required calculations continue with fixed artificial data when live access is unavailable.
+
 ## Observable outcome
 
 After completing Week 2, you will produce an audited financial-data record and a reproducible return notebook. The evidence will identify the asset, market, fields, units, currency, timestamps, observation frequency, corporate-action assumptions, data problems, return definitions, frequency conversion, and common holding intervals. It will include simple and log returns, compounded returns, a wealth index, and one-period fixed-weight portfolio returns.

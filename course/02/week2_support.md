@@ -4,7 +4,9 @@ This file contains preparation, records, terminology, detailed checks, troublesh
 
 ## Before class
 
-Use Google Colab or a local Jupyter environment with Python, `numpy`, and `pandas`. The preparation notebook also uses `matplotlib` for a figure check. If needed, run the [Colab environment and data check](../resources/notebooks/00_Colab_課前環境與資料檢查.ipynb).
+Use Google Colab or a local Jupyter environment with Python, `numpy`, and `pandas`. The [Week 2 executable lesson notebook](../resources/notebooks/05_Week2_Financial_Data_and_Returns.ipynb) optionally imports `yfinance` for the source-and-retrieval example, but its required calculations remain executable without a live download. The preparation notebook also uses `matplotlib` for a figure check. If needed, run the [Colab environment and data check](../resources/notebooks/00_Colab_課前環境與資料檢查.ipynb).
+
+Run the executable lesson from top to bottom. Preserve predictions before each example, visible outputs, revisions, discussion responses, and the requested evidence. Do not publish downloaded Yahoo Finance rows or saved notebook output containing those rows unless their permitted use and redistribution have been verified.
 
 The preparation notebook uses fixed artificial data and does not download market data. Before class, confirm that you can:
 
