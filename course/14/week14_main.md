@@ -6,7 +6,7 @@ Report 2 shows whether the team has converted an observed limitation of an estab
 
 ## Required team submission
 
-The progress report and current implementation are due through the course LMS 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1 support](../01/week1_support.md). The main text may contain at most 1,800 words and six figures or tables in total. The presentation may contain at most eight content slides. Material beyond these limits is not assessed.
+The progress report and current implementation are due through GitHub 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1 support](../01/week1_support.md). The main text may contain at most 1,800 words and six figures or tables in total. The presentation may contain at most eight content slides. Material beyond these limits is not assessed.
 
 The submission must include the report, current code, data and environment records, preliminary result files, presentation, contribution statement, GenAI disclosure, and a version identifier. Students should expect approximately 4–6 hours of additional preparation for Report 2, using the evidence already produced in Weeks 11–13. The submission must show:
 
@@ -40,4 +40,4 @@ Questions from the instructor and peers help each team identify necessary revisi
 | Presentation and oral responses | 2 | Responses connect questions to assumptions, implementation evidence, or planned checks. |
 | Presentation and oral responses | 1 | The team records justified revisions and unresolved questions. |
 
-Completion requires the progress submission, presentation and oral response, and revision record. The revision record is due through the LMS 24 hours after the scheduled end of class. The Report 2 version remains unchanged for grading, but the team may revise its method for the final report when every change is recorded and only development evidence is used. See [Week 14 support](week14_support.md) for the required records and the [course GenAI policy](../GenAI使用規範.md) for permitted use and disclosure. Rubric feedback and unresolved questions are returned by the start of Week 15.
+Completion requires the progress submission, presentation and oral response, and revision record. The revision record is due through GitHub 24 hours after the scheduled end of class. The Report 2 version remains unchanged for grading, but the team may revise its method for the final report when every change is recorded and only development evidence is used. See [Week 14 support](week14_support.md) for the required records and the [course GenAI policy](../GenAI使用規範.md) for permitted use and disclosure. Rubric feedback and unresolved questions are returned by the start of Week 15.

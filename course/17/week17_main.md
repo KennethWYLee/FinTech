@@ -19,6 +19,6 @@ After all presentations, each student compares and ranks every other team. Stude
 
 No single measure automatically determines the ordering. The student must state how the criteria were applied and identify missing or incomparable evidence. Rankings received from classmates do not directly determine a team's grade; the individual score evaluates the quality and consistency of the student's evidence-based comparison.
 
-The individual comparison contributes 6 points: 2 points for consistent common criteria, 2 points for traceable evidence across teams, and 2 points for a logically supported ordering and appropriate limitations. Completion requires a record for every other team and a final ordering. The comparison is due through the LMS 24 hours after the scheduled end of class. Use [Week 17 support](week17_support.md) for the comparison record.
+The individual comparison contributes 6 points: 2 points for consistent common criteria, 2 points for traceable evidence across teams, and 2 points for a logically supported ordering and appropriate limitations. Completion requires a record for every other team and a final ordering. The comparison is due through GitHub 24 hours after the scheduled end of class. Use [Week 17 support](week17_support.md) for the comparison record.
 
 The unresolved limitations identified across the final reports become evidence for the research questions developed in [Week 18](../18/week18_main.md).

@@ -6,7 +6,7 @@ Report 1 demonstrates that the team can turn a financial question into a reprodu
 
 ## Required team submission
 
-The frozen submission is due through the course LMS 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1 support](../01/week1_support.md). The Report 1 main text may contain at most 2,500 words and eight figures or tables in total. Each student may use at most three content slides for the individual presentation. Material beyond these limits is not assessed.
+The frozen submission is due through GitHub 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1 support](../01/week1_support.md). The Report 1 main text may contain at most 2,500 words and eight figures or tables in total. Each student may use at most three content slides for the individual presentation. Material beyond these limits is not assessed.
 
 The submission must include the written report, executable code or notebook, data and environment records, result files, presentation, contribution statement, GenAI disclosure, and a version identifier. The report, code, results, and presentation must describe the same analysis. Students should expect approximately 6–8 hours of additional preparation for Report 1, using the evidence already produced in Weeks 2–8.
 
@@ -24,7 +24,7 @@ The submission must show:
 10. uncertainty, possible leakage or overfitting, implementation limitations, and claims that remain unsupported; and
 11. an initial, clearly defined method for converting signals into portfolio weights.
 
-The common dataset and required numerical settings are announced through the LMS by the start of Week 3. Teams must use those settings for the common comparison and may separately label an additional analysis.
+The common dataset and required numerical settings are announced through GitHub by the start of Week 3. Teams must use those settings for the common comparison and may separately label an additional analysis.
 
 ## Individual presentation and review
 
@@ -48,4 +48,4 @@ For a 150-minute class, 10 minutes are used to confirm the common conditions, 12
 | Individual review of other approaches | 1 | The ranking cites traceable evidence from the other teams' submitted or presented results. |
 | Individual review of other approaches | 1 | The ordering and stated limitations are logically supported. |
 
-The team submission contributes 8 points, the individual presentation and oral responses contribute 4 points, and the individual review contributes 3 points. Completion requires the team submission, the student's own presentation and oral response, and the student's review of all other teams. The individual review is due through the LMS 24 hours after the scheduled end of class. See [Week 10 support](week10_support.md) for the submission and comparison records and the [course GenAI policy](../GenAI使用規範.md) for permitted use and disclosure. Rubric feedback is returned by the start of Week 11.
+The team submission contributes 8 points, the individual presentation and oral responses contribute 4 points, and the individual review contributes 3 points. Completion requires the team submission, the student's own presentation and oral response, and the student's review of all other teams. The individual review is due through GitHub 24 hours after the scheduled end of class. See [Week 10 support](week10_support.md) for the submission and comparison records and the [course GenAI policy](../GenAI使用規範.md) for permitted use and disclosure. Rubric feedback is returned by the start of Week 11.

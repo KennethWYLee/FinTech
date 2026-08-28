@@ -33,4 +33,4 @@ After completing the tables, explain your ordering:
 3. Identify missing or incomparable evidence and explain how it limits the ordering.
 4. State one conclusion that the available evidence does not support.
 
-Each comparison must cite specific financial measures, implementation evidence, assumptions, or robustness results. Presentation style and personal preference are not valid criteria, and your own team must not appear in the ordering. Submit the comparison through the LMS within 24 hours after the scheduled end of the Week 17 class.
+Each comparison must cite specific financial measures, implementation evidence, assumptions, or robustness results. Presentation style and personal preference are not valid criteria, and your own team must not appear in the ordering. Submit the comparison through GitHub within 24 hours after the scheduled end of the Week 17 class.

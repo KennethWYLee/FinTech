@@ -145,12 +145,6 @@ English: Week 18 connects the semester's findings with advanced issues such as t
 
 - Class participation and weekly learning evidence: 40%
 
-  - In-class implementation and problem-solving: 20%
-
-  - Weekly preparation and traceable learning evidence: 10%
-
-  - Discussion, oral responses, and evidence-based peer feedback: 10%
-
 - Report 1 — Quantitative Trading Report: 15%
 
   - Team prediction model, strategy, reproducible backtest, performance evidence, and written report: 8%
