@@ -43,6 +43,8 @@ Students do not evaluate their own team. Individual reviews use the required com
 
 For comparison activities, access to GitHub materials follows the course repository permissions. Restricted raw data, individual rankings, and grading records are not made public. Only an anonymous class summary of individual rankings is returned to students.
 
+Individual reviews, rankings, and other grading-related personal records submitted through GitHub must be placed in a private repository that the instructor can access. Do not place these records in a public team repository.
+
 Report 1 rubric feedback is returned by the start of Week 11. Report 2 feedback and unresolved questions are returned by the start of Week 15 so teams can decide what to revise. Final report feedback and the anonymous class comparison summary are returned within the university's grade-reporting schedule.
 
 Students who need an approved accommodation should use the university's official procedure. The reporting format or timing may be adjusted while preserving the assessed learning outcomes. An approved absence is handled through the same official process, and the instructor documents any alternative accepted under those rules.

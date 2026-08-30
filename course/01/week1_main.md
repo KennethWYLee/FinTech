@@ -11,7 +11,7 @@
 
 ## 教學目標
 
-This EMI course introduces artificial intelligence in financial technology through the following progression: financial data, technical indicators and financially motivated features, trading signals, backtesting, machine-learning prediction, trading costs and execution, performance evaluation, and portfolio weighting. Students first learn how financial data are collected, aligned, transformed, and used without information leakage. Each later stage must preserve the information boundary and evidence produced by the earlier stages.
+This EMI course introduces artificial intelligence in financial technology through the following progression: financial data, technical indicators and features derived from stated financial hypotheses, trading signals, backtesting, machine-learning prediction, trading costs and execution, performance evaluation, and portfolio weighting. Students first learn how financial data are collected, aligned, transformed, and used without information leakage. Each later stage must preserve the information boundary and evidence produced by the earlier stages.
 
 Week 8 introduces basic portfolio-weighting methods before the quantitative-trading report. After that report, students will study optimization-based and risk-based weighting methods and compare their assumptions, required inputs, risk characteristics, transaction costs, and out-of-sample stability. Each team will identify a specific limitation of an existing method, formulate a clearly defined modification, and evaluate the proposed method using common data, benchmarks, rebalancing rules, transaction costs, and out-of-sample periods.
 
@@ -19,7 +19,7 @@ After completing the course, students should be able to prepare and audit financ
 
 ## 教學內容
 
-The course follows one cumulative sequence: financial data, technical indicators and financially motivated features, signals, backtesting, machine-learning prediction, costs, performance evaluation, and weighting. Students first learn how prices, returns, financial variables, and trading calendars are constructed. Particular attention is given to observation time, publication time, signal time, decision time, execution time, and evaluation time so that every later calculation uses only information that would have been available at the relevant decision point.
+The course follows one cumulative sequence: financial data, technical indicators and features derived from stated financial hypotheses, signals, backtesting, machine-learning prediction, costs, performance evaluation, and weighting. Students first learn how prices, returns, financial variables, and trading calendars are constructed. Particular attention is given to observation time, publication time, signal time, decision time, execution time, and evaluation time so that every later calculation uses only information that would have been available at the relevant decision point.
 
 Students next calculate trailing indicators and other features that have an explicit financial interpretation. They connect each feature to a testable financial hypothesis, document its lookback and availability time, and convert a stated rule or model output into a signal. An indicator or signal is not treated as evidence of investment value before execution and evaluation rules have been defined.
 
@@ -51,9 +51,9 @@ English: Week 2 introduces financial prices, simple and log returns, cumulative 
 
 ## 第三週
 
-English: Week 3 examines observation time, publication time, signal time, decision time, execution time, and evaluation time. Students calculate technical indicators and financially motivated features, including trailing momentum and rolling volatility, check their information boundaries, and convert a stated feature rule into a simple trading signal.
+English: Week 3 examines observation time, publication time, signal time, decision time, execution time, and evaluation time. Students calculate technical indicators and features derived from stated financial hypotheses, including trailing momentum and rolling volatility, check their information boundaries, and convert a stated feature rule into a simple trading signal.
 
-中文：第三週說明觀察時間、發布時間、訊號時間、決策時間、執行時間與評估時間。學生將計算包含過去動能與滾動波動度在內的技術指標及具有財務動機的特徵，檢查其資訊邊界，並依明確的特徵規則產生簡單交易訊號。
+中文：第三週說明觀察時間、發布時間、訊號時間、決策時間、執行時間與評估時間。學生將計算包含過去動能與滾動波動度在內的技術指標及由明確財務假說推導的特徵，檢查其資訊邊界，並依明確的特徵規則產生簡單交易訊號。
 
 ## 第四週
 
@@ -111,9 +111,9 @@ English: Week 12 compares sample, shrinkage, factor-based, and rolling covarianc
 
 ## 第十三週
 
-English: Week 13 introduces Value at Risk, Conditional Value at Risk, minimum-CVaR portfolios, scenario-based optimization, regularization, portfolio constraints, turnover limits, transaction-cost penalties, and robust portfolio decisions.
+English: Week 13 introduces Value at Risk, Conditional Value at Risk, minimum-CVaR portfolios, scenario-based optimization, regularization, portfolio constraints, turnover limits, transaction-cost penalties, and sensitivity to scenario count, random seed, and explicitly stated stress scenarios.
 
-中文：第十三週介紹風險值、條件風險值、最低條件風險值投資組合、情境式最佳化、正則化、投資組合限制、週轉率限制、交易成本懲罰及穩健投資組合決策。
+中文：第十三週介紹風險值、條件風險值、最低條件風險值投資組合、情境式最佳化、正則化、投資組合限制、週轉率限制、交易成本懲罰，以及情境數量、隨機種子與明確設定之壓力情境的敏感度分析。
 
 ## 第十四週
 
@@ -123,9 +123,9 @@ English: Week 14 contains Report 2. Each team presents a limitation of an existi
 
 ## 第十五週
 
-English: Week 15 is used to revise the proposed weighting method, complete common out-of-sample validation, transaction-cost analysis, concentration and turnover measures, and robustness checks, and submit the frozen final report, code, and results before Week 16.
+English: Week 15 is used to revise the proposed weighting method, complete common out-of-sample validation, transaction-cost analysis, concentration and turnover measures, and prespecified sensitivity checks for estimation windows, rebalancing intervals, and transaction costs, and submit the frozen final report, code, and results before Week 16.
 
-中文：第十五週用於修改所提出的加權方法，完成共同樣本外驗證、交易成本分析、集中度與週轉率衡量及穩健性檢查，並在第十六週前提交凍結版本的期末報告、程式碼與結果。
+中文：第十五週用於修改所提出的加權方法，完成共同樣本外驗證、交易成本分析、集中度與週轉率衡量，以及針對估計視窗、再平衡間隔及交易成本的預先設定敏感度檢查，並在第十六週前提交凍結版本的期末報告、程式碼與結果。
 
 ## 第十六週
 
@@ -135,9 +135,9 @@ English: Week 16 is the first final-report session. The first set of teams prese
 
 ## 第十七週
 
-English: Week 17 is the second final-report session. The remaining teams present under the same requirements, after which students compare and rank the other teams using common financial measures, implementation evidence, assumptions, and robustness results.
+English: Week 17 is the second final-report session. The remaining teams present under the same requirements, after which students compare and rank the other teams using common financial measures, implementation evidence, assumptions, sensitivity results, failed or infeasible cases, and stated limitations.
 
-中文：第十七週為期末報告第二場。其餘組別依相同要求完成報告，之後學生使用共同財務指標、實作證據、假設與穩健性結果比較並排序其他組別。
+中文：第十七週為期末報告第二場。其餘組別依相同要求完成報告，之後學生使用共同財務指標、實作證據、假設、敏感度結果、失敗或不可行案例及明確陳述的限制，比較並排序其他組別。
 
 ## 第十八週
 
