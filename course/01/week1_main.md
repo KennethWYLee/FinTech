@@ -147,29 +147,29 @@ English: Week 18 discusses papers related to weighting methods.
 
 ## 成績評量
 
-- Class participation and weekly learning evidence: 40%
+- Class participation and weekly learning evidence — 40 points
 
-- Report 1 — Quantitative Trading Report: 15%
+- Report 1 — Quantitative Trading Report: 15 points
 
-  - Team prediction model, strategy, reproducible backtest, performance evidence, and written report: 8%
+  - Team prediction model, strategy, reproducible backtest, performance evidence, and written report: 8 points
 
-  - Individual presentation and oral responses: 4%
+  - Individual presentation and oral responses: 4 points
 
-  - Individual evidence-based review of other approaches: 3%
+  - Individual evidence-based review of other approaches: 3 points
 
-- Report 2 — Weighting Method Progress Report: 15%
+- Report 2 — Weighting Method Progress Report: 15 points
 
-  - Team method proposal, mathematical definition, implementation, and preliminary evidence: 10%
+  - Team method proposal, mathematical definition, implementation, and preliminary evidence: 10 points
 
-  - Brief presentation and oral responses: 5%
+  - Brief presentation and oral responses: 5 points
 
-- Report 3 — Final Report: 30%
+- Report 3 — Final Report: 30 points
 
-  - Team weighting method, implementation, and empirical evaluation: 18%
+  - Team weighting method, implementation, and empirical evaluation: 18 points
 
-  - Final presentation and oral responses: 6%
+  - Final presentation and oral responses: 6 points
 
-  - Individual evidence-based comparison of other teams: 6%
+  - Individual evidence-based comparison of other teams: 6 points
 
 Students will not evaluate their own team. Rankings received from classmates will not directly determine team grades. Individual comparison scores will depend on whether the student uses common test results, financial measures, implementation evidence, and clearly stated comparison criteria.
 
