@@ -1,6 +1,6 @@
 # Artificial Intelligence in FinTech
 
-This directory contains the public, student-facing materials for the 18-week course. Before Report 1, the course progresses from financial data to technical indicators and features, signals, backtesting, machine-learning prediction, trading costs, performance evaluation, and basic portfolio weighting. The second half develops and evaluates more advanced weighting methods.
+This directory contains the public, student-facing materials for the 18-week course. Before Report 1, the course progresses from financial data to technical indicators and features, signals, backtesting, machine-learning prediction, trading costs, performance evaluation, and basic portfolio weighting. Later paper weeks discuss papers related to weighting methods.
 
 ## Weekly materials
 
@@ -11,20 +11,20 @@ This directory contains the public, student-facing materials for the 18-week cou
 | [Week 3](03/week3_main.ipynb) | Point-in-time information, technical indicators and features, and simple signals |
 | [Week 4](04/week4_main.ipynb) | Construction of a basic backtest |
 | [Week 5](05/week5_main.ipynb) | Machine-learning prediction, time-series evaluation, model updating, and rebalancing |
-| [Week 6](06/week6_main.md) | Trading costs, execution assumptions, and benchmarks |
-| [Week 7](07/week7_main.md) | Performance evaluation and backtest auditing |
-| [Week 8](08/week8_main.md) | Basic portfolio-weighting methods |
+| [Week 6](06/week6_main.ipynb) | Trading costs, execution assumptions, and benchmarks |
+| [Week 7](07/week7_main.ipynb) | Performance evaluation and backtest auditing |
+| [Week 8](08/week8_main.ipynb) | Basic portfolio-weighting methods |
 | [Week 9](09/week9_main.md) | No scheduled class — instructor travel |
 | [Week 10](10/week10_main.md) | Report 1 — Quantitative Trading Report |
-| [Week 11](11/week11_main.md) | Minimum-variance and mean-variance portfolios |
-| [Week 12](12/week12_main.md) | Covariance estimation, risk parity, and diversification |
-| [Week 13](13/week13_main.md) | Downside risk and robust portfolio decisions |
+| [Week 11](11/week11_main.md) | Papers related to weighting methods |
+| [Week 12](12/week12_main.md) | Papers related to weighting methods |
+| [Week 13](13/week13_main.md) | Papers related to weighting methods |
 | [Week 14](14/week14_main.md) | Report 2 — Weighting Method Progress Report |
-| [Week 15](15/week15_main.md) | Weighting-method development and final submission |
+| [Week 15](15/week15_main.md) | Papers related to weighting methods |
 | [Week 16](16/week16_main.md) | Final report, session 1 |
 | [Week 17](17/week17_main.md) | Final report, session 2 and comparison of other teams |
-| [Week 18](18/week18_main.md) | Advanced issues and research questions |
+| [Week 18](18/week18_main.md) | Papers related to weighting methods |
 
-The complete syllabus is [Week 1 main](01/week1_main.md), and the shared assessment, submission, workload, version, and accommodation rules are in [Week 1 support](01/week1_support.md). Weekly directories normally contain one main file and one support file; Weeks 2 through 5 instead each use one complete executable notebook containing the main lesson and its supporting information. The bilingual [course statement and GenAI policy](GenAI使用規範.md) apply throughout the semester.
+The complete syllabus and the shared assessment, submission, workload, version, and accommodation rules are in [Week 1](01/week1_main.md). Weekly directories normally contain one main file and one support file; Weeks 2 through 8 instead each use one complete executable notebook containing the main lesson and its supporting information. The bilingual [course statement and GenAI policy](GenAI使用規範.md) apply throughout the semester.
 
-The [Week 2 environment and data check](resources/notebooks/00_Colab_課前環境與資料檢查.ipynb) is an optional preparation notebook. The [Week 2 main notebook](02/week2_main.ipynb) integrates preparation, the complete lesson, twenty worked issues, three independent practice issues, an integrated case, troubleshooting, extensions, and sources. The [Week 3](03/week3_main.ipynb), [Week 4](04/week4_main.ipynb), and [Week 5](05/week5_main.ipynb) notebooks use the same structure for information timing and signals, basic backtesting, and chronological prediction respectively. The four notebooks whose filenames begin with `01_TypeB` through `04_TypeB` preserve earlier optional examples that combine topics now assigned to several weeks; they do not replace the current weekly main files or define current assessment requirements. Instructor answers, grading records, administrative files, personal EMI documents, and material without verified distribution rights are not included.
+The [Week 2 environment and data check](resources/notebooks/00_Colab_課前環境與資料檢查.ipynb) is an optional preparation notebook. The [Week 2 main notebook](02/week2_main.ipynb) integrates preparation, the complete lesson, worked issues, independent practice, an integrated case, troubleshooting, extensions, and sources. Weeks 3–8 follow the same overall issue-based standard while addressing their own topics; use the weekly links in the table above rather than treating one notebook as a substitute for another. The four notebooks whose filenames begin with `01_TypeB` through `04_TypeB` preserve earlier optional examples that combine topics now assigned to several weeks; they do not replace the current weekly main files or define current assessment requirements. Instructor answers, grading records, administrative files, personal EMI documents, and material without verified distribution rights are not included.

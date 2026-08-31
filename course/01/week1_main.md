@@ -13,7 +13,7 @@
 
 This EMI course introduces artificial intelligence in financial technology through the following progression: financial data, technical indicators and features derived from stated financial hypotheses, trading signals, backtesting, machine-learning prediction, trading costs and execution, performance evaluation, and portfolio weighting. Students first learn how financial data are collected, aligned, transformed, and used without information leakage. Each later stage must preserve the information boundary and evidence produced by the earlier stages.
 
-Week 8 introduces basic portfolio-weighting methods before the quantitative-trading report. After that report, students will study optimization-based and risk-based weighting methods and compare their assumptions, required inputs, risk characteristics, transaction costs, and out-of-sample stability. Each team will identify a specific limitation of an existing method, formulate a clearly defined modification, and evaluate the proposed method using common data, benchmarks, rebalancing rules, transaction costs, and out-of-sample periods.
+Week 8 introduces basic portfolio-weighting methods before the quantitative-trading report. Weeks 11, 12, 13, 15, and 18 then discuss papers related to weighting methods. The assigned papers and detailed discussion topics will be announced later. Each team will use these readings to support the development and evaluation of its own weighting method.
 
 After completing the course, students should be able to prepare and audit financial data; calculate and align returns correctly; construct technical indicators and financially interpretable features; convert a stated rule or model output into a trading signal; identify look-ahead bias, information leakage, and other sources of invalid backtest results; construct a reproducible backtest; estimate and evaluate a prediction model with fixed, rolling, expanding, and walk-forward designs; distinguish model retraining, signal updating, and portfolio rebalancing; incorporate transaction costs and execution assumptions; evaluate financial performance and its uncertainty; implement and compare established portfolio-weighting methods; develop a mathematically defined modification of an existing method; and communicate financial evidence, limitations, and conclusions in professional English.
 
@@ -31,11 +31,11 @@ Report 1 must include at least one prediction model estimated from historical da
 
 After the backtest contains the prediction, execution, and cost rules, students learn how to evaluate investment performance. The course considers returns after costs, annualized return, volatility, the Sharpe ratio, the Sortino ratio, maximum drawdown, drawdown duration, turnover, benchmark comparison, market-period sensitivity, and statistical uncertainty. Students also examine overfitting, repeated model selection, multiple testing, and data snooping. Predictive accuracy is treated as model evidence rather than as sufficient evidence of investment value.
 
-Week 8 begins the transition to portfolio weighting with equal weighting, market-capitalization weighting, weights based on normalized trading signals, and inverse-volatility weighting. The second half extends that foundation to minimum-variance portfolios, mean-variance optimization, maximum-Sharpe portfolios, equal risk contribution, risk budgeting, hierarchical risk parity, and minimum-CVaR portfolios. Covariance estimation, estimation error, portfolio concentration, downside risk, turnover constraints, transaction-cost penalties, and robust optimization are introduced when they are relevant to the weighting methods being studied.
+Week 8 begins the transition to portfolio weighting with equal weighting, market-capitalization weighting, weights based on normalized trading signals, and inverse-volatility weighting. Weeks 11, 12, 13, 15, and 18 discuss papers related to weighting methods. The exact methods and supporting topics depend on the assigned papers and therefore are not specified in advance in this syllabus.
 
 Throughout the second half of the course, students gradually develop their own modification of an existing weighting method. The proposed method must address an explicitly stated limitation, define its inputs and calculation procedure, satisfy portfolio constraints, specify its rebalancing rule, and be reproducible by another person. Its performance must be compared with appropriate baseline methods using the same information boundary and out-of-sample evaluation conditions.
 
-Research articles are introduced when they help students explain an empirical or methodological problem encountered during implementation. Students are expected to distinguish what the evidence demonstrates from what remains uncertain and to limit their conclusions to the data, periods, assumptions, and tests actually examined.
+Papers related to weighting methods are the primary learning materials in Weeks 11, 12, 13, 15, and 18. Reading details will be provided after the papers are selected.
 
 ## 第一週
 
@@ -99,21 +99,21 @@ English: Week 10 contains Report 1. Every student presents the team's required p
 
 ## 第十一週
 
-English: Week 11 introduces expected-return and covariance estimation, the efficient frontier, minimum-variance portfolios, mean-variance optimization, and maximum-Sharpe portfolios, with attention to concentration and weight instability caused by estimation error.
+English: Week 11 discusses papers related to weighting methods.
 
-中文：第十一週介紹預期報酬與共變異數估計、效率前緣、最小變異數投資組合、平均數—變異數最佳化及最大夏普比率投資組合，並討論估計誤差造成的集中度與權重不穩定問題。
+中文：第十一週討論與投資組合加權方法相關的論文。
 
 ## 第十二週
 
-English: Week 12 compares sample, shrinkage, factor-based, and rolling covariance estimates and introduces equal risk contribution, risk budgeting, hierarchical risk parity, and the distinction between diversification of capital and diversification of risk.
+English: Week 12 discusses papers related to weighting methods.
 
-中文：第十二週比較樣本共變異數、收縮估計、因子模型估計與滾動共變異數估計，並介紹等風險貢獻、風險預算、階層式風險平價，以及資金分散與風險分散的差異。
+中文：第十二週討論與投資組合加權方法相關的論文。
 
 ## 第十三週
 
-English: Week 13 introduces Value at Risk, Conditional Value at Risk, minimum-CVaR portfolios, scenario-based optimization, regularization, portfolio constraints, turnover limits, transaction-cost penalties, and sensitivity to scenario count, random seed, and explicitly stated stress scenarios.
+English: Week 13 discusses papers related to weighting methods.
 
-中文：第十三週介紹風險值、條件風險值、最低條件風險值投資組合、情境式最佳化、正則化、投資組合限制、週轉率限制、交易成本懲罰，以及情境數量、隨機種子與明確設定之壓力情境的敏感度分析。
+中文：第十三週討論與投資組合加權方法相關的論文。
 
 ## 第十四週
 
@@ -123,9 +123,9 @@ English: Week 14 contains Report 2. Each team presents a limitation of an existi
 
 ## 第十五週
 
-English: Week 15 is used to revise the proposed weighting method, complete common out-of-sample validation, transaction-cost analysis, concentration and turnover measures, and prespecified sensitivity checks for estimation windows, rebalancing intervals, and transaction costs, and submit the frozen final report, code, and results before Week 16.
+English: Week 15 discusses papers related to weighting methods.
 
-中文：第十五週用於修改所提出的加權方法，完成共同樣本外驗證、交易成本分析、集中度與週轉率衡量，以及針對估計視窗、再平衡間隔及交易成本的預先設定敏感度檢查，並在第十六週前提交凍結版本的期末報告、程式碼與結果。
+中文：第十五週討論與投資組合加權方法相關的論文。
 
 ## 第十六週
 
@@ -141,9 +141,9 @@ English: Week 17 is the second final-report session. The remaining teams present
 
 ## 第十八週
 
-English: Week 18 connects the semester's findings with advanced issues such as time-varying weights, market regimes, online portfolio selection, machine-learning allocation, distributionally robust optimization, estimation uncertainty, and transaction-cost-aware rebalancing and develops research questions from observed limitations.
+English: Week 18 discusses papers related to weighting methods.
 
-中文：第十八週將整學期的發現連結至進階議題，包括時變權重、市場狀態、線上投資組合選擇、機器學習資產配置、分布穩健最佳化（distributionally robust optimization）、估計不確定性及考量交易成本的再平衡，並由觀察到的限制發展研究問題。
+中文：第十八週討論與投資組合加權方法相關的論文。
 
 ## 成績評量
 
@@ -173,8 +173,57 @@ English: Week 18 connects the semester's findings with advanced issues such as t
 
 Students will not evaluate their own team. Rankings received from classmates will not directly determine team grades. Individual comparison scores will depend on whether the student uses common test results, financial measures, implementation evidence, and clearly stated comparison criteria.
 
-Detailed observable criteria, team and individual responsibilities, permitted resources, version rules, and arrangements for the three report sessions are provided in [Week 1 support](week1_support.md) and the corresponding report-week files. Report 1 common settings are announced by the start of Week 3, and final portfolio settings are announced by the start of Week 11. Students will not be evaluated against an unannounced setting.
+Detailed observable criteria and arrangements for the three report sessions are provided in the corresponding report-week files. Report 1 common settings are announced by the start of Week 3, and final portfolio settings are announced by the start of Week 11. Students will not be evaluated against an unannounced setting.
+
+## 課程運作與繳交說明
+
+The [course statement and GenAI policy](../GenAI使用規範.md) apply throughout the semester. Detailed report instructions are provided for [Report 1](../10/week10_main.md), [Report 2](../14/week14_main.md), and the [final report](../16/week16_main.md).
+
+### How assessment evidence is used
+
+Grades are based only on work submitted through GitHub or directly observed in class. Team scores apply to the shared submission. Individual presentation, oral response, review, and comparison scores are based on each student's own evidence. Rankings received from classmates do not determine a team's grade.
+
+For every scoring row, full credit requires complete and traceable evidence that satisfies the stated criterion. Partial credit reflects evidence that is incomplete, inconsistent, only partly correct, or not adequately explained. No credit is awarded when the required evidence is absent or cannot be connected to the assessed work. Concerns about academic integrity are handled under university rules and are not decided by peer rankings.
+
+Students may use course materials, authorized data, cited public sources, their team's submitted code, and generative AI in accordance with the course policy. Any use that affects analysis, code, wording, or interpretation must be disclosed. Every student remains responsible for verifying the submitted work and explaining it during oral questions. Fabricated data, results, execution records, or sources are not acceptable evidence.
+
+### Report submission through GitHub
+
+Submit each report and its related files through GitHub by the deadline stated in the report-week file. The submitted files must provide enough evidence to review the report, presentation, code, data sources, results, member contributions, and required GenAI disclosure. Do not upload credentials, restricted data, grading records, or personal information to a public repository.
+
+The main report, presentation, and oral explanation use English. Original field names, market labels, or source titles in another language may be retained when an English explanation is provided. Use descriptive headings, table headers, captions, and link text. Figures must remain legible when projected and when viewed on a smaller screen; color alone should not carry essential meaning.
+
+The stated word limits apply to the main text and exclude references, table notes, figure captions, and appendices. An appendix may provide audit details, but the main report must cite the relevant appendix item. The grader is not required to search an uncited appendix for missing evidence. Presentation limits count content slides; a title slide and reference slide do not count, and appendix slides may be used only to answer questions.
+
+The workload estimates assume that teams reuse verified weekly evidence. If the proposed method cannot be completed within the upper estimate, narrow the financial question or implementation scope before the frozen deadline rather than omitting required validity and reproducibility checks.
+
+### Deadlines, frozen versions, and corrections
+
+- Report 1 and its presentation are due 48 hours before the scheduled start of the Week 10 class.
+- Report 2 and its presentation are due 48 hours before the scheduled start of the Week 14 class.
+- The final report, code, results, and presentation are due 72 hours before the scheduled start of the Week 16 class. The same version is used by teams presenting in either Week 16 or Week 17.
+- The Report 1 individual review is due 24 hours after the scheduled end of the Week 10 class. The Report 2 revision record is due 24 hours after the scheduled end of the Week 14 class. The final individual comparison is due 24 hours after the scheduled end of the Week 17 class.
+
+At each deadline, the most recent complete GitHub version becomes the frozen version. A later version does not silently replace it or enter the common presentation and comparison. If a correctness error is found, retain both versions and disclose the error, correction, and effect on the conclusion. If the method or settings change after the final evaluation period has been inspected, that period can no longer be described as unused out-of-sample evidence.
+
+If no complete version is available by a report deadline, the team presents the latest verifiable evidence that was available at the deadline and is evaluated only on that evidence. There is no additional percentage deduction added to the rubric; however, missing version, reproducibility, or timeliness evidence cannot receive credit. University rules or an approved accommodation take precedence when they require a different treatment.
+
+### Presentation, comparison, and feedback
+
+All students or teams in the same report receive the same presentation and question time. The exact schedule is published after enrollment and team membership are known. Report 1 common data, required prediction baseline, trading benchmarks, and settings are announced through GitHub by the start of Week 3. The final portfolio data, final period, costs, portfolio constraints, and required numerical settings are announced by the start of Week 11. Students are not evaluated against an unannounced setting.
+
+A required common setting is not changed after the relevant freeze. If a correction is necessary before the freeze and fewer than seven calendar days remain, all teams receive the same corrected specification and a revised deadline. If a correctness problem is discovered after the freeze, the instructor preserves the affected evidence, documents the problem, and applies the same remedy to every team.
+
+Students do not evaluate their own team. Individual reviews use the required common criteria and cite evidence from submitted or presented results. The instructor may publish the class median rank and the spread of ranks without student names to support discussion; these summaries do not alter team grades.
+
+For comparison activities, access to GitHub materials follows the course repository permissions. Restricted raw data, individual rankings, and grading records are not made public. Only an anonymous class summary of individual rankings is returned to students.
+
+Individual reviews, rankings, and other grading-related personal records submitted through GitHub must be placed in a private repository that the instructor can access. Do not place these records in a public team repository.
+
+Report 1 rubric feedback is returned by the start of Week 11. Report 2 feedback and unresolved questions are returned by the start of Week 15 so teams can decide what to revise. Final report feedback and the anonymous class comparison summary are returned within the university's grade-reporting schedule.
+
+Students who need an approved accommodation should use the university's official procedure. The reporting format or timing may be adjusted while preserving the assessed learning outcomes. An approved absence is handled through the same official process, and the instructor documents any alternative accepted under those rules.
 
 ## 指定教科書及參考書籍
 
-The course does not require a single textbook. It uses selected English journal articles, instructor-prepared notebooks and research notes, and open or authorized financial datasets. Supporting materials cover financial data construction, backtesting, performance evaluation, covariance estimation, portfolio weighting, risk parity, CVaR, transaction costs, and robust portfolio optimization. Research readings are assigned when the corresponding empirical or methodological issue is introduced.
+The course does not require a single textbook. Weeks 2–8 primarily use instructor-prepared notebooks and open or authorized financial datasets. Weeks 11, 12, 13, 15, and 18 use papers related to weighting methods. Assigned papers and accessible versions will be announced through the course GitHub repository.

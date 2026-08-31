@@ -6,7 +6,7 @@ Report 2 shows whether the team has converted an observed limitation of an estab
 
 ## Required team submission
 
-The progress report and current implementation are due through GitHub 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1 support](../01/week1_support.md). The main text may contain at most 1,800 words and six figures or tables in total. The presentation may contain at most eight content slides. Material beyond these limits is not assessed.
+The progress report and current implementation are due through GitHub 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1](../01/week1_main.md). The main text may contain at most 1,800 words and six figures or tables in total. The presentation may contain at most eight content slides. Material beyond these limits is not assessed.
 
 The submission must include the report, current code, data and environment records, preliminary result files, presentation, contribution statement, GenAI disclosure, and a version identifier. Students should expect approximately 4–6 hours of additional preparation for Report 2, using the evidence already produced in Weeks 11–13. The submission must show:
 

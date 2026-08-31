@@ -2,11 +2,11 @@
 
 ## Purpose and frozen submission
 
-The final report evaluates whether the proposed modification of a portfolio weighting method is precisely defined, reproducible, and supported by a fair out-of-sample comparison. Every team must submit the same frozen version before Week 16, regardless of whether it presents in Week 16 or Week 17. A team may not revise its method or results after hearing another team. Necessary corrections must retain the original frozen evidence and follow the disclosure rule in [Week 1 support](../01/week1_support.md).
+The final report evaluates whether the proposed modification of a portfolio weighting method is precisely defined, reproducible, and supported by a fair out-of-sample comparison. Every team must submit the same frozen version before Week 16, regardless of whether it presents in Week 16 or Week 17. A team may not revise its method or results after hearing another team. Necessary corrections must retain the original frozen evidence and follow the disclosure rule in [Week 1](../01/week1_main.md).
 
 ## Required final submission
 
-The final submission is due through GitHub 72 hours before the scheduled start of the Week 16 class. Follow the shared formats and version rules in [Week 1 support](../01/week1_support.md). The main text may contain at most 4,000 words and 12 figures or tables in total. The presentation may contain at most 15 content slides. Material beyond these limits is not assessed.
+The final submission is due through GitHub 72 hours before the scheduled start of the Week 16 class. Follow the shared formats and version rules in [Week 1](../01/week1_main.md). The main text may contain at most 4,000 words and 12 figures or tables in total. The presentation may contain at most 15 content slides. Material beyond these limits is not assessed.
 
 The final submission must include the report, executable code or notebook, data definition and retrieval record, environment and dependency record, result files, presentation, contribution statement, generative AI disclosure, and a version identifier. Students should expect approximately 8–12 hours of additional preparation after Report 2, using the implementation and evidence completed in Weeks 14–15. The submission must show:
 
@@ -16,7 +16,7 @@ The final submission must include the report, executable code or notebook, data 
 4. comparison with the required baselines under the same data, dates, information boundary, costs, and portfolio constraints;
 5. common out-of-sample measures, including return after costs, volatility, downside risk when applicable, drawdown, turnover, concentration, and weight stability;
 6. prespecified sensitivity or robustness checks and any failed or infeasible cases; and
-7. conclusions limited to the evidence, with unresolved limitations carried forward for the Week 18 research activity.
+7. conclusions limited to the evidence, with unresolved limitations stated clearly.
 
 The common dataset, final period, numerical constraints, and required baselines are announced through GitHub by the start of Week 11. An additional analysis is allowed only when it is clearly separated from the common comparison.
 

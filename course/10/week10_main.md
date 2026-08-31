@@ -6,7 +6,7 @@ Report 1 demonstrates that the team can turn a financial question into a reprodu
 
 ## Required team submission
 
-The frozen submission is due through GitHub 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1 support](../01/week1_support.md). The Report 1 main text may contain at most 2,500 words and eight figures or tables in total. Each student may use at most three content slides for the individual presentation. Material beyond these limits is not assessed.
+The frozen submission is due through GitHub 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1](../01/week1_main.md). The Report 1 main text may contain at most 2,500 words and eight figures or tables in total. Each student may use at most three content slides for the individual presentation. Material beyond these limits is not assessed.
 
 The submission must include the written report, executable code or notebook, data and environment records, result files, presentation, contribution statement, GenAI disclosure, and a version identifier. The report, code, results, and presentation must describe the same analysis. Students should expect approximately 6–8 hours of additional preparation for Report 1, using the evidence already produced in Weeks 2–8.
 

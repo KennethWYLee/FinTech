@@ -53,4 +53,4 @@ Calculate the weighted total by multiplying each rating by its decimal weight an
 
 The ordering must follow from the recorded evidence rather than presentation style or personal preference. If evidence is missing or two results are not comparable, state that limitation explicitly. Rankings received do not determine a team's grade; the quality of each student's reasoning determines the individual review score.
 
-If code fails during verification, preserve the error message and identify the last verified result. Do not replace a failed execution with an unrecorded result. Any correction after the frozen deadline must follow the version rule in [Week 1 support](../01/week1_support.md).
+If code fails during verification, preserve the error message and identify the last verified result. Do not replace a failed execution with an unrecorded result. Any correction after the frozen deadline must follow the version rule in [Week 1](../01/week1_main.md).
