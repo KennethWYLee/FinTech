@@ -2,50 +2,37 @@
 
 ## Purpose
 
-Report 1 demonstrates that the team can turn a financial question into a reproducible quantitative trading analysis that includes at least one prediction model estimated from historical data. Every student must explain at least one empirical result and answer questions about its validity and financial interpretation. A more complex model does not receive credit merely for being more complex.
+Report 1 demonstrates that the team can turn a financial question into a reproducible quantitative trading analysis. The analysis must connect financial data, prediction, signals, positions, backtesting, transaction costs, performance evaluation, and an initial portfolio-weighting approach. A more complex model is not automatically a stronger solution.
 
-## Required team submission
+## Required evidence
 
-The frozen submission is due through GitHub 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1](../01/week1_main.md). The Report 1 main text may contain at most 2,500 words and eight figures or tables in total. Each student may use at most three content slides for the individual presentation. Material beyond these limits is not assessed.
+The report must make the following evidence clear and traceable:
 
-The submission must include the written report, executable code or notebook, data and environment records, result files, presentation, contribution statement, GenAI disclosure, and a version identifier. The report, code, results, and presentation must describe the same analysis. Students should expect approximately 6–8 hours of additional preparation for Report 1, using the evidence already produced in Weeks 2–8.
+- the financial question, assets, period, frequency, return definition, and information available at each decision time;
+- at least one prediction model estimated from historical data and a transparent baseline evaluated on the same target dates;
+- the connection from predictions to signals, positions, execution, rebalancing, and portfolio weights;
+- transaction-cost assumptions and trading benchmarks compared under compatible conditions;
+- predictive results and portfolio results after costs, including return, risk, drawdown, and turnover; and
+- checks for information leakage, overfitting, uncertainty, implementation failures, and limits on the conclusions.
 
-The submission must show:
+Use the common course settings when they are provided. Any additional analysis must be clearly separated from the common comparison.
 
-1. the financial question and why it matters;
-2. the assets, fields, dates, frequency, return definition, and permitted information at each decision time;
-3. at least one prediction model estimated from historical data, including its target, features, training rule, prediction timing, and update schedule;
-4. comparison of the required model with a transparent rule-based or statistical prediction baseline on the same target dates;
-5. the conversion of predictions into a trading signal, position rule, execution assumption, and holding period;
-6. the fixed, rolling, expanding, or walk-forward evaluation design and the model, signal, and rebalancing update rules;
-7. transaction costs, turnover, portfolio constraints, and failure behavior;
-8. comparison with the required common trading benchmarks under the same dates, information, execution, and cost assumptions;
-9. predictive results and financial results after costs, including return, risk, drawdown, and turnover measures, with prediction quality kept distinct from portfolio performance;
-10. uncertainty, possible leakage or overfitting, implementation limitations, and claims that remain unsupported; and
-11. an initial, clearly defined method for converting signals into portfolio weights.
+## GitHub submission and frozen version
 
-The common dataset and required numerical settings are announced through GitHub by the start of Week 3. Teams must use those settings for the common comparison and may separately label an additional analysis.
+Submit the report, presentation, and runnable code or notebook through the team's GitHub repository. The repository must provide enough information to identify the data sources, reproduce the analysis, and connect the reported results to the code.
 
-## Individual presentation and review
+Identify one Git commit as the frozen version by linking directly to that commit. Later commits do not replace the frozen version. If the team corrects an error afterward, retain the original version and explain how the correction changes the results or conclusions. The shared rule is also stated in [Week 1](../01/week1_main.md).
 
-Each student receives an equal short presentation slot. The student must identify their contribution, explain one result using traceable evidence, and respond without relying on another team member to answer in their place. Students then review and rank the other teams; students do not review their own team.
+Follow the [course GenAI policy](../GenAI使用規範.md), and do not publish credentials, restricted data, personal information, or grading records.
 
-All students follow the same presentation and question requirements. Students record evidence during the presentations and use it to complete the individual comparison. The presentation order is published after the number of students is known.
+## Presentation, oral explanation, and comparison
 
-## Scoring — 15 points
+The presentation and oral explanation use English. Each student must identify their contribution, explain at least one result using a specific table, figure, calculation, or code result, and answer questions about the assumptions and validity of the analysis.
 
-| Component | Points | Observable criteria |
-| --- | ---: | --- |
-| Team submission | 2 | The financial question, data, return definition, dates, and information boundary are precise and consistent. |
-| Team submission | 2 | The required prediction model and transparent prediction baseline have defined targets, inputs, chronological training, update rules, and common-date measures. |
-| Team submission | 2 | Predictions, signals, positions, trades, execution, costs, and portfolio returns are correctly connected. |
-| Team submission | 1 | Code, dependencies, inputs, checks, results, and required common benchmarks can be traced and rerun. |
-| Team submission | 1 | Conclusions follow from the evidence and disclose uncertainty, failures, and limitations. |
-| Individual presentation and oral responses | 1 | The student gives a clear financial explanation of the assigned work. |
-| Individual presentation and oral responses | 2 | The student connects a stated result to a specific table, figure, calculation, or execution record. |
-| Individual presentation and oral responses | 1 | Answers identify relevant assumptions, validity threats, or additional checks. |
-| Individual review of other approaches | 1 | The review uses the common financial and implementation criteria. |
-| Individual review of other approaches | 1 | The ranking cites traceable evidence from the other teams' submitted or presented results. |
-| Individual review of other approaches | 1 | The ordering and stated limitations are logically supported. |
+After the presentations, each student compares and ranks the other teams using traceable financial and technical evidence. Do not rank your own team. Presentation style alone is not evidence that one solution is stronger than another.
 
-The team submission contributes 8 points, the individual presentation and oral responses contribute 4 points, and the individual review contributes 3 points. Completion requires the team submission, the student's own presentation and oral response, and the student's review of all other teams. The individual review is due through GitHub 24 hours after the scheduled end of class. See [Week 10 support](week10_support.md) for the submission and comparison records and the [course GenAI policy](../GenAI使用規範.md) for permitted use and disclosure. Rubric feedback is returned by the start of Week 11.
+## Assessment — 15 points
+
+Report 1 is worth 15 points. Evaluation considers the correctness and reproducibility of the analysis, the strength and limits of the evidence, each student's presentation and oral explanation, and the reasoning used to compare the other teams. Detailed arrangements will be announced in class.
+
+Use the concise [Week 10 support guide](week10_support.md) before identifying the frozen version.

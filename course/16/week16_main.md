@@ -1,46 +1,36 @@
 # Week 16 — Final Report, Session 1
 
-## Purpose and frozen submission
+## Purpose
 
-The final report evaluates whether the proposed modification of a portfolio weighting method is precisely defined, reproducible, and supported by a fair out-of-sample comparison. Every team must submit the same frozen version before Week 16, regardless of whether it presents in Week 16 or Week 17. A team may not revise its method or results after hearing another team. Necessary corrections must retain the original frozen evidence and follow the disclosure rule in [Week 1](../01/week1_main.md).
+The final report evaluates whether a proposed modification to a portfolio weighting method is clearly defined and supported by reproducible out-of-sample evidence. Week 16 begins the final presentations, and Week 17 continues with the same requirements.
 
-## Required final submission
+## Frozen version and GitHub submission
 
-The final submission is due through GitHub 72 hours before the scheduled start of the Week 16 class. Follow the shared formats and version rules in [Week 1](../01/week1_main.md). The main text may contain at most 4,000 words and 12 figures or tables in total. The presentation may contain at most 15 content slides. Material beyond these limits is not assessed.
+At the final-report deadline, every team identifies one Git commit as its frozen version. The same version is used in Weeks 16 and 17, regardless of presentation order. Later commits do not replace it. If an error is corrected afterward, retain the frozen version and explain how the correction changes the results or conclusions. The general rule is stated in [Week 1](../01/week1_main.md).
 
-The final submission must include the report, executable code or notebook, data definition and retrieval record, environment and dependency record, result files, presentation, contribution statement, generative AI disclosure, and a version identifier. Students should expect approximately 8–12 hours of additional preparation after Report 2, using the implementation and evidence developed after the progress report. The submission must show:
+Submit the report, presentation, and the code or notebook needed to reproduce the reported results through GitHub. Follow the [course statement and GenAI policy](../GenAI使用規範.md). Do not include credentials, restricted data, individual rankings, grading records, or personal information in the public team repository.
 
-1. the financial motivation, research question, and established method being modified;
-2. the exact mathematical definition, input timing, constraints, rebalancing rule, cost treatment, and failure behavior of the proposed method;
-3. checks of calculations, constraints, date alignment, solver status when applicable, and reproducibility;
-4. comparison with the required baselines under the same data, dates, information boundary, costs, and portfolio constraints;
-5. common out-of-sample measures, including return after costs, volatility, downside risk when applicable, drawdown, turnover, concentration, and weight stability;
-6. prespecified sensitivity or robustness checks and any failed or infeasible cases; and
-7. conclusions limited to the evidence, with unresolved limitations stated clearly.
+## Required evidence
 
-The common dataset, final period, numerical constraints, and required baselines are announced through GitHub by the start of Week 11. An additional analysis is allowed only when it is clearly separated from the common comparison.
+The final report must make the following points clear:
 
-## Presentation sessions
+- the financial question, the established weighting method, and the proposed modification;
+- the information available when weights are formed, the weight calculation, portfolio constraints, rebalancing rule, and transaction-cost treatment;
+- the data, dates, baselines, and evaluation procedure used for the out-of-sample comparison;
+- results for the proposed method and required baselines under the same announced conditions;
+- checks or sensitivity evidence that reveal when the result changes, fails, or cannot be calculated; and
+- conclusions that cite the reported evidence and state the remaining limitations.
 
-The first set of teams presents in Week 16, and Week 17 continues with the same requirements. After the number of teams is known, teams are divided between the two sessions. Every team follows the same presentation and question requirements, and the assignment and order are published before the freeze.
+Any additional analysis must be separated from the common comparison. If a team changes the data, period, costs, constraints, baseline, or evaluation procedure, it must describe the result as a comparison under different conditions rather than attributing the difference only to the weighting method.
 
-Students should ask whether conclusions follow from the assumptions, data, estimation windows, rebalancing, transaction costs, concentration, stability, failed cases, and out-of-sample evidence. Individual rankings are completed only after all Week 17 presentations.
+## Presentation and oral defense
 
-## Scoring — 30 points
+Present the frozen version and connect each conclusion to a specific result. During the oral defense, be prepared to explain the method, trace one portfolio decision from inputs to weights, interpret the out-of-sample evidence, and identify one condition under which the conclusion may not hold.
 
-| Component | Points | Observable criteria |
-| --- | ---: | --- |
-| Team final submission | 2 | The financial motivation, question, existing method, and proposed change are coherent. |
-| Team final submission | 4 | The method, input timing, constraints, costs, rebalancing, and failure behavior are precisely defined. |
-| Team final submission | 4 | Code, data, dependencies, checks, and results are traceable and reproducible. |
-| Team final submission | 3 | Baselines and out-of-sample measures use the required common comparison conditions. |
-| Team final submission | 3 | Sensitivity checks, failed cases, uncertainty, and limitations are interpreted correctly. |
-| Team final submission | 2 | The written report links claims to evidence and does not exceed what the evaluation supports. |
-| Presentation and oral responses | 2 | The team clearly explains the financial motivation and method. |
-| Presentation and oral responses | 2 | The team connects conclusions to specific out-of-sample and robustness evidence. |
-| Presentation and oral responses | 2 | Answers identify relevant assumptions, limitations, or additional checks. |
-| Individual comparison of other teams | 2 | The comparison applies the common financial and implementation criteria consistently. |
-| Individual comparison of other teams | 2 | The ranking cites traceable evidence across the other teams. |
-| Individual comparison of other teams | 2 | The ordering and its limitations are logically supported. |
+Students should keep evidence-based notes on the other teams. The comparison and ranking are completed only after all Week 17 presentations.
 
-The team submission contributes 18 points, presentation and oral responses contribute 6 points, and the individual comparison completed in Week 17 contributes 6 points. See [Week 16 support](week16_support.md) for the frozen-submission check and the [course GenAI policy](../GenAI使用規範.md) for permitted use and disclosure. Final rubric feedback and the anonymous class comparison summary are returned within the university's grade-reporting schedule.
+## Assessment — 30 points
+
+Report 3 — Final Report is worth 30 points. Evaluation considers the quality of the final submission, presentation and oral defense, and the student's evidence-based comparison of the other teams. Detailed administrative and scoring arrangements will be announced separately after they are confirmed.
+
+Use the [Week 16 support page](week16_support.md) for a concise final check.

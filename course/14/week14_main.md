@@ -2,42 +2,35 @@
 
 ## Purpose
 
-Report 2 shows whether the team has converted an observed limitation of an established weighting method into a precise and testable modification. It is a progress report: incomplete work may be shown, but completed evidence and remaining work must be distinguished.
+Report 2 explains how the team has turned a limitation of an established portfolio-weighting method into a precise, testable modification. This is a progress report, so completed evidence, incomplete work, and limitations must be clearly distinguished.
 
-## Required team submission
+## Required evidence
 
-The progress report and current implementation are due through GitHub 48 hours before the scheduled start of class. Follow the shared formats and version rules in [Week 1](../01/week1_main.md). The main text may contain at most 1,800 words and six figures or tables in total. The presentation may contain at most eight content slides. Material beyond these limits is not assessed.
+The report must:
 
-The submission must include the report, current code, data and environment records, preliminary result files, presentation, contribution statement, GenAI disclosure, and a version identifier. Students should expect approximately 4–6 hours of additional preparation for Report 2, using the evidence already produced in Weeks 11–13. The submission must show:
+1. define the established weighting method and cite a traceable source;
+2. identify the specific financial or implementation limitation being addressed;
+3. define the proposed modification, including its inputs, information timing, calculation or optimization, output weights, and financial reasoning;
+4. state the data, period, constraints, rebalancing rule, transaction costs, benchmarks, and other conditions used for comparison;
+5. present the current implementation and preliminary evidence without describing unfinished tests as completed results; and
+6. explain the remaining limitations and the evidence still needed for the final report.
 
-1. the established method being modified and a traceable source for its definition;
-2. the specific financial or implementation limitation addressed by the modification;
-3. the proposed inputs, mathematical calculation or optimization problem, output weights, and timing of every input;
-4. portfolio constraints, rebalancing rule, treatment of transaction costs, and behavior when the method is infeasible or receives invalid input;
-5. baseline methods and common comparison conditions;
-6. implementation progress, small known-answer or diagnostic checks, and preliminary evidence from the development period;
-7. evidence that has not yet been completed, including the planned robustness checks and comparisons; and
-8. changes the team intends to make before the frozen final submission.
+Specific papers, common data, and numerical settings will be announced later. Teams must use the announced settings and clearly identify any additional assumption.
 
-The final evaluation period must not be used to choose or revise the method. Results in this report are preliminary and must be labeled with the period and purpose for which they were produced.
+## GitHub submission and frozen version
 
-## Presentation and revision record
+Submit the report and supporting work through GitHub according to the announced course schedule. Identify one Git commit as the frozen version for Report 2. Later commits do not replace that version. If the team later corrects an error, it must preserve the original version and explain how the correction changes the evidence or conclusion.
 
-Every team follows the same presentation and question requirements. Teams record evidence-based revisions and confirm the work required before the final submission. The presentation order is published after the number of teams is known.
+The final evaluation period must not be used to choose or revise the method. Preliminary results must state the data period, comparison conditions, and purpose for which they were produced.
 
-Questions from the instructor and peers help each team identify necessary revisions. A team does not need to accept every suggestion, but it must record the question, decide whether a change is justified, and identify the evidence that supports the decision.
+## Presentation and revision reasoning
 
-## Scoring — 15 points
+During the presentation, the team must explain the method, limitation, proposed modification, and preliminary evidence in English. Oral responses should connect each answer to a source, assumption, calculation, implementation result, or planned check.
 
-| Component | Points | Observable criteria |
-| --- | ---: | --- |
-| Team progress submission | 2 | A traceable source supports the definition of the existing method, and a source or observed result supports the stated limitation. |
-| Team progress submission | 2 | The modification has explicit inputs, timing, calculations or optimization, and output weights. |
-| Team progress submission | 2 | Constraints, rebalancing, costs, and failure behavior are specified. |
-| Team progress submission | 2 | The current implementation includes appropriate checks and can be traced to the reported result. |
-| Team progress submission | 2 | Baselines, preliminary evidence, incomplete work, and the final validation plan are clearly separated. |
-| Presentation and oral responses | 2 | The team explains the financial motivation and method clearly. |
-| Presentation and oral responses | 2 | Responses connect questions to assumptions, implementation evidence, or planned checks. |
-| Presentation and oral responses | 1 | The team records justified revisions and unresolved questions. |
+After the discussion, the team should record which revisions it accepts or rejects and explain the evidence or reasoning for each decision. A suggestion does not have to be accepted, but the decision must be justified.
 
-Completion requires the progress submission, presentation and oral response, and revision record. The revision record is due through GitHub 24 hours after the scheduled end of class. The Report 2 version remains unchanged for grading, but the team may revise its method for the final report when every change is recorded and only development evidence is used. See [Week 14 support](week14_support.md) for the required records and the [course GenAI policy](../GenAI使用規範.md) for permitted use and disclosure. Rubric feedback and unresolved questions are returned by the start of Week 15.
+## Assessment — 15 points
+
+Report 2 is worth 15 points. Evaluation considers the accuracy and traceability of the method definition, the clarity of the limitation and proposed modification, the relevance and interpretation of preliminary evidence, the honesty of stated limitations, and the quality of the oral explanation and revision reasoning.
+
+Use the brief [Week 14 support guide](week14_support.md), follow the [Week 1 course rules](../01/week1_main.md), and comply with the [course GenAI policy](../GenAI使用規範.md).

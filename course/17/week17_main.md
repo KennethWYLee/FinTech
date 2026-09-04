@@ -1,24 +1,22 @@
 # Week 17 — Final Report, Session 2
 
-The remaining teams present the frozen final submission under the same requirements and scoring criteria stated in the [Week 16 final report instructions](../16/week16_main.md). No team may change its evaluated version after the first presentation session.
+Week 17 continues the final presentations using each team's frozen version and the requirements stated in the [Week 16 final report instructions](../16/week16_main.md). A team may not replace its evaluated version after hearing the Week 16 presentations.
 
-The remaining teams follow the same presentation and question requirements used in Week 16. Students then complete the individual comparison and record conclusions across the course.
+## Presentation and oral defense
 
-## Individual comparison and ranking
+The remaining teams present their methods, out-of-sample evidence produced under the announced common conditions, limitations, and conclusions. Questions should test whether the reported conclusion follows from the method, information boundary, data, portfolio constraints, rebalancing, transaction costs, baselines, and evaluation procedure.
 
-After all presentations, each student compares and ranks every other team. Students do not rank their own team. The comparison must use results from the common period and consider:
+## Evidence-based comparison and ranking
 
-- return after transaction costs and the stated risk measures;
-- drawdown and downside risk;
-- turnover and transaction costs;
-- concentration and stability of portfolio weights;
-- adherence to the common information, rebalancing, and portfolio constraints;
-- reproducibility and implementation checks;
-- sensitivity, robustness, failed cases, and limitations; and
-- whether the conclusion follows from the evidence.
+After all presentations, each student compares and ranks every other team but does not rank their own team. Use the announced common conditions and evidence from each team's frozen version and oral defense. Consider:
 
-No single measure automatically determines the ordering. The student must state how the criteria were applied and identify missing or incomparable evidence. Rankings received from classmates do not directly determine a team's grade; the individual score evaluates the quality and consistency of the student's evidence-based comparison.
+- whether the weighting method and its implementation are clearly defined and reproducible;
+- whether the out-of-sample comparison keeps the relevant data, dates, costs, constraints, baselines, and evaluation procedure consistent;
+- what each reported return, risk, turnover, concentration, or weight stability measure shows under those conditions, including failed or infeasible calculations; and
+- whether the conclusion acknowledges unfavorable results and material limitations.
 
-The individual comparison contributes 6 points: 2 points for consistent common criteria, 2 points for traceable evidence across teams, and 2 points for a logically supported ordering and appropriate limitations. Completion requires a record for every other team and a final ordering. The comparison is due through GitHub 24 hours after the scheduled end of class. Use [Week 17 support](week17_support.md) for the comparison record.
+No single measure automatically determines the ordering. When evidence is missing or teams were evaluated under materially different conditions, identify what cannot be compared and limit the ranking claim accordingly. Rankings received from classmates do not directly determine a team's grade.
 
-The unresolved limitations identified across the final reports can guide the discussion of [papers related to weighting methods in Week 18](../18/week18_main.md).
+The team's public repository must not contain individual rankings or private grading records. Submit the individual comparison only through the private GitHub location designated by the instructor.
+
+Use the [Week 17 support page](week17_support.md) to record concise, traceable evidence. Limitations identified across the reports may inform the [Week 18 paper discussion](../18/week18_main.md).

@@ -1,28 +1,20 @@
-# Week 14 — Support
+# Week 14 — Support Guide
 
-## Method and implementation record
+Use this guide to review the report before identifying the frozen Git commit. It is not a separate form.
 
-Complete the following information before the presentation:
+## Before submission
 
-| Item | Required record |
-| --- | --- |
-| Existing method | Source, exact definition, inputs, constraints, and rebalancing rule |
-| Observed limitation | Data, period, result, or implementation behavior that demonstrates the limitation |
-| Proposed modification | Exact calculation or optimization, input timing, output weights, and financial reasoning |
-| Failure behavior | Invalid inputs, infeasible constraints, solver failure, or fallback behavior |
-| Current implementation | File and version, environment, completed checks, and last verified result |
-| Baselines | Methods and settings used under the same comparison conditions |
-| Preliminary evidence | Development period, metrics, assumptions, and limitations |
-| Remaining work | Missing implementation, robustness check, comparison, or documentation |
+- Confirm that a traceable source supports the definition of the established weighting method.
+- State exactly what limitation is being addressed and what evidence makes it relevant.
+- Define what the proposed modification changes, how it produces weights, and when each input is available.
+- Keep the data, period, constraints, costs, rebalancing, and benchmarks consistent with the announced settings; disclose every additional assumption.
+- Separate completed preliminary evidence from planned tests, and state what the current evidence cannot establish.
+- Confirm that the report, code, results, and presentation correspond to the identified frozen Git commit.
 
-Also confirm that the report, code, preliminary results, and presentation use the same version; the final evaluation period has not been inspected; the contribution statement identifies each member's work; and the GenAI disclosure is complete.
+Specific papers and common settings will be announced later.
 
-The proposed method must be defined precisely enough that another person could implement it without guessing a hidden rule. Do not describe a change only as “more robust,” “AI-based,” or “better”; state what calculation changes and what evidence could contradict the expected improvement.
+## After the presentation
 
-## Feedback and revision record
+For each important question, record the team's decision, the evidence or reasoning behind it, and any resulting change or additional check. If the team keeps the original design, explain why. Preserve the frozen Report 2 version when later corrections or revisions are made.
 
-| Question or criticism | Evidence relevant to the issue | Team decision | Change or additional check | Responsible member and deadline |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-
-Mark each result as completed or not yet completed. Do not present a planned test as an executed result. Keep the final evaluation period unused until the frozen method and settings have been submitted. Any use of generative AI must follow the [course policy](../GenAI使用規範.md).
+Any use of generative AI must follow the [course policy](../GenAI使用規範.md).
