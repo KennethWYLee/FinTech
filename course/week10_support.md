@@ -14,4 +14,4 @@
 
 For each team, identify the strongest traceable result, the most important unresolved limitation, and whether the solution is comparable under the common data, timing, execution, cost, and evaluation conditions. Use those observations to explain the final ordering. If the evidence does not support a distinction between two teams, report that limitation instead of inventing one.
 
-If a correction is made after the frozen version, keep the original commit available and explain which results and conclusions change. Follow the full frozen-version rule in [Week 1](../01/week1_main.md).
+If a correction is made after the frozen version, keep the original commit available and explain which results and conclusions change. Follow the full frozen-version rule in the [course syllabus](../README.md).

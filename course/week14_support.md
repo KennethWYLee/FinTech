@@ -17,4 +17,4 @@ Specific papers and common settings will be announced later.
 
 For each important question, record the team's decision, the evidence or reasoning behind it, and any resulting change or additional check. If the team keeps the original design, explain why. Preserve the frozen Report 2 version when later corrections or revisions are made.
 
-Any use of generative AI must follow the [course policy](../GenAI使用規範.md).
+Any use of generative AI must follow the [course policy](GenAI使用規範.md).

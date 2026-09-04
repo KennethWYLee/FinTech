@@ -6,9 +6,9 @@ The final report evaluates whether a proposed modification to a portfolio weight
 
 ## Frozen version and GitHub submission
 
-At the final-report deadline, every team identifies one Git commit as its frozen version. The same version is used in Weeks 16 and 17, regardless of presentation order. Later commits do not replace it. If an error is corrected afterward, retain the frozen version and explain how the correction changes the results or conclusions. The general rule is stated in [Week 1](../01/week1_main.md).
+At the final-report deadline, every team identifies one Git commit as its frozen version. The same version is used in Weeks 16 and 17, regardless of presentation order. Later commits do not replace it. If an error is corrected afterward, retain the frozen version and explain how the correction changes the results or conclusions. The general rule is stated in the [course syllabus](../README.md).
 
-Submit the report, presentation, and the code or notebook needed to reproduce the reported results through GitHub. Follow the [course statement and GenAI policy](../GenAI使用規範.md). Do not include credentials, restricted data, individual rankings, grading records, or personal information in the public team repository.
+Submit the report, presentation, and the code or notebook needed to reproduce the reported results through GitHub. Follow the [course statement and GenAI policy](GenAI使用規範.md). Do not include credentials, restricted data, individual rankings, grading records, or personal information in the public team repository.
 
 ## Required evidence
 

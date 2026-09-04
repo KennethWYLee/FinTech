@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1250" role="img" aria-labelledby="title desc">
+  <title id="title">Course workflow from financial data to portfolio research</title>
+  <desc id="desc">The course moves from financial data through technical indicators, signals, backtesting, machine-learning prediction, transaction costs, performance evaluation, portfolio weighting, repeated cost and performance evaluation, and research reports.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      .title { font: 500 38px Arial, "Noto Sans", sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 22px Arial, "Noto Sans", sans-serif; fill: #475569; }
+      .week { font: 500 22px Arial, "Noto Sans", sans-serif; fill: #334155; }
+      .stage { font: 500 29px Arial, "Noto Sans", sans-serif; fill: #0f172a; }
+      .stage-small { font: 500 26px Arial, "Noto Sans", sans-serif; fill: #0f172a; }
+      .question { font: 400 20px Arial, "Noto Sans", sans-serif; fill: #334155; }
+      .footer { font: 500 22px Arial, "Noto Sans", sans-serif; fill: #0f172a; }
+      .box { stroke-width: 3; rx: 18; }
+      .arrow { fill: none; stroke: #334155; stroke-width: 5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1250" fill="#ffffff"/>
+  <text x="600" y="54" text-anchor="middle" class="title">From Financial Data to a Defensible Portfolio Decision</text>
+  <text x="600" y="94" text-anchor="middle" class="subtitle">Each step changes the financial question that the next step can answer.</text>
+
+  <rect x="50" y="140" width="300" height="170" class="box" fill="#e0f2fe" stroke="#0369a1"/>
+  <text x="200" y="178" text-anchor="middle" class="week">Week 2</text>
+  <text x="200" y="222" text-anchor="middle" class="stage">Financial data</text>
+  <text x="200" y="261" text-anchor="middle" class="question">
+    <tspan x="200" dy="0">What does each price</tspan>
+    <tspan x="200" dy="26">or return represent?</tspan>
+  </text>
+
+  <rect x="450" y="140" width="300" height="170" class="box" fill="#e0e7ff" stroke="#4338ca"/>
+  <text x="600" y="178" text-anchor="middle" class="week">Week 3</text>
+  <text x="600" y="214" text-anchor="middle" class="stage-small">
+    <tspan x="600" dy="0">Technical indicators</tspan>
+    <tspan x="600" dy="31">and features</tspan>
+  </text>
+  <text x="600" y="278" text-anchor="middle" class="question">What was available then?</text>
+
+  <rect x="850" y="140" width="300" height="170" class="box" fill="#fef3c7" stroke="#b45309"/>
+  <text x="1000" y="178" text-anchor="middle" class="week">Weeks 3–4</text>
+  <text x="1000" y="222" text-anchor="middle" class="stage">Trading signals</text>
+  <text x="1000" y="261" text-anchor="middle" class="question">
+    <tspan x="1000" dy="0">What action follows from</tspan>
+    <tspan x="1000" dy="26">available information?</tspan>
+  </text>
+
+  <line x1="350" y1="225" x2="450" y2="225" class="arrow"/>
+  <line x1="750" y1="225" x2="850" y2="225" class="arrow"/>
+  <line x1="1000" y1="310" x2="1000" y2="390" class="arrow"/>
+
+  <rect x="850" y="390" width="300" height="170" class="box" fill="#dcfce7" stroke="#15803d"/>
+  <text x="1000" y="428" text-anchor="middle" class="week">Week 4</text>
+  <text x="1000" y="472" text-anchor="middle" class="stage">Backtesting</text>
+  <text x="1000" y="511" text-anchor="middle" class="question">
+    <tspan x="1000" dy="0">Which return may the</tspan>
+    <tspan x="1000" dy="26">position earn?</tspan>
+  </text>
+
+  <rect x="450" y="390" width="300" height="170" class="box" fill="#fce7f3" stroke="#be185d"/>
+  <text x="600" y="428" text-anchor="middle" class="week">Week 5</text>
+  <text x="600" y="472" text-anchor="middle" class="stage">ML prediction</text>
+  <text x="600" y="511" text-anchor="middle" class="question">
+    <tspan x="600" dy="0">Does prediction hold on</tspan>
+    <tspan x="600" dy="26">later observations?</tspan>
+  </text>
+
+  <rect x="50" y="390" width="300" height="170" class="box" fill="#ffedd5" stroke="#c2410c"/>
+  <text x="200" y="428" text-anchor="middle" class="week">Week 6</text>
+  <text x="200" y="472" text-anchor="middle" class="stage-small">Costs and execution</text>
+  <text x="200" y="511" text-anchor="middle" class="question">
+    <tspan x="200" dy="0">What remains after</tspan>
+    <tspan x="200" dy="26">trading?</tspan>
+  </text>
+
+  <line x1="850" y1="475" x2="750" y2="475" class="arrow"/>
+  <line x1="450" y1="475" x2="350" y2="475" class="arrow"/>
+  <line x1="200" y1="560" x2="200" y2="640" class="arrow"/>
+
+  <rect x="50" y="640" width="300" height="170" class="box" fill="#f3e8ff" stroke="#7e22ce"/>
+  <text x="200" y="678" text-anchor="middle" class="week">Week 7</text>
+  <text x="200" y="714" text-anchor="middle" class="stage-small">
+    <tspan x="200" dy="0">Performance</tspan>
+    <tspan x="200" dy="31">and validity</tspan>
+  </text>
+  <text x="200" y="778" text-anchor="middle" class="question">Which conclusion is supported?</text>
+
+  <rect x="450" y="640" width="300" height="170" class="box" fill="#ccfbf1" stroke="#0f766e"/>
+  <text x="600" y="678" text-anchor="middle" class="week">Week 8</text>
+  <text x="600" y="722" text-anchor="middle" class="stage-small">Portfolio weighting</text>
+  <text x="600" y="761" text-anchor="middle" class="question">
+    <tspan x="600" dy="0">How is capital allocated</tspan>
+    <tspan x="600" dy="26">under constraints?</tspan>
+  </text>
+
+  <rect x="850" y="640" width="300" height="170" class="box" fill="#f1f5f9" stroke="#475569"/>
+  <text x="1000" y="678" text-anchor="middle" class="week">After each rebalance</text>
+  <text x="1000" y="714" text-anchor="middle" class="stage-small">
+    <tspan x="1000" dy="0">Reapply costs</tspan>
+    <tspan x="1000" dy="31">and evaluation</tspan>
+  </text>
+  <text x="1000" y="778" text-anchor="middle" class="question">What changed after trading?</text>
+
+  <line x1="350" y1="725" x2="450" y2="725" class="arrow"/>
+  <line x1="750" y1="725" x2="850" y2="725" class="arrow"/>
+  <path d="M 1000 810 V 850 H 600 V 890" class="arrow"/>
+
+  <rect x="450" y="890" width="300" height="170" class="box" fill="#e2e8f0" stroke="#475569"/>
+  <text x="600" y="928" text-anchor="middle" class="week">Weeks 10–18</text>
+  <text x="600" y="972" text-anchor="middle" class="stage-small">Research and reports</text>
+  <text x="600" y="1011" text-anchor="middle" class="question">
+    <tspan x="600" dy="0">Which limitation becomes</tspan>
+    <tspan x="600" dy="26">a testable question?</tspan>
+  </text>
+
+  <text x="600" y="1155" text-anchor="middle" class="footer">Every result must preserve data, time, units, assumptions, and common comparison conditions.</text>
+</svg>

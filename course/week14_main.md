@@ -33,4 +33,4 @@ After the discussion, the team should record which revisions it accepts or rejec
 
 Report 2 is worth 15 points. Evaluation considers the accuracy and traceability of the method definition, the clarity of the limitation and proposed modification, the relevance and interpretation of preliminary evidence, the honesty of stated limitations, and the quality of the oral explanation and revision reasoning.
 
-Use the brief [Week 14 support guide](week14_support.md), follow the [Week 1 course rules](../01/week1_main.md), and comply with the [course GenAI policy](../GenAI使用規範.md).
+Use the brief [Week 14 support guide](week14_support.md), follow the [course syllabus](../README.md), and comply with the [course GenAI policy](GenAI使用規範.md).

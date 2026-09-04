@@ -1,6 +1,6 @@
 # Week 17 — Final Report, Session 2
 
-Week 17 continues the final presentations using each team's frozen version and the requirements stated in the [Week 16 final report instructions](../16/week16_main.md). A team may not replace its evaluated version after hearing the Week 16 presentations.
+Week 17 continues the final presentations using each team's frozen version and the requirements stated in the [Week 16 final report instructions](week16_main.md). A team may not replace its evaluated version after hearing the Week 16 presentations.
 
 ## Presentation and oral defense
 
@@ -19,4 +19,4 @@ No single measure automatically determines the ordering. When evidence is missin
 
 The team's public repository must not contain individual rankings or private grading records. Submit the individual comparison only through the private GitHub location designated by the instructor.
 
-Use the [Week 17 support page](week17_support.md) to record concise, traceable evidence. Limitations identified across the reports may inform the [Week 18 paper discussion](../18/week18_main.md).
+Use the [Week 17 support page](week17_support.md) to record concise, traceable evidence. Limitations identified across the reports may inform the [Week 18 paper discussion](week18_main.md).

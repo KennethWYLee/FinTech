@@ -21,9 +21,9 @@ Use the common course settings when they are provided. Any additional analysis m
 
 Submit the report, presentation, and runnable code or notebook through the team's GitHub repository. The repository must provide enough information to identify the data sources, reproduce the analysis, and connect the reported results to the code.
 
-Identify one Git commit as the frozen version by linking directly to that commit. Later commits do not replace the frozen version. If the team corrects an error afterward, retain the original version and explain how the correction changes the results or conclusions. The shared rule is also stated in [Week 1](../01/week1_main.md).
+Identify one Git commit as the frozen version by linking directly to that commit. Later commits do not replace the frozen version. If the team corrects an error afterward, retain the original version and explain how the correction changes the results or conclusions. The shared rule is also stated in the [course syllabus](../README.md).
 
-Follow the [course GenAI policy](../GenAI使用規範.md), and do not publish credentials, restricted data, personal information, or grading records.
+Follow the [course GenAI policy](GenAI使用規範.md), and do not publish credentials, restricted data, personal information, or grading records.
 
 ## Presentation, oral explanation, and comparison
 
