@@ -196,6 +196,6 @@ The course uses each source only for claims it can support:
 
 ## Course materials
 
-The public student materials are organized in the [course directory](course/). Begin with the [Week 1 lesson](course/week1_main.md), which introduces the course workflow and asks students to turn an investment idea into a testable quantitative trading question.
+The public student materials are organized in the [course directory](course/). Begin with the [Week 1 lesson](course/week01_main.md), which introduces the course workflow and asks students to turn an investment idea into a testable quantitative trading question.
 
 Instructor answers, grading records, administrative files, personal EMI documents, and material without verified distribution rights are not published in this repository.

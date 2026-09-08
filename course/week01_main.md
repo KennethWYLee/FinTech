@@ -75,6 +75,6 @@ Keep only the table, your question, and the peer comment with your response. The
 
 ## Next: obtain the evidence
 
-Week 1 defines the question. [Week 2 — Financial Data and Returns](week2_main.ipynb) checks what the proposed prices, dates, and returns mean. Week 3 determines which features and signals can be available before a decision. Later weeks build and evaluate the strategy.
+Week 1 defines the question. [Week 2 — Financial Data and Returns](week02_main.ipynb) checks what the proposed prices, dates, and returns mean. Week 3 determines which features and signals can be available before a decision. Later weeks build and evaluate the strategy.
 
 The [syllabus](../README.md) and [course statement and GenAI policy](GenAI使用規範.md) contain the course rules. This activity does not add a report requirement or a grading rule.
