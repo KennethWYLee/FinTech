@@ -5,3 +5,7 @@
 !/COURSE_PLAN.md
 !/course/
 !/course/**
+
+# Student publication uses PDFs; editable teaching sources stay local.
+*.md
+*.ipynb
