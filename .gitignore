@@ -9,3 +9,7 @@
 # Student publication uses PDFs; editable teaching sources stay local.
 *.md
 *.ipynb
+
+# Chinese translations are distributed through Drive, not GitHub.
+FinTechCH_week*.pdf
+CH_week*.pdf
