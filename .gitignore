@@ -1,10 +1,19 @@
 # This course archive is private by default. Add reviewed public files explicitly.
 /*
 !/.gitignore
+!/.gitattributes
 !/README.md
 !/COURSE_PLAN.md
 !/course/
 !/course/**
+
+# QuantTrading is a four-session course; publish these reviewed English PDFs only.
+!/QuantTrading/
+/QuantTrading/*
+!/QuantTrading/partA.pdf
+!/QuantTrading/partB.pdf
+!/QuantTrading/partC.pdf
+!/QuantTrading/partD.pdf
 
 # Student publication uses PDFs; editable teaching sources stay local.
 *.md

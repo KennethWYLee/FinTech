@@ -1,0 +1,2 @@
+# Preserve PDF bytes and xref offsets on every operating system.
+*.pdf binary
