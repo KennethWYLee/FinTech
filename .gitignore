@@ -19,6 +19,11 @@
 *.md
 *.ipynb
 
-# Chinese translations are distributed through Drive, not GitHub.
+# Chinese PDFs stay private unless explicitly approved below.
 FinTechCH_week*.pdf
 CH_week*.pdf
+
+# Approved on 2026-10-15: publish the reviewed Week 6-8 Chinese PDFs.
+!/course/FinTechCH_week6_withClaude.pdf
+!/course/FinTechCH_week7_withClaude.pdf
+!/course/FinTechCH_week8_withClaude.pdf
