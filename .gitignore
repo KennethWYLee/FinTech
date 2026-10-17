@@ -37,3 +37,11 @@ CH_week*.pdf
 !/course/FinTechCH_week3_withClaude.pdf
 !/course/FinTechCH_week4_withClaude.pdf
 !/course/FinTechCH_week5_withClaude.pdf
+
+# Approved on 2026-10-17: original Chan book guide only; never the source book.
+!/book_guides/
+/book_guides/*
+!/book_guides/Chan_QuantTrading/
+/book_guides/Chan_QuantTrading/*
+!/book_guides/Chan_QuantTrading/Chan_QuantTrading_coverage_CH.pdf
+!/book_guides/Chan_QuantTrading/Chan_QuantTrading_ch01_CH.pdf
