@@ -7,13 +7,17 @@
 !/course/
 !/course/**
 
-# QuantTrading is a four-session course; publish these reviewed English PDFs only.
+# QuantTrading is a four-session course; publish only the reviewed PDFs listed below.
 !/QuantTrading/
 /QuantTrading/*
 !/QuantTrading/partA.pdf
 !/QuantTrading/partB.pdf
 !/QuantTrading/partC.pdf
 !/QuantTrading/partD.pdf
+
+# Approved on 2026-10-17: synchronized Chinese Parts B and D.
+!/QuantTrading/partB_CH.pdf
+!/QuantTrading/partD_CH.pdf
 
 # Student publication uses PDFs; editable teaching sources stay local.
 *.md
